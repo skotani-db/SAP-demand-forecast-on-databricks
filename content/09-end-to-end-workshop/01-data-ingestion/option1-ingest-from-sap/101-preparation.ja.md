@@ -27,7 +27,7 @@ weight: 201
     |認証モードを選択	|ベーシック認証	|
     |ユーザー名	|講師が指定した SAP ユーザ	|
     |パスワード	|講師が指定した SAP ユーザのパスワード	|
-    |アプリケーションのホスト URL	|講師が指定した S/4HANA アプリケーションURL	 |
+    |アプリケーションのホスト URL	|講師が指定した URL (例：http://hostname.aws.dev)	※ |
     |アプリケーションサービスへのパス	|/sap/opu/odata/iwfnd/catalogservice;v=2	|
     |ポート番号	|443	|
     |クライアント番号	|100	|
@@ -35,6 +35,9 @@ weight: 201
     |PrivateLink	|無効	|
     |データ暗号化	|選択しない	|
     |	|	|
+
+    **※アプリケーションホストURLの末尾に「/」を記載しないでください。接続エラーになります。**
+
     ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image05.ja.png)
 1. 接続先が正常に作成されたことを確認します。
     ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image06.ja.png)
