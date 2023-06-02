@@ -1,0 +1,10 @@
+version: 2.0
+
+defaultLocaleCode: ja-JP
+#localeCodes:
+#  - ja-JP
+
+params:
+  hello: world
+  foo:
+    - bar

@@ -1,5 +1,5 @@
 ---
-title: "Databricks on AWS Immersion Day: End-to-End Workshop"
+title: "End-to-End Workshop"
 weight: 0
 ---
 

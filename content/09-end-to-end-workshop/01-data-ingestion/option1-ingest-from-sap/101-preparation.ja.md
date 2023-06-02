@@ -1,3 +1,4 @@
+---
 title: "事前準備：S3 バケットの作成と SAP Odata コネクタ接続先の設定"
 weight: 201
 ---
@@ -7,10 +8,11 @@ weight: 201
 1. [Amazon S3 コンソール](https://s3.console.aws.amazon.com/s3/home)を開きます。
 1. **バケットを作成** をクリックします。
 1. バケットを作成したい **AWS リージョン** を選択します。 (us-east-1に設定)
-1. バケット名を`**<AWSAccountID>-appflowodata-<MMDD>**` に設定します。バケット名はユニークである必要があります。自分のAWSアカウントID <AWSAccountID> は AWS マネージメントコンソルの右上で確認できますが、アカウント ID 番号に入っている「-」は削除するようにご注意ください。
+1. バケット名を `<AWSAccountID>-appflowodata-<MMDD>` に設定します。バケット名はユニークである必要があります。自分のAWSアカウントID `<AWSAccountID>` は AWS マネージメントコンソルの右上で確認できますが、アカウント ID 番号に入っている「-」は削除するようにご注意ください。
 1. 他の値はデフォルト値のままにし、画面の一番下にスクロールし、**バケットを作成** をクリックします。 選択したリージョンで S3 バケットが作成されます。
-    ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image01.ja.png)
-    ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image02.ja.png)
+
+![pic](/static/01-data-ingestion/option1-ingest-from-sap/image01.ja.png)
+![pic](/static/01-data-ingestion/option1-ingest-from-sap/image02.ja.png)
 
 ## AppFlow で、SAP の接続先 ( Connection ) を設定
 

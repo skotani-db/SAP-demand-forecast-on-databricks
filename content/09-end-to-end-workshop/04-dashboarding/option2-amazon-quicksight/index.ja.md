@@ -1,5 +1,5 @@
 ---
-title: "Amazon QuickSight を用いた Delta Lake Table の可視化"
+title: "Option 2: Amazon QuickSight を用いた Delta Lake Table の可視化"
 weight: 52
 ---
 
@@ -9,38 +9,54 @@ QuickSight は優れたインメモリエンジン (SPICE) を使って、組織
 
 このハンズオンラボでは Databricks の Delta Lake Table に接続し、Databricks 上のデータを QuickSight で可視化する手順を解説します。
 
-## 事前準備: Amazon QuickSight のセットアップ
-
-QuickSight を初めて利用する場合はまず初期設定を行います。
-
-1. AWS コンソールにログインしてください。
+1. 初めに、AWS コンソールにログインしてください。
 2. AWS コンソール上部の検索バーに「QuickSight」と入力し、表示された QuickSight のリンクをクリックします。
 ![](/static/04-dashboarding/option2-amazon-quicksight/aws-console-search-bar.png)
-3. 「Sign up for QuickSight」ボタンをクリックします (初期設定済みの場合は次のセクションに進んでください)。
+
+## 事前準備: QuickSight のセットアップ
+
+QuickSight を初めて利用する場合はまず初期設定を行います。
+初期設定済みの場合は次のセクションに進んでください。
+
+1. 「Sign up for QuickSight」ボタンをクリックします。
 ![](/static/04-dashboarding/option2-amazon-quicksight/sign-up-for-quicksight.png)
-4. 「Enterprise」エディションを選択し、「Continue」ボタンをクリックします。
+2. 「Enterprise」エディションを選択し、「Continue」ボタンをクリックします。
 ![](/static/04-dashboarding/option2-amazon-quicksight/create-your-quicksight-account.png)
-5. Paginated Report add-on は今回必要ないので「No, Maybe Later」ボタンをクリックします。
+3. Paginated Report add-on は今回必要ないので「No, Maybe Later」ボタンをクリックします。
 ![](/static/04-dashboarding/option2-amazon-quicksight/get-paginated-report-add-on.png)
-6. 「Select a region」のボックスではワークショップを実施しているリージョンを選択し、「QuickSight account name」には任意の名前 (`databricks-on-aws-workshop-<your name>` など、一意である必要があります) を入力し、「Notification email address」にはあなたのメールアドレスを入力してください。その他はデフォルトの設定のままにし、「Finish」ボタンをクリックします。
+4. 「Select a region」のボックスではワークショップを実施しているリージョンを選択し、「QuickSight account name」には任意の名前 (`databricks-on-aws-workshop-<your name>` など、一意である必要があります) を入力し、「Notification email address」にはあなたのメールアドレスを入力してください。その他はデフォルトの設定のままにし、「Finish」ボタンをクリックします。
 ![](/static/04-dashboarding/option2-amazon-quicksight/account-setting.png)
-7. 初期設定が完了したら「Go to Amazon QuickSight」ボタンをクリックします。
+5. 初期設定が完了したら「Go to Amazon QuickSight」ボタンをクリックします。
 
-## Amazon QuickSight の Databricks コネクターをセットアップ
+## QuickSight の Databricks コネクターをセットアップ
 
-1. Datasets
+QuickSight には [Databricks 用のコネクター](https://aws.amazon.com/about-aws/whats-new/2022/11/amazon-quicksight-supports-connectivity-databricks/)があるので、複雑な設定を行うことなく、Databricks 上のテーブルに接続して QuickSight 上で可視化することができます。
+
+1. 左ペインの「Datasets」をクリックします。
 ![](/static/04-dashboarding/option2-amazon-quicksight/quicksight-analyses.png)
-2. New Dataset
+2. 右上の「New Dataset」ボタンをクリックします。
 ![](/static/04-dashboarding/option2-amazon-quicksight/quicksight-datasets.png)
-3. Databricks
+3. データソースのリストから「Databricks」を探し、クリックします。
 ![](/static/04-dashboarding/option2-amazon-quicksight/quicksight-connectors.png)
+
+接続先の情報を入力するモーダルウィンドウが表示されます。
+次の手順で Databricks クラスターへの JDBC 接続情報を確認し、入力していきます。
 
 ### Databricks クラスターへの JDBC 接続情報を確認
 
-クラスターが起動状態であることを確認してください。
+::alert[クラスターが起動状態であることを確認してください。停止している場合は QuickSight から接続できません。]{type=warning}
+
+1. Databricks のワークスペースを開きます。
+2. 左ペインの「Compute」をクリックし、クラスターのリストを開きます。
+![](/static/04-dashboarding/option2-amazon-quicksight/databricks-main.png)
+3. 前回までのラボで用いていたクラスターの名前をクリックします。
+4. 下部の「Advanced options」メニューを開き、「JDBC/ODBC」タブをクリックします。
+
+ここで表示されている項目を QuickSight に入力していきます。
 
 ### QuickSight の Databricks コネクターを作成
 
+Databr
 ![](/static/04-dashboarding/option2-amazon-quicksight/new-databricks-data-source.png)
 
 ## Amazon QuickSight でダッシュボードを作成

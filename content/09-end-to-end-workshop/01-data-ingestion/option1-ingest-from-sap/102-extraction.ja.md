@@ -1,3 +1,4 @@
+---
 title: "Amazon AppFlowで SAP データ抽出フローを設定"
 weight: 202
 ---
@@ -59,18 +60,18 @@ weight: 202
     ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image21.ja.png)
 1. **フロートリガー**で**オンデマンドで実行**を選択し、次へをクリックします。
     ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image22.ja.png)
-1. データフィールドをマッピング画面で、マッピング方法を**「手動でフィールドをマッピングする」**を選択します。
+1. データフィールドをマッピング画面で、マッピング方法を **「手動でフィールドをマッピングする」** を選択します。
 1. **送信元から送信先フィールドへのマッピング**で**送信元フィールド名**を**すべてのフィールドを直接マッピングする**を選択します。
     ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image23.ja.png)
 1. 全てのフィールドが表示されることを確認し、**次へ**をクリックします。
     ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image25.ja.png)
-1. **フィルターを追加する**画面で何も設定しないままで**、次へ**をクリックします。
+1. **フィルターを追加する** 画面で何も設定しないままで、 **次へ** をクリックします。
     
     ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image26.ja.png)
-1. 最後の入力確認画面で、入力値を確認し、**フローを作成**ボタンをクリックします。
+1. 最後の入力確認画面で、入力値を確認し、**フローを作成** ボタンをクリックします。
     ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image27.ja.png)
 1. フローが正常に作成されたことを確認します。
-1. **フローを実行**ボタンをクリックし、データ抽出フローを実行させます。
+1. **フローを実行** ボタンをクリックし、データ抽出フローを実行させます。
 1. フローが正常に完了し、抽出された件数と格納場所がメッセージに表示されることを確認します。
     ![pic](/static/01-data-ingestion/option1-ingest-from-sap/image28.ja.png)
 1. 指定したAmazon S3バケットにフロー名のPrefixが作成され、その中に今回抽出したファイルが保存されることを確認します。ダウンロードしたり、Amazon S3 Queryでファイル参照することも可能です。
