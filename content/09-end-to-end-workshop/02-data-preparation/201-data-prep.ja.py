@@ -189,14 +189,13 @@ df_vbap_renamed = (
     .select("ID", "Price", "ItemGroup")
 )
 
-display(df_price)
+display(df_vbap_renamed)
 
 # COMMAND ----------
 
 # 品目情報が取れるレコードのみを残して、売上に関するエンリッチデータを作成する
 (
     df_vbak_renamed.join(df_vbap_renamed, on="ID", how="inner")
-    .filter("ItemGroup in ('ZRACING', 'ZMTN', 'ZMTN', 'ZCRUISE', 'ZYOUTH')")
     .write.format("delta")
     .mode("overwrite")
     .saveAsTable("sales_record_silver")
