@@ -95,7 +95,23 @@ df_vbap = (
 
 # COMMAND ----------
 
-後で画面キャプチャを挿入する
+# VBAK
+(
+    spark
+    .read
+    .format("csv")
+    .load("file:/Workspace/Repos/firstgrade430@gmail.com/SAP-demand-forecast-on-databricks/static/02-data-preparation/vbak_mapping.csv")
+    .createOrReplaceTempView("vbak_mapping")
+)
+
+# VBAP
+(
+    spark
+    .read
+    .format("csv")
+    .load("file:/Workspace/Repos/firstgrade430@gmail.com/SAP-demand-forecast-on-databricks/static/02-data-preparation/vbak_mapping.csv")
+    .createOrReplaceTempView("vbap_mapping")
+)
 
 # COMMAND ----------
 
@@ -161,6 +177,7 @@ df_vbap = (
 
 # MAGIC %md
 # MAGIC ## Step 4: 売上予測の分析に必要な情報を持ったエンリッチデータを作成する
+# MAGIC
 
 # COMMAND ----------
 
