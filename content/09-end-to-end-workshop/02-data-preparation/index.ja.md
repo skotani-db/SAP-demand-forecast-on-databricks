@@ -123,9 +123,9 @@ aws iam attach-role-policy --role-name databricks-cluster-sagemaker-access-role 
 ```
 
 Databricks クラスターにインスタンスプロファイルをアタッチする際に必要な権限をインラインポリシーとして追加します。
-`<!!!your-aws-account-id!!!>` の箇所はご自身の AWS アカウント ID (12桁) に置き換えてください。
 
 ```bash:
+AWS_ACCOUNT_ID=`aws sts get-caller-identity --query "Account" --output text`
 aws iam put-role-policy \
   --role-name databricks-cluster-sagemaker-access-role \
   --policy-name get-role-inline-policy \
@@ -138,7 +138,7 @@ aws iam put-role-policy \
                 "iam:GetRole"
             ],
             "Resource": [
-                "arn:aws:iam::<!!!your-aws-account-id!!!>:role/databricks-cluster-sagemaker-access-role"
+                "arn:aws:iam::${AWS_ACCOUNT_ID}:role/databricks-cluster-sagemaker-access-role"
             ],
             "Effect": "Allow"
         }
@@ -149,6 +149,7 @@ aws iam put-role-policy \
 Databricks ワークスペースの IAM ロール (`databricks-cross-account-role`) に対して、今回作成したロール (`databricks-cluster-sagemaker-access-role`) を渡せる権限を付与します。
 
 ```bash:
+# AWS_ACCOUNT_ID=`aws sts get-caller-identity --query "Account" --output text`
 aws iam put-role-policy \
   --role-name databricks-cross-account-role \
   --policy-name pass-cluster-role-inline-policy \
@@ -161,7 +162,7 @@ aws iam put-role-policy \
                 "iam:PassRole"
             ],
             "Resource": [
-                "arn:aws:iam::<!!!your-aws-account-id!!!>:role/databricks-cluster-sagemaker-access-role"
+                "arn:aws:iam::${AWS_ACCOUNT_ID}:role/databricks-cluster-sagemaker-access-role"
             ],
             "Effect": "Allow"
         }
@@ -184,6 +185,14 @@ aws iam put-role-policy \
 2. 「All-purpose compute」タブの「Create compute」ボタンをクリックします。
 3. 以下のスクリーンショットを参考に設定し、「Create cluster」ボタンをクリックします。なお、ここでは「Single node」モードを選択し、「Databricks runtime version」は「Runtime: 12.2 LTS **ML** (Scala 2.12, Spark 3.3.2)」を選択し、「Use Photon Acceleration」チェックボックスを外し、「Instance Profile」には「databricks-cluster-sagemaker-access-role」を選択します。
 ![](/static/02-data-preparation/create-cluster.png)
+
+## ハンズオン用のノートブック
+
+ハンズオン用のノートブックは `201-data-prep.ja.py` です。
+
+:button[201-data-prep.ja.py]{href="/static/02-data-preparation/notebooks/201-data-prep.ja.py" action=download}
+
+講師が説明する手順に従ってこちらのファイルを Databricks ワークスペースにインポートしてください。
 
 <!--
 ## Databricks ワークスペースにハンズオン用のノートブックをアップロード
