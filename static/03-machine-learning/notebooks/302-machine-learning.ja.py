@@ -49,10 +49,36 @@
 
 # COMMAND ----------
 
-# MAGIC %md ## Q2. モデルごとのmetrics比較を行なってください
+# MAGIC %md ## モデルごとのmetrics比較を行なってください
 
 # COMMAND ----------
 
 # MAGIC %md 
 # MAGIC
 # MAGIC <img src='https://github.com/skotani-db/SAP-demand-forecast-on-databricks/blob/main/static/03-machine-learning/metrics.png?raw=true' />
+
+# COMMAND ----------
+
+# MAGIC %md ## mlflowから作成したモデルをModel registryに登録
+# MAGIC <br>
+# MAGIC </br>
+# MAGIC <img src='https://raw.githubusercontent.com/microsoft/openhack-for-lakehouse-japanese/main/images/day2_01__mlflow/mlflow-first.png' />
+# MAGIC <br>
+# MAGIC </br>
+# MAGIC
+# MAGIC **ご自身のお名前をいれたmodel名にしてください** 
+# MAGIC
+# MAGIC <img src='https://raw.githubusercontent.com/microsoft/openhack-for-lakehouse-japanese/main/images/day2_01__mlflow/register_model.jpg' />
+# MAGIC <br>
+# MAGIC </br>
+# MAGIC
+# MAGIC **赤枠をクリックしてください** 
+# MAGIC <img src='https://raw.githubusercontent.com/microsoft/openhack-for-lakehouse-japanese/main/images/day2_01__mlflow/regist_model2.jpg' />
+# MAGIC <br>
+# MAGIC </br>
+# MAGIC
+# MAGIC **Transit to productionをクリックします** 
+# MAGIC <img src='https://raw.githubusercontent.com/microsoft/openhack-for-lakehouse-japanese/main/images/day2_01__mlflow/mlflow-second.png' />
+# MAGIC <br>
+# MAGIC </br>
+# MAGIC **この作業を実施することで、DatabricksのModel Registryに登録が行われ、mlflowのAPIやsparkから呼び出すことが可能になります。modelの確認はサイドバーからでも確認可能です**
