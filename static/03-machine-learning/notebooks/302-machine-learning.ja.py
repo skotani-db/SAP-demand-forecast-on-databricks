@@ -82,3 +82,34 @@
 # MAGIC <br>
 # MAGIC </br>
 # MAGIC **この作業を実施することで、DatabricksのModel Registryに登録が行われ、mlflowのAPIやsparkから呼び出すことが可能になります。modelの確認はサイドバーからでも確認可能です**
+
+# COMMAND ----------
+
+# MAGIC %md ## 予測と実績を確認するためのデータマートを作成
+
+# COMMAND ----------
+
+# 予測テーブルの特定
+forecast_table_name = (
+                        spark
+                        .sql("SHOW TABLES")
+                        .filter("tableName like 'forecast_prediction_%'")
+                        .select("tableName")
+                        .collect()[0][0]
+                        )
+
+display(forecast_table_name)
+
+# COMMAND ----------
+
+# 実績と予測を組み合わせる
+prediction_table_query = f"""
+    CREATE OR REPLACE TABLE sales_forecast
+    AS SELECT YearMonth, Price, NULL Price_lower, NULL Price_upper
+    FROM sales_history
+    UNION ALL
+    SELECT LEFT(YearMonth, 10), Price, Price_lower, Price_upper
+    FROM {forecast_table_name};
+"""
+
+spark.sql(prediction_table_query)

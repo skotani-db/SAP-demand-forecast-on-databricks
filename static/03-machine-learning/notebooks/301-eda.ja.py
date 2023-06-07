@@ -86,3 +86,23 @@
 
 # MAGIC %sql
 # MAGIC SELECT * FROM sales_history;
+
+# COMMAND ----------
+
+# MAGIC %md ## Oops!! 2021-04-01以降のデータが紛れ込んでしまっているので削除しよう
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC DELETE FROM sales_history WHERE YearMonth > '2022-03-01'
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC -- tableのversionがされ、タイムトラベル可能
+# MAGIC DESCRIBE HISTORY sales_history;
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT * FROM sales_history;
