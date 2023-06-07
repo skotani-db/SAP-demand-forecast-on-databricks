@@ -11,7 +11,7 @@
 # MAGIC ML Problem typeは、今回は`Forcasting`です。 \
 # MAGIC prediction targetは`Price`カラムです。 \
 # MAGIC Time columnは`YearMonth`カラムです。 \
-# MAGIC Output Databaseは``カラムです。 
+# MAGIC Output Databaseは`default`です。 
 # MAGIC
 # MAGIC AutoMLのMetricや実行時間とトライアル回数については、Advance Menuで選択できます。
 # MAGIC
