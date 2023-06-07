@@ -186,6 +186,23 @@ aws iam put-role-policy \
 3. 以下のスクリーンショットを参考に設定し、「Create cluster」ボタンをクリックします。なお、ここでは「Single node」モードを選択し、「Databricks runtime version」は「Runtime: 12.2 LTS **ML** (Scala 2.12, Spark 3.3.2)」を選択し、「Use Photon Acceleration」チェックボックスを外し、「Instance Profile」には「databricks-cluster-sagemaker-access-role」を選択します。
 ![](/static/02-data-preparation/create-cluster.png)
 
+## Amazon SageMaker 推論コンテナ作成用の環境を構築
+
+ラボ3では、Databricks 上で開発した機械学習モデルを Amazon SageMaker の推論エンドポイントとしてデプロイする手順を解説します。
+その際に、推論用コンテナをビルドする必要があります。
+手元に Docker 構築環境がない場合は、あらかじめ以下のコマンドで SageMaker Notebook インスタンスを作成しておいてください。
+
+```bash:
+AWS_ACCOUNT_ID=`aws sts get-caller-identity --query "Account" --output text`
+aws sagemaker create-notebook-instance \
+  --notebook-instance-name databricks-on-aws-immersion-day \
+  --instance-type ml.t3.large \
+  --role-arn arn:aws:iam::${AWS_ACCOUNT_ID}:role/databricks-cluster-sagemaker-access-role \
+  --volume-size-in-gb 30 \
+  --region us-east-1 \
+  --platform-identifier notebook-al2-v2 
+```
+
 ## ハンズオン用のノートブック
 
 ハンズオン用のノートブックは `201-data-prep.ja.py` です。
@@ -208,6 +225,8 @@ aws iam put-role-policy \
 ![](/static/02-data-preparation/import-modal.png)
 4. 
 -->
+
+
 
 ## 参考文献
 
