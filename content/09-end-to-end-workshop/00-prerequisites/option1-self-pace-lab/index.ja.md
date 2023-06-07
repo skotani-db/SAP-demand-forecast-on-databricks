@@ -217,6 +217,8 @@ aws s3api put-bucket-policy --bucket databricks-root-storage-<!!!your-name!!!> -
 
 作成した Credential と Storage の構成情報を利用してワークスペースを作成します。
 
+::alert[ワークスペースのプロビジョニング時に VPC が作成されます。利用している AWS アカウントのバージニア北部 (us-east-1) リージョン VPC 数の上限に達していないか、あらかじめ確認してください。]{type=warning}
+
 1. [Databricks 管理コンソール](https://accounts.cloud.databricks.com/)の左ペインの「Workspaces」をクリックしてください。
 2. 画面右上の「Create workspace」をクリックしてください。
 3. 「Workspace name」に任意の名前 (例: `workshop`) を入力し、「Workspace URL」に任意の名前 (例: `workshop`) を入力し、「Region」では `N.Virginia (us-east-1)` を選択し、「credential configuration」では先ほど作成した構成 `workshop-credential-configuration` を選択し、「storage configuration」では先ほど作成した構成 `workshop-storage-configuration` を選択し、ページ下部の「Save」をクリックしてください。
@@ -224,6 +226,10 @@ aws s3api put-bucket-policy --bucket databricks-root-storage-<!!!your-name!!!> -
 
 これで自動的にワークスペースのプロビジョニングが始まります。
 ワークスペースのリストからステータスを確認し、Provisioning から Running に変われば準備完了です。
+通常、プロビジョニングは5分程度で完了します。
+
+メールでワークスペースの URL が届くのでアクセスし、ログインしてください。
+ログイン名およびパスワードは管理コンソールにログインするときのものと同じです。
 
 ## 参考文献
 
