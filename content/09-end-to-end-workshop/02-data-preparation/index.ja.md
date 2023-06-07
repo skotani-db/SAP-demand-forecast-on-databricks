@@ -185,9 +185,20 @@ aws iam put-role-policy \
 3. 以下のスクリーンショットを参考に設定し、「Create cluster」ボタンをクリックします。なお、ここでは「Single node」モードを選択し、「Databricks runtime version」は「Runtime: 12.2 LTS **ML** (Scala 2.12, Spark 3.3.2)」を選択し、「Use Photon Acceleration」チェックボックスを外し、「Instance Profile」には「databricks-cluster-sagemaker-access-role」を選択します。
 ![](/static/02-data-preparation/create-cluster.png)
 
-## Databricks ノートブックをアップロード
+<!--
+## Databricks ワークスペースにハンズオン用のノートブックをアップロード
 
-:button[201-data-prep.ja.py]{href="./201-data-prep.ja.py" action=download}
+以下のボタンを右クリックしてローカル PC 内に `201-data-prep.ja.py` を保存してください。
+
+:button[201-data-prep.ja.py]{href="/static/02-data-preparation/notebooks/201-data-prep.ja.py" action=download}
+
+1. Databricks ワークスペースの左ペインの「Workspace」をクリックします。
+2. 「Home」を右クリックして、「Import」をクリックします。
+![](/static/02-data-preparation/import.png)
+3. 以下のモーダル画面が表示されるので、灰色の枠内にダウンロードした `201-data-prep.ja.py` をドラッグアンドドロップし、「Import」ボタンをクリックします。
+![](/static/02-data-preparation/import-modal.png)
+4. 
+-->
 
 ## 参考文献
 
