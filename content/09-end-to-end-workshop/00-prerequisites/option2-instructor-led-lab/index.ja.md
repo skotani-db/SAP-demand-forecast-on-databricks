@@ -1,5 +1,5 @@
 ---
-title: "インストラクター主導ラボ"
+title: "Workshop Studio 使用時"
 weight: 12 
 ---
 
