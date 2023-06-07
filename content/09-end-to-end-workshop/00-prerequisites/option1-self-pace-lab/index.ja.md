@@ -3,10 +3,25 @@ title: "セルフペースラボ"
 weight: 11
 ---
 
-## セルフペースラボ
+::alert[本ワークショップを実行するには Databricks および AWS アカウントの管理者アカウントが必要です。Databricks の管理者アカウントをお持ちでない場合は[こちら](https://www.databricks.com/try-databricks-aws#account)から無料トライアルを開始してください。]{type=warning}
 
-## Databricks ワークスペースをデプロイするための IAM ロールを作成
+## Databricks ワークスペースの作成
 
+Databricks on AWS の SaaS プラットフォームは2つ (以上) のアカウントで構成されます。
+ひとつは Databricks が所有する AWS アカウント内にコントロールプレーンが作成され、ウェブアプリケーションの UI の提供やノートブックやその他メタデータはこちらで管理されます。
+一方、データ処理を行う Spark クラスターや S3 上のデータセットはデータプレーンとしてユーザーの AWS アカウント内に存在することになります。
+![](/static/00-prerequisites/databricks-architecture.png)
+
+以下の手順では、皆さまの AWS アカウントの上で稼働する Databricks ワークスペースを作成していきます。
+
+### Databricks ワークスペースをデプロイするための IAM ロールを作成
+
+まずは、皆様の AWS アカウントと Databricks の所有するアカウントとを繋ぐクロスアカウントロールを作成します。
+
+1. [Databricks の管理者コンソール](https://accounts.cloud.databricks.com/)にアクセスし、右上のユーザー名の横にある下矢印をクリックしてください。
+2. ドロップダウンメニューで、アカウント ID をコピーしてください。
+![](/static/00-prerequisites/databricks-account-id.png)
+3. AWS CloudShell など、AWS CLI がセットアップされた端末に以下のコマンドをコピーし、`<!!!databricks-account-id!!!>` の部分を書き換えた上で実行してください。
 ```bash:
 aws iam create-role --role-name databricks-cross-account-role --assume-role-policy-document '{
     "Version": "2012-10-17",
@@ -26,7 +41,7 @@ aws iam create-role --role-name databricks-cross-account-role --assume-role-poli
     ]
 }'
 ```
-
+4. 以下のコマンドを実行し、作成した IAM ロールに対して Databricks が必要とする権限をまとめたインラインポリシーをセットします。
 ```bash:
 aws iam put-role-policy \
   --role-name databricks-cross-account-role \
@@ -133,13 +148,17 @@ aws iam put-role-policy \
   ]
 }'
 ```
+::alert[ここでは Databricks が作成する VPC 内にワークスペースを展開するデフォルトの設定を適用しています。自身で管理する VPC を用いたり、制限を加えたい場合は[こちらのドキュメント](https://docs.databricks.com/administration-guide/account-settings-e2/credentials.html#step-2-create-an-access-policy)を参照してください。]{type=info}
 
-## Databricks ワークスペースのルートストレージ用の S3 バケットを作成
+### Databricks ワークスペースのルートストレージ用の S3 バケットを作成
 
+次に、Databricks ワークスペースのルートストレージ用の S3 バケットを作成します。
+
+1. 以下のコマンドの `<!!!your-name!!!>` をご自身のお名前等に置き換えた上で実行し、S3 バケットを作成してください。S3 バケットの名前は世界中で一意である必要があります。
 ```bash:
 aws s3 mb s3://databricks-root-storage-<!!!your-name!!!>
 ```
-
+2. 以下のコマンドの `<!!!your-name!!!>` (3箇所) および `<!!!databricks-account-id!!!>` (1箇所) を書き換えた上で実行し、バケットポリシーを設定してください。
 ```bash:
 aws s3api put-bucket-policy --bucket databricks-root-storage-<!!!your-name!!!> --policy \
 '{
@@ -174,7 +193,40 @@ aws s3api put-bucket-policy --bucket databricks-root-storage-<!!!your-name!!!> -
  ]
 }'
 ```
+
+### Credential configuration の作成
+
+前のステップで作成した IAM のクロスアカウントロールを Databricks に登録していきます。
+
+1. [Databricks 管理コンソール](https://accounts.cloud.databricks.com/)の左ペインの「Cloud resources」をクリックしてください。
+![](/static/00-prerequisites/cloud-resources.png)
+2. 「Credential configuration」タブの「Add credential configuration」ボタンをクリックします。
+3. 「Credential configuration name」には任意の名前 (例: `workshop-credential-configuration`) を入力し、「Role ARN」には `arn:aws:iam::<!!!aws-account-id!!!>:role/databricks-cross-account-role` を入力し、「Add」ボタンをクリックしてください。
+![](/static/00-prerequisites/add-credential-configuration.png)
+
+### Storage configuration の作成
+
+続いて、先ほど作成した S3 バケットの情報を Databricks に登録していきます。
+
+1. [Databricks 管理コンソール](https://accounts.cloud.databricks.com/)の左ペインの「Cloud resources」をクリックしてください。
+2. 「Storage configuration」タブの「Add storage configuration」ボタンをクリックします。
+3. 「Storage configuration name」には任意の名前 (例: `workshop-storage-configuration`) を入力し、「Bucket name」には先ほど作成した S3 バケットの名前 (例: `databricks-root-storage-<!!!your-name!!!>`) を入力し、「Add」ボタンをクリックしてください。
+![](/static/00-prerequisites/add-storage-configuration.png)
+
+### Databricks ワークスペースの作成
+
+作成した Credential と Storage の構成情報を利用してワークスペースを作成します。
+
+1. [Databricks 管理コンソール](https://accounts.cloud.databricks.com/)の左ペインの「Workspaces」をクリックしてください。
+2. 画面右上の「Create workspace」をクリックしてください。
+3. 「Workspace name」に任意の名前 (例: `workshop`) を入力し、「Workspace URL」に任意の名前 (例: `workshop`) を入力し、「Region」では `N.Virginia (us-east-1)` を選択し、「credential configuration」では先ほど作成した構成 `workshop-credential-configuration` を選択し、「storage configuration」では先ほど作成した構成 `workshop-storage-configuration` を選択し、ページ下部の「Save」をクリックしてください。
+![](/static/00-prerequisites/create-workspace.png)
+
+これで自動的にワークスペースのプロビジョニングが始まります。
+ワークスペースのリストからステータスを確認し、Provisioning から Running に変われば準備完了です。
+
 ## 参考文献
 
-
 - [Create an IAM role for workspace deployment](https://docs.databricks.com/administration-guide/account-settings-e2/credentials.html)
+- [Create an S3 bucket for workspace deployment](https://docs.databricks.com/administration-guide/account-settings-e2/storage.html)
+- [Create a workspace using the account console](https://docs.databricks.com/administration-guide/workspace/create-workspace.html)
