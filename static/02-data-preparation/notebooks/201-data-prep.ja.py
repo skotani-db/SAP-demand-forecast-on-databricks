@@ -1,46 +1,36 @@
 # Databricks notebook source
 # MAGIC %md
 # MAGIC ## Step 1:データを抽出したS3バケットのマウント
-# MAGIC DatabricksにおいてS3バケットをデータソースとする方法はいくつかあります。
-# MAGIC * Unity Catalogの外部ロケーションを用いる(推奨)
-# MAGIC * Instance Profileをクラスターにアタッチする
-# MAGIC * Credential Paththroughによるアクセス
-# MAGIC * Access Key認証によるアクセス
+# MAGIC Databricks において S3 バケットをデータソースとする方法はいくつかあります。
+# MAGIC * Unity Catalog の外部ロケーションを用いる (推奨)
+# MAGIC * Instance Profile をクラスターにアタッチする
+# MAGIC * Credential Paththrough によるアクセス
+# MAGIC * Access Key 認証によるアクセス
 # MAGIC
-# MAGIC 今回はハンズオンのため最も簡単なオプションとしてAccess Keyを用いる方法を実践します。 \
-# MAGIC Access Keyを用いて、DBFS(Databricks File System)にデータ抽出を行ったS3をマウントします。
+# MAGIC 今回は事前準備で S3 フルアクセスの権限を持ったインスタンスプロファイルをクラスターにアタッチ済みなので、このまま、DBFS (Databricks File System) にデータ抽出を行った S3 バケットをマウントします。
 
 # COMMAND ----------
 
-## Databricks Widgetsで変数を取得
+## Databricks Widgets で変数を取得
 
-# 取得したアクセスキーを入力
-# 本来は平文ではなく、Databricks Secretにアクセスキー・シークレットキーを登録することが推奨される
-dbutils.widgets.text("access_key", "")
-dbutils.widgets.text("secret_key", "")
-
-# Appflowでデータ抽出したバケット名
+# Appflow でデータ抽出したバケット名
 dbutils.widgets.text("aws_bucket_name", "")
 
 # COMMAND ----------
-
-# アクセスキーの取得
-access_key = dbutils.widgets.get("access_key")
-secret_key = dbutils.widgets.get("secret_key")
 
 # mount時のフォルダ名を指定
 mount_name = dbutils.widgets.get("aws_bucket_name")
 
 # S3バケットのマウント
 dbutils.fs.mount(
-    "s3a://%s:%s@%s" % (access_key, secret_key, aws_bucket_name), "/mnt/%s" % mount_name
+    f"s3a://{mount_name}", f"/mnt/{mount_name}"
 )
-display(dbutils.fs.ls("/mnt/%s" % mount_name))
+display(dbutils.fs.ls(f"/mnt/{mount_name}"))
 
 # COMMAND ----------
 
 # mountを解除する
-# dbutils.fs.unmount("/mnt/%s" % mount_name)
+# dbutils.fs.unmount(f"/mnt/{mount_name}")
 
 # COMMAND ----------
 
@@ -100,7 +90,7 @@ df_vbap = (
     spark
     .read
     .format("csv")
-    .load("file:/Workspace/Repos/firstgrade430@gmail.com/SAP-demand-forecast-on-databricks/static/02-data-preparation/vbak_mapping.csv")
+    .load("file:/Workspace/Repos/<!!!your-email-address!!!>/SAP-demand-forecast-on-databricks/static/02-data-preparation/notebooks/vbak_mapping.csv")
     .createOrReplaceTempView("vbak_mapping")
 )
 
@@ -109,7 +99,7 @@ df_vbap = (
     spark
     .read
     .format("csv")
-    .load("file:/Workspace/Repos/firstgrade430@gmail.com/SAP-demand-forecast-on-databricks/static/02-data-preparation/vbak_mapping.csv")
+    .load("file:/Workspace/Repos/<!!!your-email-address!!!>/SAP-demand-forecast-on-databricks/static/02-data-preparation/notebooks/vbak_mapping.csv")
     .createOrReplaceTempView("vbap_mapping")
 )
 
@@ -225,3 +215,7 @@ display(df_vbap_renamed)
 # MAGIC   *
 # MAGIC FROM
 # MAGIC   sales_record_silver
+
+# COMMAND ----------
+
+
