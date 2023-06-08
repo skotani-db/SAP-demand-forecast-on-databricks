@@ -22,9 +22,7 @@ dbutils.widgets.text("aws_bucket_name", "")
 mount_name = dbutils.widgets.get("aws_bucket_name")
 
 # S3バケットのマウント
-dbutils.fs.mount(
-    f"s3a://{mount_name}", f"/mnt/{mount_name}"
-)
+dbutils.fs.mount(f"s3a://{mount_name}", f"/mnt/{mount_name}")
 display(dbutils.fs.ls(f"/mnt/{mount_name}"))
 
 # COMMAND ----------
@@ -85,21 +83,26 @@ df_vbap = (
 
 # COMMAND ----------
 
+# user nameの取得
+user_name = spark.sql("SELECT current_user()").collect()[0][0]
+
 # VBAK
 (
-    spark
-    .read
-    .format("csv")
-    .load("file:/Workspace/Repos/<!!!your-email-address!!!>/SAP-demand-forecast-on-databricks/static/02-data-preparation/notebooks/vbak_mapping.csv")
+    spark.read.format("csv")
+    .option("header", True)
+    .load(
+        f"file:/Workspace/Repos/{user_name}/SAP-demand-forecast-on-databricks/static/02-data-preparation/notebooks/vbak_mapping.csv"
+    )
     .createOrReplaceTempView("vbak_mapping")
 )
 
 # VBAP
 (
-    spark
-    .read
-    .format("csv")
-    .load("file:/Workspace/Repos/<!!!your-email-address!!!>/SAP-demand-forecast-on-databricks/static/02-data-preparation/notebooks/vbak_mapping.csv")
+    spark.read.format("csv")
+    .option("header", True)
+    .load(
+        f"file:/Workspace/Repos/{user_name}/SAP-demand-forecast-on-databricks/static/02-data-preparation/notebooks/vbak_mapping.csv"
+    )
     .createOrReplaceTempView("vbap_mapping")
 )
 
@@ -215,7 +218,3 @@ display(df_vbap_renamed)
 # MAGIC   *
 # MAGIC FROM
 # MAGIC   sales_record_silver
-
-# COMMAND ----------
-
-
