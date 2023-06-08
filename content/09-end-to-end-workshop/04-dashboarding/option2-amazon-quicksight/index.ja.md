@@ -8,6 +8,9 @@ weight: 52
 QuickSight は優れたインメモリエンジン (SPICE) を使って、組織がそのビジネス分析機能を何十万ものユーザーにスケールし、高速で応答性の良いクエリパフォーマンスを達成できるようにします。
 
 このハンズオンラボでは Databricks の Delta Lake Table に接続し、Databricks 上のデータを QuickSight で可視化する手順を解説します。
+最終的な画面イメージはこちらです。
+
+![](/static/04-dashboarding/option2-amazon-quicksight/sales-dashboard.png)
 
 1. 初めに、AWS コンソールにログインしてください。
 2. AWS コンソール上部の検索バーに「QuickSight」と入力し、表示された QuickSight のリンクをクリックします。
@@ -56,10 +59,42 @@ QuickSight には [Databricks 用のコネクター](https://aws.amazon.com/abou
 
 ### QuickSight の Databricks コネクターを作成
 
-Databr
+QuickSight の画面に戻ります。
+
+1. 「Data source name」欄には任意の名前 (例: `Databricks on AWS Workshop`)、「Database server」欄には「Server Hostname」の値 (例: `foo.cloud.databricks.com`)、「HTTP Path」欄には「HTTP Path」の値、「Port」欄には `443`、「Username」および「Password」欄にはワークスペースログイン時のユーザー名とパスワードを入力してください。
 ![](/static/04-dashboarding/option2-amazon-quicksight/new-databricks-data-source.png)
+2. 「Validate connection」をクリックして問題がなければ「Create data source」ボタンをクリックしてください。
+3. 「Choose your table」の画面の「Catalog: contain sets of schemas.」では `hive_metastore` を選択し、「Schema: contain sets of tables.」は `default` を選択してください。
+4. 「Tables: contain the data you can visualize.」にテーブルのリストが表示されます。`sales_forecast` を選択し、「Select」ボタンをクリックしてください。
+![](/static/04-dashboarding/option2-amazon-quicksight/choose-your-table.png)
+5. 「Finish dataset creation」の画面では変更せずそのまま「Visualize」ボタンをクリックします。ダッシュボードの編集画面が開きます。
+![](/static/04-dashboarding/option2-amazon-quicksight/finish-dataset-creation.png)
+
+今回は機械学習の売上予測と実績値を含んだ `sales_forecast` テーブルをインポートしましたが、もうひとつテーブルをインポートします。
+
+6. ページ下部の「FROM EXISTING DATA SOURCES」にある、先ほど作成したデータソース (例: `Databricks on AWS Workshop`) をクリックします.
+![](/static/04-dashboarding/option2-amazon-quicksight/from-existing-data-sources.png)
+7. 「Create dataset」ボタンをクリックします。
+8. 先ほどと同様に、「Choose your table」の画面の「Catalog: contain sets of schemas.」では `hive_metastore` を選択し、「Schema: contain sets of tables.」は `default` を選択してください。
+9. 「Tables: contain the data you can visualize.」にテーブルのリストが表示されます。`sales_record_silver` を選択し、「Select」ボタンをクリックしてください。
+10. 「Finish dataset creation」の画面は「×」ボタンで閉じてください。
 
 ## Amazon QuickSight でダッシュボードを作成
+
+先ほど開いたダッシュボード編集画面に戻ります。
+
+::alert[閉じてしまった場合は「Quick Sight のトップページ」→「Analyses」→「sales_forecast analysis」を開いてください。]{type=info}
+
+まず、可視化で使うテーブルをダッシュボードに追加します。
+
+1. ダッシュボードの「Visualize」アイコンの右にある鉛筆マークをクリックします。
+![](/static/04-dashboarding/option2-amazon-quicksight/add-dataset.png)
+2. 「Add dataset」をクリックします。
+3. 「sales_record_silver」を選択し、「Select」ボタンをクリックします。
+
+以下のようなダッシュボードを作りましょう。
+
+![](/static/04-dashboarding/option2-amazon-quicksight/sales-dashboard.png)
 
 ## 参考文献
 
