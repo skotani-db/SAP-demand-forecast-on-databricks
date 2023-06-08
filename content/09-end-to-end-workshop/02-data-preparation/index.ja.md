@@ -126,11 +126,8 @@ Databricks クラスターにインスタンスプロファイルをアタッチ
 
 ```bash:
 AWS_ACCOUNT_ID=`aws sts get-caller-identity --query "Account" --output text`
-aws iam put-role-policy \
-  --role-name databricks-cluster-sagemaker-access-role \
-  --policy-name get-role-inline-policy \
-  --policy-document \
-'{
+cat << EOF > get-role-inline-policy.json
+{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -143,18 +140,20 @@ aws iam put-role-policy \
             "Effect": "Allow"
         }
     ]
-}'
+}
+EOF
+aws iam put-role-policy \
+  --role-name databricks-cluster-sagemaker-access-role \
+  --policy-name get-role-inline-policy \
+  --policy-document file://get-role-inline-policy.json
 ```
 
 Databricks ワークスペースの IAM ロール (`databricks-cross-account-role`) に対して、今回作成したロール (`databricks-cluster-sagemaker-access-role`) を渡せる権限を付与します。
 
 ```bash:
-# AWS_ACCOUNT_ID=`aws sts get-caller-identity --query "Account" --output text`
-aws iam put-role-policy \
-  --role-name databricks-cross-account-role \
-  --policy-name pass-cluster-role-inline-policy \
-  --policy-document \
-'{
+AWS_ACCOUNT_ID=`aws sts get-caller-identity --query "Account" --output text`
+cat << EOF > pass-cluster-role-inline-policy.json
+{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -167,7 +166,12 @@ aws iam put-role-policy \
             "Effect": "Allow"
         }
     ]
-}'
+}
+EOF
+aws iam put-role-policy \
+  --role-name databricks-cross-account-role \
+  --policy-name pass-cluster-role-inline-policy \
+  --policy-document file://pass-cluster-role-inline-policy.json
 ```
 
 
