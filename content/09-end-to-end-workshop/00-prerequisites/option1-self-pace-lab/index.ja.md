@@ -156,7 +156,7 @@ aws iam put-role-policy \
 
 1. 以下のコマンドの `<!!!your-name!!!>` をご自身のお名前等に置き換えた上で実行し、S3 バケットを作成してください。S3 バケットの名前は世界中で一意である必要があります。
 ```bash:
-aws s3 mb s3://databricks-root-storage-<!!!your-name!!!>
+aws s3 mb s3://databricks-root-storage-<!!!your-name!!!> --region us-east-1
 ```
 2. 以下のコマンドの `<!!!your-name!!!>` (3箇所) および `<!!!databricks-account-id!!!>` (1箇所) を書き換えた上で実行し、バケットポリシーを設定してください。
 ```bash:
