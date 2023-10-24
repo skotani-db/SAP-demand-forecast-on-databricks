@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC ## Step 1:データを抽出したS3バケットのマウント
+# MAGIC ## Step 1: SAP データ抽出先の Amazon S3 バケットのマウント
 # MAGIC Databricks において S3 バケットをデータソースとする方法はいくつかあります。
 # MAGIC * Unity Catalog の外部ロケーションを用いる (推奨)
 # MAGIC * Instance Profile をクラスターにアタッチする
@@ -11,10 +11,21 @@
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC 次のセルを選択した状態で Shift+Enter などを押すとセル内のコードを実行できます。
+
+# COMMAND ----------
+
 ## Databricks Widgets で変数を取得
 
-# Appflow でデータ抽出したバケット名
+# Amazon AppFlow でデータ抽出したバケット名
 dbutils.widgets.text("aws_bucket_name", "")
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC 画面上部に `aws_bucket_name` というテキストボックスが表示されます。
+# MAGIC テキストボックスに AppFlow のデータ抽出先として指定した S3 バケットの名前 (`111122223333-appflowodata-20230808` のような形式) を入力した上で、次のセルを実行してください。
 
 # COMMAND ----------
 
@@ -27,13 +38,19 @@ display(dbutils.fs.ls(f"/mnt/{mount_name}"))
 
 # COMMAND ----------
 
-# mountを解除する
+# MAGIC %md
+# MAGIC マウントしたディレクトリのパス等を含んだテーブルが表示されれば成功です。
+# MAGIC マウントを解除するには以下のセルをアンコメントして実行してください。
+
+# COMMAND ----------
+
+# mount を解除する
 # dbutils.fs.unmount(f"/mnt/{mount_name}")
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Step 2:Spark Dataframeとして抽出データをロードし、テーブル化
+# MAGIC ## Step 2:Spark Dataframe として抽出データをロードし、テーブル化
 
 # COMMAND ----------
 
@@ -50,6 +67,11 @@ df_vbap = (
     .format("parquet")
     .load("/mnt/%s/salesitem/*" % mount_name)
 )
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC それぞれ `vbak_bronze`、`vbap_bronze` としてテーブル化します。
 
 # COMMAND ----------
 
@@ -78,8 +100,8 @@ df_vbap = (
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Step 3: GUIからカラムマッピングファイルをインポートして、テーブル化する
-# MAGIC このままでは各列が何の情報を表しているか分からないため、マッピングファイルを活用する
+# MAGIC ## Step 3: カラムマッピングファイルをテーブル化する
+# MAGIC このままでは各列が何の情報を表しているか分からないため、参照用のマッピングファイルを準備しておきます。
 
 # COMMAND ----------
 
@@ -91,7 +113,7 @@ user_name = spark.sql("SELECT current_user()").collect()[0][0]
     spark.read.format("csv")
     .option("header", True)
     .load(
-        f"file:/Workspace/Repos/{user_name}/SAP-demand-forecast-on-databricks/static/02-data-preparation/notebooks/vbak_mapping.csv"
+        f"file:/Workspace/Users/{user_name}/vbak_mapping.csv"
     )
     .createOrReplaceTempView("vbak_mapping")
 )
@@ -101,7 +123,7 @@ user_name = spark.sql("SELECT current_user()").collect()[0][0]
     spark.read.format("csv")
     .option("header", True)
     .load(
-        f"file:/Workspace/Repos/{user_name}/SAP-demand-forecast-on-databricks/static/02-data-preparation/notebooks/vbak_mapping.csv"
+        f"file:/Workspace/Users/{user_name}/vbap_mapping.csv"
     )
     .createOrReplaceTempView("vbap_mapping")
 )
@@ -110,7 +132,7 @@ user_name = spark.sql("SELECT current_user()").collect()[0][0]
 
 # MAGIC %md
 # MAGIC ### VBAK：伝票ヘッダーの主要なカラム
-# MAGIC VBELN - 販売伝票(番号) \
+# MAGIC VBELN - 販売伝票 (番号) \
 # MAGIC ERDAT - 登録日付 \
 # MAGIC KUNNR - 受注先 \
 # MAGIC NETWR - 受注正味額 \
@@ -176,7 +198,7 @@ user_name = spark.sql("SELECT current_user()").collect()[0][0]
 
 from pyspark.sql.functions import *
 
-# 伝票ヘッダーからは伝票番号、登録日、通貨、顧客
+# 伝票ヘッダーからは伝票番号、登録日、通貨、顧客をセレクト
 df_vbak_renamed = (
     spark.read.table("vbak_bronze")
     .withColumnRenamed("VBELN", "ID")
@@ -190,7 +212,7 @@ display(df_vbak_renamed)
 
 # COMMAND ----------
 
-# 商品明細からは伝票番号、正味額、品目
+# 商品明細からは伝票番号、正味額、品目をセレクト
 df_vbap_renamed = (
     spark.read.table("vbap_bronze")
     .withColumnRenamed("VBELN", "ID")
@@ -218,3 +240,31 @@ display(df_vbap_renamed)
 # MAGIC   *
 # MAGIC FROM
 # MAGIC   sales_record_silver
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC これで初期のデータ準備は完了です。
+# MAGIC 「Lab 3: Databricks と MLflow を用いた需要予測モデル開発」に進んでください。
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## LICENSE
+# MAGIC
+# MAGIC MIT No Attribution
+# MAGIC
+# MAGIC Copyright 2023 Amazon Web Services Japan G.K.
+# MAGIC
+# MAGIC Permission is hereby granted, free of charge, to any person obtaining a copy of this
+# MAGIC software and associated documentation files (the "Software"), to deal in the Software
+# MAGIC without restriction, including without limitation the rights to use, copy, modify,
+# MAGIC merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+# MAGIC permit persons to whom the Software is furnished to do so.
+# MAGIC
+# MAGIC THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+# MAGIC INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+# MAGIC PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+# MAGIC HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# MAGIC OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+# MAGIC SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
