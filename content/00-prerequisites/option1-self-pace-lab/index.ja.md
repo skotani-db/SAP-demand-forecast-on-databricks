@@ -1,5 +1,5 @@
 ---
-title: "セルフペースラボ"
+title: "Option 1:セルフペースラボ"
 weight: 11
 ---
 

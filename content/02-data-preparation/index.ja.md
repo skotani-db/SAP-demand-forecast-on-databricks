@@ -25,7 +25,11 @@ Databricks on AWS のクラスターの実態は Amazon EC2 インスタンス�
 aws iam create-instance-profile --instance-profile-name databricks-cluster-sagemaker-access-role
 ```
 
-IAM ロールを作成します。
+[Databricks の管理者コンソール](https://accounts.cloud.databricks.com/)にアクセスし、右上のユーザー名の横にある下矢印をクリックしてください。
+ドロップダウンメニューで、アカウント ID (例: 1abc23de-e4ed-56d7-ae89-abc12d345e60) をコピーしてください。
+![Check Databricks Account ID](/static/00-prerequisites/databricks-account-id.png)
+
+`<DATABRICKS-ACCOUNT-ID>`を置換し、IAM ロールを作成します。
 
 ```bash:
 aws iam create-role --role-name databricks-cluster-sagemaker-access-role --assume-role-policy-document '{
@@ -44,6 +48,20 @@ aws iam create-role --role-name databricks-cluster-sagemaker-access-role --assum
                 "Service": "sagemaker.amazonaws.com"
             },
             "Action": "sts:AssumeRole"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+              "AWS": [
+                "arn:aws:iam::414351767826:role/unity-catalog-prod-UCMasterRole-14S5ZJVKOTYTL"
+              ]
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+              "StringEquals": {
+                "sts:ExternalId": "<DATABRICKS-ACCOUNT-ID>"
+              }
+            }
         }
     ]
 }'
@@ -121,6 +139,47 @@ Amazon SageMaker アクセス権限を追加します。
 aws iam attach-role-policy --role-name databricks-cluster-sagemaker-access-role \
   --policy-arn arn:aws:iam::aws:policy/AmazonSageMakerFullAccess
 ```
+信頼関係ポリシーを変更して「自己信頼ポリシー」にします。
+```bash:
+AWS_ACCOUNT_ID=`aws sts get-caller-identity --query "Account" --output text`
+cat << EOF > trust-policy.json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "ec2.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "sagemaker.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+              "AWS": [
+                "arn:aws:iam::414351767826:role/unity-catalog-prod-UCMasterRole-14S5ZJVKOTYTL",
+                "arn:aws:iam::${AWS_ACCOUNT_ID}:role/databricks-cluster-sagemaker-access-role"
+              ]
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+              "StringEquals": {
+                "sts:ExternalId": "<DATABRICKS-ACCOUNT-ID>"
+              }
+            }
+        }
+    ]
+}
+EOF
+aws iam update-assume-role-policy --role-name databricks-cluster-sagemaker-access-role --policy-document file://trust-policy.json
+```
 
 Databricks クラスターにインスタンスプロファイルをアタッチする際に必要な権限をインラインポリシーとして追加します。
 
@@ -148,7 +207,17 @@ aws iam put-role-policy \
   --policy-document file://get-role-inline-policy.json
 ```
 
-Databricks ワークスペースの IAM ロール (`databricks-cross-account-role`) に対して、今回作成したロール (`databricks-cluster-sagemaker-access-role`) を渡せる権限を付与します。
+Databricks ワークスペースのクロスアカウントロールに対して、今回作成したロール (`databricks-cluster-sagemaker-access-role`) を渡せる権限を付与します。
+
+Option 1:セルフペースラボでワークスペースのデプロイを行なった場合は`databricks-cross-account-role` です。
+
+Option 2:クイックスタートの場合は Databricks アカウントコンソールの Cloud Resources から`databricks-workspace-stack-xxxxx-credentials` をクリックし、「Role Arn」の末尾の IAM Role 名をコピーします。
+
+![Cloud Resources](/static/02-data-preparation/cloud-resouces.png)
+
+![Cross Account Role](/static/02-data-preparation/cross-account-role.png)
+
+そして特定した IAM Role 名で以下コマンドの `<YOUR IAM ROLE NAME>` を置換し、コマンドを実行します。
 
 ```bash:
 AWS_ACCOUNT_ID=`aws sts get-caller-identity --query "Account" --output text`
@@ -169,7 +238,7 @@ cat << EOF > pass-cluster-role-inline-policy.json
 }
 EOF
 aws iam put-role-policy \
-  --role-name databricks-cross-account-role \
+  --role-name <YOUR IAM ROLE NAME> \
   --policy-name pass-cluster-role-inline-policy \
   --policy-document file://pass-cluster-role-inline-policy.json
 ```
