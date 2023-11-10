@@ -1,0 +1,382 @@
+table,original_column,content,header,column_text,medium_label,long_label,translated_column,column_for_analysis
+VBAP,ABDAT,合意累積納入数量の照合基準日,照合基準日,照合基準日,照合基準日,照合基準日,Loading...,none
+VBAP,ABFOR,支払保証形態,支払,保証形態,支払保証形態,支払保証形態,Loading...,none
+VBAP,ABGES,保証 (係数が 0 と 1 の間),G,保証,保証,保証,Loading...,none
+VBAP,ABGRS,結果分析キー,RAキー,RAキー,結果分析キー,結果分析キー,Loading...,none
+VBAP,ABGRU,販売伝票の拒否理由,拒,拒否理由,拒否理由,拒否理由,Loading...,none
+VBAP,ABLFZ,丸め数量: 出荷,丸め数量,丸め数量,丸め数量,丸め数量,Loading...,none
+VBAP,ABSFZ,数量に関する許容偏差 (絶対値),DQty,絶対偏差,絶対偏差,絶対偏差,Loading...,none
+VBAP,ABSTA,拒否ステータス (明細),拒否ステータス,拒否Status,拒否ステータス,拒否ステータス,Loading...,none
+VBAP,AD01PROFNR,動的明細プロセッサプロファイル,Profile,Profile,DIPプロファイル,DIP プロファイル,Loading...,none
+VBAP,ADACN,航空機登録番号,航空機登録番号,航空機No.,航空機登録番号,航空機登録番号,Loading...,none
+VBAP,ADDNS,代替不可,代替不可,DNS,代替不可,代替不可,Loading...,none
+VBAP,ADICC,交換性コード,交換性コード,交換性Code,交換性コード,交換性コード,Loading...,none
+VBAP,ADMOI,モデル ID コード,モデル ID コード,Mod.ID Cd.,モデル ID コード,モデル ID コード,Loading...,none
+VBAP,ADPRI,指図優先度,指図優先度,優先度,指図優先度,指図優先度,Loading...,none
+VBAP,AEDAT,最終変更日付,変更日,変更,変更日,変更日,Loading...,none
+VBAP,ANTLF,明細の分割納入回数上限,PD,分納最大数,分納最大回数,分納最大回数,Loading...,none
+VBAP,ANZSN,シリアル番号数,NoSNo.,SerialNo数,シリアル番号数,シリアル番号数,Loading...,none
+VBAP,APLZL_OAA,内部カウンタ,カウンタ,カウンタ,カウンタ,カウンタ,Loading...,none
+VBAP,APLZL_OLC,内部カウンタ,カウンタ,カウンタ,カウンタ,カウンタ,Loading...,none
+VBAP,ARKTX,受注明細のテキスト (短),明細テキスト,テキスト,明細テキスト,明細テキスト,Loading...,none
+VBAP,ARSNUM,入出庫予定/従属所要量の番号,入出庫予定番号,Reserv番号,入出庫予定,入出庫予定,Loading...,none
+VBAP,ARSPOS,入出庫予定/従属所要量の明細番号,入出庫予定明細番号,明細番号,明細番号,入出庫予定明細番号,Loading...,none
+VBAP,ARUN_GROUP_PRIO,配分実行需要グループ優先度,需要優先度,需要,需要優先度,需要優先度,Loading...,none
+VBAP,ASSIGNMENT_PRIORITY,配分需要優先度,需要優先度,需要,需要優先度,需要優先度,Loading...,none
+VBAP,ATPKZ,取替部品,R,取替,交換部品,取替部品,Loading...,none
+VBAP,ATP_ABC_SUBSTITUTION_STATUS,代替基準確認 (ABC) の代替ステータス,代替ステータス,代替Status,代替ステータス,代替ステータス,Loading...,none
+VBAP,AUART_ANA,販売伝票タイプ,販タ,販売伝票Ty,販売伝票タイプ,販売伝票タイプ,Loading...,none
+VBAP,AUDAT_ANA,伝票日付 (受信日/送信日),伝票日付,伝票日付,伝票日付,伝票日付,Loading...,none
+VBAP,AUFNR,指図番号,指図,指図,指図,指図,Loading...,none
+VBAP,AUFPL_OAA,指図における作業の作業手順番号,作業の作業手順番号,計画番号,作業計画番号,作業タスクリスト番号,Loading...,none
+VBAP,AUFPL_OLC,指図における作業の作業手順番号,作業の作業手順番号,計画番号,作業計画番号,作業タスクリスト番号,Loading...,none
+VBAP,AUGRU_ANA,受注理由 (取引理由),理由,受注理由,受注理由,受注理由,Loading...,none
+VBAP,AWAHR,明細の受注可能性,Prb,受注可能性,受注可能性,受注可能性,Loading...,none
+VBAP,BEDAE,所要量タイプ,RqTy,タイプ,所要量タイプ,所要量タイプ,Loading...,none
+VBAP,BERID,MRP エリア,MRP エリア,MRP エリア,MRP エリア,MRP エリア,Loading...,none
+VBAP,BESTA,出荷確認ステータス (明細),CS,出荷確認St,出荷確認 Status,出荷確認ステータス,Loading...,none
+VBAP,BONUS,取引量リベートグループ,VRG,リベートGp,取引量RebateGrp,取引量リベート Group,Loading...,none
+VBAP,BRGEW,明細の総重量,総重量,総重量,総重量,総重量,Loading...,none
+VBAP,BSTKD_ANA,得意先参照,得意先参照,得意先参照,得意先参照,得意先参照,Loading...,none
+VBAP,BUDGET_PD,予算期間,予算期間,BP,予算期間,予算期間,Loading...,none
+VBAP,BWTAR,評価タイプ,評価タイプ,評価タイプ,評価タイプ,評価タイプ,Loading...,none
+VBAP,BWTEX,分割評価区分,V,分割評価,分割評価,分割評価,Loading...,none
+VBAP,BZIRK_ANA,販売地域,地域,販売地域,販売地域,販売地域,Loading...,none
+VBAP,CAPPED_NET_AMOUNT,正味額上限,正味額上限,正味額上限,正味額上限,正味額上限,Loading...,none
+VBAP,CAPPED_NET_AMOUNT_ALERT_THLD,超過正味額上限の通知しきい値 (パーセント),上限通知しきい値,しきい値,上限通知しきい値,上限通知しきい値,Loading...,none
+VBAP,CATS_OVERTIME_CATEGORY,時間外勤務カテゴリ,時間外勤務カテゴリ,時間外勤務,時間外勤務カテゴリ,時間外勤務カテゴリ,Loading...,none
+VBAP,CEPOK,ステータス予想価格,CEP,見込価格,見込価格,見込価格,Loading...,none
+VBAP,CHARG,ロット番号,ロット,ロット,ロット,ロット,Loading...,none
+VBAP,CHMVS,ロット: 数量提案終了,QP,数量提案,数量提案,数量提案,Loading...,none
+VBAP,CHSPL,ロット分割可能,BS,ロット分割,ロット分割,ロット分割可能,Loading...,none
+VBAP,CLINT,内部クラス番号,内部クラス,内部クラス,内部クラス番号,内部クラス番号,Loading...,none
+VBAP,CMKUA,指定納入期日に対する与信データ換算レート,換算レート,換算レート,換算レート,与信データ換算レート,Loading...,none
+VBAP,CMPNT,与信管理機能の明細有効化区分,与信有効,有効,与信有効,与信機能有効,Loading...,none
+VBAP,CMPPI,ドキュメンタリクレジットの与信限度確認ステータス,DocC,Docu.Cred.,Documen. Credit,Documentary Credit,Loading...,none
+VBAP,CMPPJ,輸出与信保険の与信限度確認ステータス,ECI,ExptCredIn,輸出与信保険,輸出与信保険,Loading...,none
+VBAP,CMPRE,明細与信価格,与信価格,価格,与信価格,与信価格,Loading...,none
+VBAP,CMPRE_FLT,明細与信価格,与信価格,与信価格,与信価格,与信価格,Loading...,none
+VBAP,CMTD_DELIV_CREADATE,確定済納入日付を満たすための納入登録日付,Cmtd納入Cr.日付,確定済納CD,確定済納入登録日付,確定済納入登録日付,Loading...,none
+VBAP,CMTD_DELIV_DATE,サプライヤが確定した納入日付,確定済納入日付,C.納入日付,確定済納入日付,確定済納入日付,Loading...,none
+VBAP,CMTD_DELIV_QTY_SU,販売単位の確定済納入数量,確定済納入数量,C.納入数量,確定済納入数量,販売単位の確定済納入数量,Loading...,none
+VBAP,CMTFG,発注明細の一部承認に対するID、与信ブロック,R,承認,一部承認,一部承認,Loading...,none
+VBAP,COSTA,ALE の確認ステータス,CoSt,ConfStatus,確認ステータス,確認ステータス,Loading...,none
+VBAP,CPD_UPDAT,タイムスタンプ,タイムスタンプ,時刻,タイムスタンプ,タイムスタンプ,Loading...,none
+VBAP,CUOBJ,システム設定,分析対象番号,設定,設定,設定,Loading...,none
+VBAP,CUOBJ_CH,ロット分類の内部オブジェクト番号,Object 番号,内部ObjNo.,内部Object番号,内部オブジェクト番号,Loading...,none
+VBAP,DCSTA,遅延ステータス (明細),De,遅延Status,遅延ステータス,遅延ステータス,Loading...,none
+VBAP,DELIVERY_DATE_TYPE_RULE,納入日付ルール,納入日Rule,納入日Rule,納入日付ルール,納入日付ルール,Loading...,none
+VBAP,DGSTA,危険物ステータス (明細),危険物 Status,危険物 St,危険物ステータス,危険物ステータス,Loading...,none
+VBAP,DP_CLEAR_STA_ITM,前受金ステータス,前受金 Status,前受金 Sts,前受金 Status,前受金 Status,Loading...,none
+VBAP,DUMMY_SLSDOCITEM_INCL_EEW_PS,長さ 1 のダミー機能,,,,,#VALUE!,none
+VBAP,EAN11,国際商品コード (EAN/UPC),EAN/UPC,EAN/UPC,EAN/UPC,EAN/UPC,Loading...,none
+VBAP,EANNR,European Article Number (EAN) - 無効,EAN 番号,EAN 番号,EAN 番号,EAN 番号,Loading...,none
+VBAP,EMCST,エンバーゴステータス (明細),Embargo Status,Emb.Status,エンバーゴステータス,エンバーゴステータス,Loading...,none
+VBAP,EQART,技術対象タイプ,対象タイプ,対象タイプ,技術対象タイプ,技術対象タイプ,Loading...,none
+VBAP,EQUNR,設備番号,設備,設備,設備,設備,Loading...,none
+VBAP,ERDAT,レコードが登録された日付,登録日付,登録,登録日付,登録日付,Loading...,none
+VBAP,ERLRE,見積/契約に対する完了規則,ComRl,完了規則,完了規則,完了規則,Loading...,none
+VBAP,ERNAM,オブジェクト登録者名,登録者,登録者,登録者,登録者,Loading...,none
+VBAP,ERZET,登録時刻,時刻,時刻,時刻,時刻,Loading...,none
+VBAP,EXART,取引タイプ,取引タイプ,取引タイプ,取引タイプ,取引タイプ,Loading...,none
+VBAP,EXT_REF_ITEM_ID,外部明細 ID,外部明細ID,外部明細ID,外部明細 ID,外部明細 ID,Loading...,none
+VBAP,FABSG,受信受診予定納入日程ヘッダ区分,JIT 納入日程 EDI 停止/情報区分,JDSEDI Ind,JITDSchdEDI Ind,JIT 納入日程 EDI 停止/情報区分,Loading...,none
+VBAP,FAKSP,明細の請求ブロック,BB,請求 Block,請求ブロック,請求ブロック,Loading...,none
+VBAP,FISTL,予算センタ,予算センタ,予算センタ,予算センタ,予算センタ,Loading...,none
+VBAP,FIXMG,納入日付および数量固定,Fix,納期固定,固定日付/数量,固定日付および数量,Loading...,none
+VBAP,FKBER,機能領域,機能領域,機能領域,機能領域,機能領域,Loading...,none
+VBAP,FKDAT_ANA,請求日付,請求日付,請求日付,請求日付,請求日付,Loading...,none
+VBAP,FKREL,請求関連,請求,請求関連,請求関連,請求関連,Loading...,none
+VBAP,FKSAA,受注関連の請求ステータス (明細),BS,Ord請求Sts,受注関連請求 St,受注関連請求 Status,Loading...,none
+VBAP,FMENG,数量固定,Fix,数量固定,数量固定,数量固定,Loading...,none
+VBAP,FMFGUS_KEY,米国連邦政府項目,米国連邦政府項目,US 政府,米国連邦政府,米国連邦政府項目,Loading...,none
+VBAP,FONDS,ファンド,ファンド,ファンド,ファンド,ファンド,Loading...,none
+VBAP,FPLNR_ANA,請求計画番号,計画番号,計画番号,請求計画番号,請求計画番号,Loading...,none
+VBAP,FREEZE_PAOBJNR,前伝票依存の収益性セグメント,前伝票依存の収益性セグメント,依存ProfSg,依存収益性セグメント,前伝票依存の収益性セグメント,Loading...,none
+VBAP,FSH_CANDATE,取消日付,取消日付,取消日付,取消日付,取消日付,Loading...,none
+VBAP,FSH_COLLECTION,ファッションコレクション,コレクション,Collection,コレクション,コレクション,Loading...,none
+VBAP,FSH_CRSD,シーズンの条件レコード番号,条件レコード番号,条件RecNo.,条件レコードNo.,条件レコード番号,Loading...,none
+VBAP,FSH_GRID_COND_REC,グリッド条件レコード番号,グリッド条件レコード番号,RecNo,レコード番号,グリッドレコード番号,Loading...,none
+VBAP,FSH_ITEM,明細番号,明細番号,明細番号,明細番号,明細番号,Loading...,none
+VBAP,FSH_ITEM_GROUP,明細グループ,明細 Group,明細 Group,明細グループ,明細グループ,Loading...,none
+VBAP,FSH_PQR_UEPOS,分割数量拒否の上位明細,PQR 上位明細,PQR HL明細,PQR 上位明細,分割数量拒否の上位明細,Loading...,none
+VBAP,FSH_PSM_PFM_SPLIT,PSM および PFM 分割 ID,PFM 分割 ID,分割 ID,分割 ID,PFM 分割 ID,Loading...,none
+VBAP,FSH_SEAREF,参照伝票から決定されたシーズン,コピー済シーズンData,コピーSeas,コピー済Season,コピー済シーズンData,Loading...,none
+VBAP,FSH_SEASON,シーズン,シーズン,シーズン,シーズン,シーズン,Loading...,none
+VBAP,FSH_SEASON_YEAR,シーズン年度,シーズン年度,Season年度,シーズン年度,シーズン年度,Loading...,none
+VBAP,FSH_THEME,ファッションテーマ,テーマ,テーマ,テーマ,テーマ,Loading...,none
+VBAP,FSH_TRANSACTION,トランザクション番号,Transaction 番号,Trans.番号,Transaction 番号,トランザクション番号,Loading...,none
+VBAP,FSH_VASREF,参照伝票により決定された VAS,コピー済 VAS データ,VAS コピー,Copy済 VAS Data,コピー済 VAS データ,Loading...,none
+VBAP,FSH_VAS_PRNT_ID,明細番号 (販売管理伝票),明細,明細,明細,明細 (SD),Loading...,none
+VBAP,FSH_VAS_REL,VAS 関連,VAS 関連,VAS 関連,VAS 関連,VAS 関連,Loading...,none
+VBAP,FSSTA,請求ブロックステータス (明細),BS,請求BlkSt.,請求ブロックSt.,請求ブロック Status,Loading...,none
+VBAP,GBSTA,全処理ステータス (明細),OS,全 Status,全処理 Status,全処理ステータス,Loading...,none
+VBAP,GEWEI,重量単位,WUn,重量単位,重量単位,重量単位,Loading...,none
+VBAP,GLO_LOG_REF1_IT,伝票の国依存参照 1,国依存参照 1,,,国依存参照 1,#VALUE!,none
+VBAP,GRANT_NBR,補助金,補助金,補助金,補助金,補助金,Loading...,none
+VBAP,GRKOR,出荷グループ (明細一括出荷),出G,出荷 GROUP,出荷グループ,出荷グループ,Loading...,none
+VBAP,GRPOS,この明細が代替である明細,代替,明細の代替,明細の代替,代替明細,Loading...,none
+VBAP,GSBER,事業領域,BusA,事業領域,事業領域,事業領域,Loading...,none
+VBAP,HANDLE,'CHAR' 形式の GUID (大文字),GUID 16,GUID 16,GUID 16,GUID 16,Loading...,none
+VBAP,HANDOVERDATE,引渡場所での引渡日付,引渡日付,引渡日付,引渡日付,引渡日付,Loading...,none
+VBAP,HANDOVERLOC,商品の物理引渡の場所,引渡場所,引渡場所,引渡場所,引渡場所,Loading...,none
+VBAP,HANDOVERTIME,引渡場所での引渡時刻,引渡時刻,引渡時刻,引渡時刻,引渡時刻,Loading...,none
+VBAP,IFRS15_RELEVANCE,明細は IFRS 15 関連,IFRS 15,IFRS 15,IFRS 15 関連,IFRS 15 関連,Loading...,none
+VBAP,IFRS15_TOTAL_SSP,IFRS 15: 独立販売価格,独立販売価格,SSP,独立販売価格,独立販売価格,Loading...,none
+VBAP,IUID_RELEVANT,アイテム一意 ID 得意先関連,IUID 得意先関連,IUID得意先,IUID 得意先関連,アイテム一意 ID 得意先関連,Loading...,none
+VBAP,J_1BCFOP,,CFOP,CFOP,CFOP,CFOP,Loading...,none
+VBAP,J_1BTAXLW1,税法: ICMS,Txt,ICMS Text,ICMS 法,ICMS 法,Loading...,none
+VBAP,J_1BTAXLW2,税法: IPI,Txt,IPI Text,IPI 法,IPI 法,Loading...,none
+VBAP,J_1BTXSDC,,TC,税コード,税コード,税コード,Loading...,none
+VBAP,J_3GBELNRI,伝票番号,伝票番号,伝票番号,伝票番号,伝票番号,Loading...,none
+VBAP,J_3GDATBI,終了日,終了日,終了日,終了日,終了日,Loading...,none
+VBAP,J_3GDATVO,開始日付,開始日,開始日,開始日,開始日,Loading...,none
+VBAP,J_3GLVART,機材の状態,AType,機材の状態,機材の状態,機材の状態,Loading...,none
+VBAP,J_3GPOSNRI,伝票明細,明細No,明細番号,明細番号,明細番号,Loading...,none
+VBAP,KALNR,原価見積 (数量構成なし) の原価見積番号,原価見積番号,CENo,原価見積番号,原価見積番号,Loading...,none
+VBAP,KALSM_K,原価計算表,CstgSh,原価計算表,原価計算表,原価計算表,Loading...,none
+VBAP,KALVAR,原価計算バリアント,原価計算バリアント,Cstg Vrnt,原価計算バリアント,原価計算バリアント,Loading...,none
+VBAP,KANNR,かんばん/シーケンス番号,Sequence No,SequenceNo,シーケンス番号,シーケンス番号,Loading...,none
+VBAP,KBMENG,販売単位の累積確認済数量,累積確認済数量 (SU),累積確認数,累積確認済数量,累積確認済数量 (SU),Loading...,none
+VBAP,KBVER,数量に関する許容偏差 (%),偏差%,偏差 (%),偏差 (%),偏差 (%),Loading...,none
+VBAP,KDGRP_ANA,得意先グループ,得グ,得意先 Grp,得意先グループ,得意先グループ,Loading...,none
+VBAP,KDMAT,得意先が使用する品目コード,得意先品目コード,得意先品目,得意先品目,得意先品目,Loading...,none
+VBAP,KEVER,シフト所要日数,日数,日数,日数,差異日数,Loading...,none
+VBAP,KLMENG,基本単位の累積確認済数量,累積確認済数量 (BU),累積確認数,累積確認済数量,累積確認済数量 (BU),Loading...,none
+VBAP,KLVAR,原価計算バリアント,原価計算バリアント,Cstg Vrnt,原価計算バリアント,原価計算バリアント,Loading...,none
+VBAP,KMEIN,条件単位,UoM,単位,数量単位,数量単位,Loading...,none
+VBAP,KMPMG,構成品目数量,数量,数量,数量,構成品目数量,Loading...,none
+VBAP,KNTTP,勘定設定カテゴリ,A,勘定設定Ca,勘定設定 Categ.,勘定設定カテゴリ,Loading...,none
+VBAP,KNUMA_AG,販売ディール,販売l Deal,販売l Deal,販売ディール,販売ディール,Loading...,none
+VBAP,KNUMA_PI,販売促進,販売促進,販売促進,販売促進,販売促進,Loading...,none
+VBAP,KNUMH,ロット決定による条件マスタ番号,条件マスタ,条件マスタ,条件マスタ/Lot,条件マスタ/ロット,Loading...,none
+VBAP,KNUMV_ANA,伝票条件番号,伝票条件,伝票条件,伝票条件,伝票条件番号,Loading...,none
+VBAP,KONDM,品目価格グループ,MPG,MaPricngGr,品目価格 Group,品目価格グループ,Loading...,none
+VBAP,KOSCH,製品割当決定手順,製品割当,製品割当,製品割当,製品割当,Loading...,none
+VBAP,KOSTL,原価センタ,原価センタ,原価センタ,原価センタ,原価センタ,Loading...,none
+VBAP,KOUPD,条件更新,CdUpd,条件更新,条件更新,条件更新,Loading...,none
+VBAP,KOWRR,統計金額,統計,統計値,統計値,統計値,Loading...,none
+VBAP,KPEIN,価格条件単位,/,単位,価格設定単位,価格設定単位,Loading...,none
+VBAP,KTGRM,品目の勘定設定グループ,AAGM,AccAsmtGrM,勘定設定Gr(得),勘定設定Gr(品),Loading...,none
+VBAP,KUNNR_ANA,受注先,受注先,受注先,受注先,受注先,Loading...,none
+VBAP,KUNRE_ANA,請求先,請求先,請求先,請求先,請求先,Loading...,none
+VBAP,KUNRG_ANA,支払人,支払人,支払人,支払人,支払人,Loading...,none
+VBAP,KUNWE_ANA,出荷先,出荷先,出荷先,出荷先,出荷先,Loading...,none
+VBAP,KVGR1_ANA,得意先グループ 1,Grp1,得意先Grp1,得意先グループ1,得意先グループ 1,Loading...,none
+VBAP,KVGR2_ANA,得意先グループ 2,Grp2,得意先Grp2,得意先グループ2,得意先グループ 2,Loading...,none
+VBAP,KVGR3_ANA,得意先グループ 3,Grp3,得意先Grp3,得意先グループ3,得意先グループ 3,Loading...,none
+VBAP,KVGR4_ANA,得意先グループ 4,Grp4,得意先Grp4,得意先グループ4,得意先グループ 4,Loading...,none
+VBAP,KVGR5_ANA,得意先グループ 5,Grp5,得意先Grp5,得意先グループ5,得意先グループ 5,Loading...,none
+VBAP,KWMENG,累積受注数量 (販売単位),受注数量,受注数量,受注数量,受注数量,Loading...,none
+VBAP,KZBWS,特殊在庫の評価,,評価,評価,特殊在庫の評価,Loading...,none
+VBAP,KZFME,ID: トランザクション終了時の先行数量単位,L,先行 UoM,先行数量単位,先行数量単位,Loading...,none
+VBAP,KZTLF,明細レベルの分納納入,PD,分納納入,分割納入/明細,分割納入/明細,Loading...,none
+VBAP,KZVBR,消費転記区分,消,消費,消費,消費,Loading...,none
+VBAP,KZWI1,条件に対する価格決定表からの小計 1,小計 1,小計 1,小計 1,小計 1,Loading...,none
+VBAP,KZWI2,条件に対する価格決定表からの小計 2,小計 2,小計 2,小計 2,小計 2,Loading...,none
+VBAP,KZWI3,条件に対する価格決定表からの小計 3,小計 3,小計 3,小計 3,小計 3,Loading...,none
+VBAP,KZWI4,条件に対する価格決定表からの小計 4,小計 4,小計 4,小計 4,小計 4,Loading...,none
+VBAP,KZWI5,条件に対する価格決定表からの小計 5,小計 5,小計 5,小計 5,小計 5,Loading...,none
+VBAP,KZWI6,条件に対する価格決定表からの小計 6,小計 6,小計 6,小計 6,小計 6,Loading...,none
+VBAP,LABSG,受信予定 JIT 納入日程区分,予定納入日程 EDI 停止/情報区分,FDSEDI Ind,予定納入日程 EDI区分,予定納入日程 EDI 停止/情報区分,Loading...,none
+VBAP,LFGSA,全体出荷ステータス (明細),DS,全出荷,全出荷 Sts,全出荷ステータス,Loading...,none
+VBAP,LFMNG,納品書処理の最小納入数量,最小納入数量,納入数量,最小納入数量,最小納入数量,Loading...,none
+VBAP,LFREL,明細は出荷関連,DlI,明細出荷,明細出荷関連,明細出荷関連,Loading...,none
+VBAP,LFSTA,出荷ステータス (明細),DS,出荷Status,出荷ステータス,出荷ステータス,Loading...,none
+VBAP,LGORT,保管場所,SLoc,保管場所,保管場所,保管場所,Loading...,none
+VBAP,LOGSYS_EXT,論理システム,論理 Sys.,論理Systm,論理システム,論理システム,Loading...,none
+VBAP,LPRIO,出荷優先順位,順位,出荷順位,出荷優先順位,出荷優先順位,Loading...,none
+VBAP,LSMENG,累積要求出荷数量 (出荷関連の全納入日程行),要求出荷数量,要求出荷数,要求出荷数量,要求出荷数量,Loading...,none
+VBAP,LSSTA,全出荷ブロックステータス (明細),DB,全出荷 Blk,全出荷 Blk Sts,全出荷ブロックStatus,Loading...,none
+VBAP,LSTANR,無償品出荷管理,D,FG出荷条件,無償品出荷管理,無償品出荷管理,Loading...,none
+VBAP,MAGRV,品目グループ: 梱包材,GrPMt,品目Grp PM,品目 Grp 梱包材,品目グループ梱包材,Loading...,none
+VBAP,MANDT,クライアント,Cl.,Client,クライアント,クライアント,Loading...,none
+VBAP,MANEK,マニュアル契約完了,マニュアル契約完了,完了,マニュアル完了,マニュアル契約完了,Loading...,none
+VBAP,MATKL,品目グループ,品目 Group,品目 Group,品目グループ,品目グループ,Loading...,none
+VBAP,MATNR,品目コード,品目,品目,品目,品目,Loading...,none
+VBAP,MATWA,入力済品目,入力品目,入力済品目,入力済品目,入力品目,Loading...,none
+VBAP,MEINS,基本数量単位,単,単位,基本単位,基本数量単位,Loading...,none
+VBAP,MFRGR,品目運賃グループ,運賃 Grp,運賃 Grp,運賃グループ,品目運賃グループ,Loading...,none
+VBAP,MILL_BATCH_SEL_F,ロット選択の管理,ロット選択の管理,BatchSe,Mill BSelInd,ロット選択,Loading...,none
+VBAP,MILL_SE_GPOSN,グローバル明細,,Global明細,グローバル明細,グローバル明細,Loading...,none
+VBAP,MPROK,ステータスマニュアル価格変更,MPr,ManualPric,マニュアル価格,マニュアル価格,Loading...,none
+VBAP,MSR_APPROV_BLOCK,承認ブロック,承認,承認,承認,承認,Loading...,none
+VBAP,MSR_REFUND_CODE,返品払戻コード,払戻コード,払戻コード,払戻コード,払戻コード,Loading...,none
+VBAP,MSR_RET_REASON,返品理由,返品理由,返品理由,返品理由,返品理由,Loading...,none
+VBAP,MTVFP,利用可能在庫確認の確認グループ,Av,AvailCheck,利用可能在庫chk,利用可能在庫確認,Loading...,none
+VBAP,MVGR1,品目グループ 1,MG 1,品目 Grp 1,品目グループ 1,品目グループ 1,Loading...,none
+VBAP,MVGR2,品目グループ 2,MG 2,品目 Grp 2,品目グループ 2,品目グループ 2,Loading...,none
+VBAP,MVGR3,品目グループ 3,MG 3,品目 Grp 3,品目グループ 3,品目グループ 3,Loading...,none
+VBAP,MVGR4,品目グループ 4,MG 4,品目 Grp 4,品目グループ 4,品目グループ 4,Loading...,none
+VBAP,MVGR5,品目グループ 5,MG 5,品目 Grp 5,品目グループ 5,品目グループ 5,Loading...,none
+VBAP,MWSBP,伝票通貨での税額,税額,税,税額,税額,Loading...,none
+VBAP,NACHL,得意先が入庫を転記していません,NGR,GR 未転記,入庫未転記,得意先入庫未転記,Loading...,none
+VBAP,NETPR,正味価格,正味価格,正味価格,正味価格,正味価格,Loading...,none
+VBAP,NETWR,伝票通貨での受注明細正味額,正味額,正味額,正味額,正味額,Loading...,none
+VBAP,NRAB_KNUMH,条件レコード番号,条件RecNo.,条件RecNo.,条件レコードNo.,条件レコード番号,Loading...,none
+VBAP,NTGEW,明細の正味重量,正味重量,正味重量,正味重量,正味重量,Loading...,none
+VBAP,OBJNR,明細レベルのオブジェクト番号,ObjNo Item,ObjNo Itm,ObjNo Item,オブジェクト番号明細,Loading...,none
+VBAP,ORIGINAL_PLANT,プラント代替の元プラント,元プラント,元プラント,元プラント,元プラント,Loading...,none
+VBAP,PAOBJNR,収益性セグメント番号 (CO-PA),収益性 Seg,Prof.Segmt,収益性 Segment,収益性セグメント番号,Loading...,none
+VBAP,PARGB,取引先事業領域,TPBA,取引先 BA,取引先 BA,取引先事業領域,Loading...,none
+VBAP,PAY_METHOD,考慮される支払方法一覧,支払方法,支払方法,支払方法,支払方法,Loading...,none
+VBAP,PBS_STATE,プロジェクトベースサービスのステータス,ステータス,ステータス,PBS ステータス,PBS ステータス,Loading...,none
+VBAP,PCSTA,製品市場性ステータス (明細),製品市場性Stats,製品MarktS,製品市場性ステータス,製品市場性ステータス,Loading...,none
+VBAP,PCTRF,請求の利益センタ,請求利益Ct,請求利益Ct,請求利益センタ,請求利益センタ,Loading...,none
+VBAP,PERVE_ANA,営業員,営業員,営業員,営業員,営業員,Loading...,none
+VBAP,PERZM_ANA,管理責任者,管理責任者,管理責任者,管理責任者,管理責任者,Loading...,none
+VBAP,PLAVO,計画納入日程手順,指示,指示,計画納入日程Ins,計画納入日程の指示,Loading...,none
+VBAP,PMATN,価格設定参照品目,価格設定参照品目,Pr参照品目,価格参照品目,価格設定参照品目,Loading...,none
+VBAP,POSAR,明細タイプ,IT,明細タイプ,明細タイプ,明細タイプ,Loading...,none
+VBAP,POSEX,元となる購買発注の明細番号,PO明細,PO 明細,購買発注明細,購買発注明細,Loading...,none
+VBAP,POSNR,販売伝票明細,明細,明細,販売伝票明細,販売伝票明細,Loading...,none
+VBAP,POSNV,開始明細,明細,明細,明細,明細,Loading...,none
+VBAP,PO_QUAN,購買発注量,購買発注量,数量,購買発注量,購買発注量,Loading...,none
+VBAP,PO_UNIT,購買発注数量単位,OUn,発注単位,発注単位,発注単位,Loading...,none
+VBAP,PRBME,製品グループの基本数量単位,PUM,数量単位,製品Grp数量単位,製品グループ数量単位,Loading...,none
+VBAP,PRCTR,利益センタ,利益センタ,利益センタ,利益センタ,利益センタ,Loading...,none
+VBAP,PREFE,特恵関税,Pr,特恵関税,特恵関税,特恵関税,Loading...,none
+VBAP,PROCESS_CODE,明細処理コード,明細処理コード,処理コード,処理コード,明細処理コード,Loading...,none
+VBAP,PRODH,品目階層,品目階層,品目階層,品目階層,品目階層,Loading...,none
+VBAP,PRODH_UNIV_BATDET_DET_ORIGIN,製品階層決定に関連する日付,製品階層決定に関連する日付,関連日付,決定に関連する日付,製品階層決定に関連する日付,Loading...,none
+VBAP,PRODH_UNIV_BATDET_PARNT_NODID,ノード ID,ノード ID,ノード ID,ノード ID,ノード ID,Loading...,none
+VBAP,PRODH_UNIV_SALES_DET_ORIGIN,製品階層決定に関連する日付,製品階層決定に関連する日付,関連日付,決定に関連する日付,製品階層決定に関連する日付,Loading...,none
+VBAP,PRODH_UNIV_SALES_PARNT_NODID,ノード ID,ノード ID,ノード ID,ノード ID,ノード ID,Loading...,none
+VBAP,PROSA,品目変換の ID,,MatDetermA,品目設定活動,品目変換有効,Loading...,none
+VBAP,PROVG,手数料グループ,Com,Comm.Grp,コミッションGrp,手数料グループ,Loading...,none
+VBAP,PRSOK,価格設定 OK,OK,価格設定,価格設定,価格設定,Loading...,none
+VBAP,PRS_OBJNR,エンゲージメント管理: オブジェクト番号,エンゲージメント管理: オブジェクト番号,EnMg:ObjNr,Eng.管理: Object番号,エンゲージメント管理: オブジェクト番号,Loading...,none
+VBAP,PRS_SD_SPSNR,販売管理によるプロジェクト開始の標準 WBS 要素,標準 WBS 要素,St.WBS要素,標準 WBS 要素,標準 WBS 要素,Loading...,none
+VBAP,PRS_WORK_PERIOD,作業期間 (内部表示),作業期間,作業期間,作業期間,作業期間,Loading...,none
+VBAP,PR_F_F,新旧 JIT 納入日程比較のプロファイル,新旧 JIT 納入日程比較,JIT 比較,JIT 納入日程比較,JIT 納入日程比較,Loading...,none
+VBAP,PR_F_L,JIT 納入日程と予定納入日程の比較プロファイル,JIT 納入日程と予定納入日程の比較,JIT-Frcst,JITDS-FcstDS 比較,JITDS-FrcstDS 比較,Loading...,none
+VBAP,PR_L_L,新旧の予定納入日程比較のプロファイル,新旧の予定納入日程比較,予定納入,予定納入日程比較,新旧予定納入日程比較,Loading...,none
+VBAP,PSTYV,明細カテゴリ (販売伝票),明カ,明細 Cat.,明細カテゴリ,明細カテゴリ,Loading...,none
+VBAP,PS_PSP_PNR,WBS 要素,WBS 要素,WBS 要素,WBS 要素,WBS 要素,Loading...,none
+VBAP,REASON_CODE,出荷予定数量の変更理由,出荷予定数量の変更理由,理由,変更理由,出荷予定数量の変更理由,Loading...,none
+VBAP,REQQTY_BU,受注依頼数量 (基本単位),受注依頼数量,依頼SO Qty,受注依頼数量,受注依頼数量,Loading...,none
+VBAP,REVFP,利用可能在庫確認結果の転送規則,AR,Av.ch.rule,AvailCheck rule,利用可能在庫確認規則,Loading...,none
+VBAP,RFGSA,全参照ステータス (明細),RS,全参照 Sts,全参照 Sts,全参照ステータス,Loading...,none
+VBAP,RFM_PSST_GROUP,PSST グループ,PSST グループ,PSST Group,PSST グループ,PSST グループ,Loading...,none
+VBAP,RFM_PSST_RULE,PSST グループ化規則,PSST グループ化規則,PSST G. R.,PSST グループ化規則,PSST グループ化規則,Loading...,none
+VBAP,RFM_SCC_INDICATOR,シーズン完全性区分,シーズン完全性区分,Sea.Co区分,シーズン完全性区分,シーズン完全性区分,Loading...,none
+VBAP,RFSTA,参照ステータス (明細),RS,参照Status,参照ステータス,参照ステータス,Loading...,none
+VBAP,RKFKF,CO/PPC 発注に対する請求方法,BlMe.,請求方法,請求方法 CO/PPC,請求方法 CO/PPC,Loading...,none
+VBAP,ROUTE,輸送経路,経路,輸送経路,輸送経路,輸送経路,Loading...,none
+VBAP,SDSSTA,安全データシートステータス (明細),安全DataシートS,安全DatShS,安全DataシートStatus,安全データシートステータス,Loading...,none
+VBAP,SERAIL,シリアル番号プロファイル,Profl.,Profile,シリアル番号Prf,シリアル番号 Profile,Loading...,none
+VBAP,SERNR,BOM 展開番号,展開番号,BOM 展開No,BOM 展開番号,BOM 展開番号,Loading...,none
+VBAP,SERVICE_DOC_ID,サービス伝票 ID,サービス伝票,Servc.伝票,サービス伝票,サービス伝票,Loading...,none
+VBAP,SERVICE_DOC_ITEM_ID,サービス伝票明細 ID,サービス伝票明細,Sv伝票明細,サービス伝票明細,サービス伝票明細,Loading...,none
+VBAP,SERVICE_DOC_TYPE,サービス伝票タイプ,サービス伝票タイプ,SrvDocType,サービス伝票タイプ,サービス伝票タイプ,Loading...,none
+VBAP,SESSION_CREATION_DATE,レコード登録のセッション日付,セッション登録日付,日付,セッション登録日付,セッション登録日付,Loading...,none
+VBAP,SESSION_CREATION_TIME,レコード登録のセッション時刻,セッション登録時刻,時刻,セッション登録時刻,セッション登録時刻,Loading...,none
+VBAP,SGT_RCAT,所要量セグメント,所要量セグメント,所要量Seg.,所要量 Segment,所要量セグメント,Loading...,none
+VBAP,SHKZG,返品明細,Ret,返品,返品,返品,Loading...,none
+VBAP,SKOPF,品揃モジュール,モジュール,モジュール,モジュール,モジュール,Loading...,none
+VBAP,SKTOF,現金割引フラグ,CDc,現金値引,現金値引,現金値引,Loading...,none
+VBAP,SLCST,Watch List Screening ステータス (明細),WLS ステータス,WLS Status,WLS ステータス,Watch List Screeningステータス,Loading...,none
+VBAP,SLOCTYPE,最初の在庫管理の場所タイプ,LocTyp,場所タイプ,場所タイプ,場所タイプ,Loading...,none
+VBAP,SMENG,基本数量単位によるスケール数量,スケール数量,Scale 数量,スケール数量,スケール数量,Loading...,none
+VBAP,SOBKZ,特殊在庫区分,S,特殊在庫,特殊在庫,特殊在庫,Loading...,none
+VBAP,SOLUTION_ORDER_ID,ソリューションオーダ,ソリューションオーダ,Solnオーダ,ソリューションオーダ,ソリューションオーダ,Loading...,none
+VBAP,SOLUTION_ORDER_ITM_ID,ソリューションオーダ明細,ソリューションオーダ明細,SolnOrdItm,Solution オーダ明細,ソリューションオーダ明細,Loading...,none
+VBAP,SPART,製品部門,部,製品部門,製品部門,製品部門,Loading...,none
+VBAP,SPART_ANA,製品部門,部,製品部門,製品部門,製品部門,Loading...,none
+VBAP,SPOSN,BOM 明細番号,Item,明細,明細,明細番号,Loading...,none
+VBAP,STADAT,統計日付,統計日付,統計日付,統計日付,統計日付,Loading...,none
+VBAP,STAFO,統計更新の更新グループ,更新GP,更新 Group,更新グループ,更新グループ (統計),Loading...,none
+VBAP,STCUR,統計用換算レート,換算レート,換算レート,換算レートStats,換算レートステータス,Loading...,none
+VBAP,STDAT,部品表/配合表のキー日付,BOM キー日,BOM キー日,BOM キー日付,BOM キー日付,Loading...,none
+VBAP,STKEY,元の部品表/配合表,OrBOM,元の BOM,元の BOM,元の BOM,Loading...,none
+VBAP,STLKN,BOM 明細ノード番号,ノード,ノード,明細ノード,明細ノード,Loading...,none
+VBAP,STLNR,部品表/配合表,BOM,BOM,BOM,部品表/配合表,Loading...,none
+VBAP,STLTY,BOM カテゴリ,BOMCat,BOM Cat,BOM カテゴリ,BOM カテゴリ,Loading...,none
+VBAP,STMAN,不整合システム設定,,不整合設定,不整合設定,不整合システム設定,Loading...,none
+VBAP,STOCKLOC,最初の在庫管理場所,最初の在庫管理場所,Location,ロケーション,ロケーション,Loading...,none
+VBAP,STPOS,部品表/配合表明細番号 VBAP は使用されません,部品表/配合表明細番号,BOM 明細No,BOM 明細番号,部品表/配合表明細番号,Loading...,none
+VBAP,STPOZ,内部カウンタ,カウンタ,カウンタ,カウンタ,カウンタ,Loading...,none
+VBAP,SUGRD,品目代替理由,理由,理由,理由,代替理由,Loading...,none
+VBAP,SUMBD,所要量の合計,合計,所要量合計,所要量合計,所要量合計,Loading...,none
+VBAP,TAXM1,品目の税分類,税分,税分類,税分類,税分類,Loading...,none
+VBAP,TAXM2,品目の税分類,税分,税分類,税分類,税分類,Loading...,none
+VBAP,TAXM3,品目の税分類,税分,税分類,税分類,税分類,Loading...,none
+VBAP,TAXM4,品目の税分類,税分,税分類,税分類,税分類,Loading...,none
+VBAP,TAXM5,品目の税分類,税分,税分類,税分類,税分類,Loading...,none
+VBAP,TAXM6,品目の税分類,税分,税分類,税分類,税分類,Loading...,none
+VBAP,TAXM7,品目の税分類,税分,税分類,税分類,税分類,Loading...,none
+VBAP,TAXM8,品目の税分類,税分,税分類,税分類,税分類,Loading...,none
+VBAP,TAXM9,品目の税分類,税分,税分類,税分類,税分類,Loading...,none
+VBAP,TECHS,パラメータバリアント/標準バリアント,標準 Variant,StdVariant,標準バリアント,標準バリアント,Loading...,none
+VBAP,TOTAL_LCCST,法令管理ステータス,法令管理 Status,法令管理,法令管理ステータス,法令管理ステータス,Loading...,none
+VBAP,TRANSIT_PLANT,輸送プラント,輸送Plant,輸送Plant,輸送プラント,輸送プラント,Loading...,none
+VBAP,TRMRISK_RELEVANT,販売管理のリスク関連性,Risk Rel.,Risk Rel.,リスク関連性,リスク関連性,Loading...,none
+VBAP,UEBTK,許可された限度無過剰納入,U,無制限,限度無許容範囲,限度無許容範囲,Loading...,none
+VBAP,UEBTO,過剰納入許容範囲,過剰納入許容,Over. Tol.,過剰納入許容,過剰納入許容範囲,Loading...,none
+VBAP,UEPOS,BOM 構成の上位レベル明細,上位明,上位明細,上位レベル明細,上位レベル明細,Loading...,none
+VBAP,UEPVW,上位レベル明細用途 ID,,Us.HLitem,上位明細の用途,上位明細の用途,Loading...,none
+VBAP,UKONM,主明細の品目価格設定グループ,主明細 MPG,主明細 MPG,MnItem MatPrcGr,主明細品目価格 Grp,Loading...,none
+VBAP,UMREF,変換係数: 数量,変換,変換,変換,変換,Loading...,none
+VBAP,UMVKN,販売数量を在庫単位に換算する分母 (除数),分母,分母,分母,分母,Loading...,none
+VBAP,UMVKZ,販売数量単位から基本数量単位への変換係数の分子,分子,分子,分子,分子,Loading...,none
+VBAP,UMZIN,販売単位の基本単位への換算の係数 (目標数量),換算係数,換算係数,換算係数,換算係数,Loading...,none
+VBAP,UMZIZ,販売単位の基本単位への換算の係数 (目標数量),換算係数,換算係数,換算係数,換算係数,Loading...,none
+VBAP,UNTTO,不足納入許容範囲,Under.Tol.,Under.Tol.,不足納入許容,不足納入許容範囲,Loading...,none
+VBAP,UPFLU,販売伝票伝票フローの更新区分,U,フロー更新,伝票フロー更新,伝票フロー更新,Loading...,none
+VBAP,UPMAT,主明細の価格設定参照品目,主明細価格参照品目,主明細 PRM,主明細PrRefMatl,主明細価格参照品目,Loading...,none
+VBAP,UVALL,未完了ステータス (明細),I,明細,明細,明細,Loading...,none
+VBAP,UVFAK,請求不完全ステータス (明細),BI,請求明細,請求 - 明細,請求 - 明細,Loading...,none
+VBAP,UVP01,得意先リザーブ 1: 明細ステータス,IR1,明細 Res1,明細リザーブ 1,明細リザーブ 1,Loading...,none
+VBAP,UVP02,得意先リザーブ 2: 明細ステータス,IR2,明細 Res2,明細リザーブ 2,明細リザーブ 2,Loading...,none
+VBAP,UVP03,得意先リザーブ 3: 明細ステータス,IR3,明細 Res3,明細リザーブ 3,明細リザーブ 3,Loading...,none
+VBAP,UVP04,得意先リザーブ 4: 明細ステータス,IR4,明細 Res4,明細リザーブ 4,明細リザーブ 4,Loading...,none
+VBAP,UVP05,得意先リザーブ 5: 明細ステータス,IR5,明細 Res5,明細リザーブ 5,明細リザーブ 5,Loading...,none
+VBAP,UVPRS,価格設定不完全ステータス (明細),PI,Prcg 明細,価格設定 - 明細,価格設定 - 明細,Loading...,none
+VBAP,UVVLK,出荷の未完了ステータス (明細),DI,出荷明細,出荷 - 明細,出荷 - 明細,Loading...,none
+VBAP,VBEAF,固定出荷処理日数,FxdPrT,固定処理日,固定処理日数,固定出荷処理日数,Loading...,none
+VBAP,VBEAV,可変出荷処理日数,VaPrTi,可変処理日,可変処理日数,可変出荷処理日数,Loading...,none
+VBAP,VBELN,販売伝票,販売伝票,販売伝票,販売伝票,販売伝票,Loading...,none
+VBAP,VBELV,開始伝票,開始伝票,開始伝票,開始伝票,開始伝票,Loading...,none
+VBAP,VBKD_POSNR,販売伝票明細,明細,明細,販売伝票明細,販売伝票明細,Loading...,none
+VBAP,VBTYP_ANA,販売管理伝票カテゴリ,伝票Categ.,伝票Categ.,伝票カテゴリ,販売管理伝票カテゴリ,Loading...,none
+VBAP,VDATU_ANA,指定納期,指定納期,指定納期,指定納期,指定納期,Loading...,none
+VBAP,VEDA_POSNR,販売伝票明細,明細,明細,販売伝票明細,販売伝票明細,Loading...,none
+VBAP,VGBEL,参照伝票番号,参照伝票,参照伝票,参照伝票,参照伝票,Loading...,none
+VBAP,VGPOS,参照明細番号,参照明,参照明細,参照明細,参照明細,Loading...,none
+VBAP,VGREF,前伝票は参照登録されています,参照から生成された前伝票,参照前伝票,参照による前伝票,参照から生成された前伝票,Loading...,none
+VBAP,VGTYP,先行 SD 伝票の伝票カテゴリ,PrCat,SD 伝票Cat,先行伝票 Categ.,先行伝票カテゴリ,Loading...,none
+VBAP,VKAUS,用途区分,用途,用途,用途,用途,Loading...,none
+VBAP,VKBUR_ANA,営業所,SOff.,営業所,営業所,営業所,Loading...,none
+VBAP,VKGRP_ANA,営業グループ,SGrp,営業 Group,営業グループ,営業グループ,Loading...,none
+VBAP,VKGRU,修理処理: 明細の分類,修理処理: 明細の分類,明細の分類,明細の分類,修理: 明細の分類,Loading...,none
+VBAP,VKORG_ANA,販売組織,販組,販売組織,販売組織,販売組織,Loading...,none
+VBAP,VLCENDCU,最終得意先 (中央取引先),最終得意先,最終得意先,最終得意先,最終得意先,Loading...,none
+VBAP,VOLEH,容積単位,VUn,容積単位,容積単位,容積単位,Loading...,none
+VBAP,VOLUM,明細の総数量,総数量,総数量,総数量,総数量,Loading...,none
+VBAP,VOREF,参照完全区分,完参,完全参照,完全参照,完全参照,Loading...,none
+VBAP,VPMAT,計画品目,計画品目,計画品目,計画品目,計画品目,Loading...,none
+VBAP,VPWRK,計画プラント,PPlt,計画 Plant,計画プラント,計画プラント,Loading...,none
+VBAP,VPZUO,割当区分,割当,割当区分,割当区分,割当区分,Loading...,none
+VBAP,VRKME,販売単位,SU,販売単位,販売単位,販売単位,Loading...,none
+VBAP,VSART_ANA,出荷タイプ,ST,出荷タイプ,出荷タイプ,出荷タイプ,Loading...,none
+VBAP,VSBED_ANA,出荷条件,SC,出荷条件,出荷条件,出荷条件,Loading...,none
+VBAP,VSTEL,出荷ポイント/入荷ポイント,出ポ,出荷 Point,出荷ポイント,出荷ポイント/入荷ポイント,Loading...,none
+VBAP,VTWEG_ANA,流通チャネル,流チ,流通 Chan.,流通チャネル,流通チャネル,Loading...,none
+VBAP,WAERK,販売伝票通貨,通貨,通貨,伝票通貨,伝票通貨,Loading...,none
+VBAP,WAVWR,伝票通貨での原価,原価,原価,原価,原価,Loading...,none
+VBAP,WBSTA,在庫移動ステータス (明細),GM,在庫移動,在庫移動 Status,在庫移動ステータス,Loading...,none
+VBAP,WERKS,プラント (自社または外部),Plnt,プラント,プラント,プラント,Loading...,none
+VBAP,WGRU1,品目グループ階層 1,MH1,品目 Gr.1,品目グループ 1,品目グループ 1,Loading...,none
+VBAP,WGRU2,品目グループ階層 2,MH2,品目 GR. 2,品目グループ 2,品目グループ 2,Loading...,none
+VBAP,WKTNR,金額契約番号,金額契約番号,金額契約No,金額契約番号,金額契約番号,Loading...,none
+VBAP,WKTPS,金額契約明細,VC 明細,VC 明細,金額契約明細,金額契約明細,Loading...,none
+VBAP,WRF_CHARSTC1,特性値 1,特性値 1,特性 1,特性 1,特性値 1,Loading...,none
+VBAP,WRF_CHARSTC2,特性値 2,特性値 2,特性 2,特性 2,特性値 2,Loading...,none
+VBAP,WRF_CHARSTC3,特性値 3,特性値 3,特性 3,特性 3,特性値 3,Loading...,none
+VBAP,WTYSC_CLMITEM,請求明細番号,請求明細,Clm 明細,請求明細番号,請求明細番号,Loading...,none
+VBAP,XCHAR,ロット管理区分 (内部),B,ロット管理,ロット管理区分,ロット管理,Loading...,none
+VBAP,XCHPF,ロット管理必須区分,BMR,ロット管理,ロット管理区分,ロット管理,Loading...,none
+VBAP,ZIEME,目標数量 UoM,UoM,目標単位,目標数量 UoM,目標数量 UoM,Loading...,none
+VBAP,ZMENG,目標数量 (販売単位),目標数量,目標数量,目標数量,目標数量,Loading...,none
+VBAP,ZSCHL_K,間接費キー,OH key,間接費キー,間接費キー,間接費キー,Loading...,none
+VBAP,ZWERT,購買契約の目標額 (伝票通貨),目標額,目標額,目標額,購買契約目標額,Loading...,none

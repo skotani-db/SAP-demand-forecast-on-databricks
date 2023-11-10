@@ -1,0 +1,205 @@
+table,original_column,content,header,column_text,medium_label,long_label,translated_column,column_for_analysis
+VBAK,ABDIS,MRP: 出荷計画タイプ,,MRP,MRP: DS タイプ,MRP: 出荷計画タイプ,Mrp,mrp
+VBAK,ABHOB,ピックアップ時刻,時間,Pick-Up Tm,Pick-Up 時刻,ピックアップ時刻,Pick-UP TM,pick-up_tm
+VBAK,ABHOD,ピックアップ日付,Pick-Up 日,Pick-Up 日,ピックアップ日,ピックアップ日付,Pick-up day,pick-up_day
+VBAK,ABHOV,ピックアップ時刻,時間,Pick-Up Tm,Pick-Up 時刻,ピックアップ時刻,Pick-UP TM,pick-up_tm
+VBAK,ABRUF_PART,取引先権限チェック,取引先 Check,CheckPart.,取引先チェック,取引先権限チェック,Checkpart.,checkpart.
+VBAK,ABRVW,用途区分,用途,用途,用途,用途,Use,use
+VBAK,ABSTK,拒否ステータス (すべての明細),拒,拒否Status,拒否ステータス,拒否ステータス,Rejected Status,rejected_status
+VBAK,AD01BASDOC,初期伝票,初期伝票,初期伝票,初期伝票,初期伝票,Initial slip,initial_slip
+VBAK,AD01FAREG,請求ルール,R,A&D請求Rul,A&D 請求ルール,A&D 請求ルール,A & D claim Rul,a_&_d_claim_rul
+VBAK,AEDAT,最終変更日付,変更日,変更,変更日,変更日,change,change
+VBAK,AGRZR,見越期間 - 見越予定の受注関連請求伝票,AP,見越期間,見越期間,見越期間,Overtaking period,overtaking_period
+VBAK,AMTBL,伝票の承認済み与信金額,承認済み与信金額,与信金額,与信金額,承認済み与信金額,Belief amount,belief_amount
+VBAK,ANGDT,見積/引合有効開始日,有効開始,有効開始日,有効開始日,見積有効開始日,Effective start date,effective_start_date
+VBAK,APM_APPROVAL_REASON,承認依頼理由 ID,承認依頼理由 ID,AppReqRsn,承認依頼理由 ID,承認依頼理由 ID,APPREQRSN,appreqrsn
+VBAK,APM_APPROVAL_STATUS,伝票承認ステータス,承認ステータス,承認Status,承認ステータス,承認ステータス,Approval Status,approval_status
+VBAK,APM_REJECTION_REASON,承認依頼の拒否理由の ID,承認依頼の拒否理由の ID,拒否理由,承認依頼拒否理由,承認依頼拒否理由 ID,Reason for rejection,reason_for_rejection
+VBAK,AUART,販売伝票タイプ,販タ,販売伝票Ty,販売伝票タイプ,販売伝票タイプ,Sales slip TY,sales_slip_ty
+VBAK,AUDAT,伝票日付 (受信日/送信日),伝票日付,伝票日付,伝票日付,伝票日付,Slip date,slip_date
+VBAK,AUFNR,指図番号,指図,指図,指図,指図,Instruction,instruction
+VBAK,AUGRU,受注理由 (取引理由),理由,受注理由,受注理由,受注理由,Reason for ordering,reason_for_ordering
+VBAK,AUTLF,一括納入 (受注ごとに定義済),CDl,一括納入,一括納入,一括納入,Collective delivery,collective_delivery
+VBAK,AWAHR,受注可能性,Prb,受注可能性,可能性,可能性,Possibility of ordering,possibility_of_ordering
+VBAK,B2B_MSG_PROCESSING_STATUS,B2B メッセージ処理ステータス,B2B メッセージ処理ステータス,B2B Status,B2B 処理ステータス,B2B メッセージ処理ステータス,B2B Status,b2b_status
+VBAK,BESTK,出荷確認ステータス (すべての明細),CS,出荷確認St,出荷確認 Status,出荷確認ステータス,Shipment confirmation ST,shipment_confirmation_st
+VBAK,BNAME,発注者名称,得意先名称,名称,名称,名称,name,name
+VBAK,BNDDT,見積の有効終了日,有効終了日,有効終了日,有効終了日,見積有効終了日,expiration date,expiration_date
+VBAK,BSARK,得意先購買発注タイプ,発注,PO タイプ,購買発注タイプ,購買発注タイプ,PO type,po_type
+VBAK,BSTDK,得意先参照日付,Cust参照日,Cust参照日,得意先参照日付,得意先参照日付,CUST reference date,cust_reference_date
+VBAK,BSTNK,得意先参照,得意先参照,得意先参照,得意先参照,得意先参照,See customer,see_customer
+VBAK,BSTZD,購買発注番号補足,補足,補足,補足,補足,supplement,supplement
+VBAK,BUKRS_VF,請求対象の会社コード,会社,会社コード,請求会社コード,請求対象の C コード,Company code,company_code
+VBAK,CMFRE,与信管理によって決定された伝票の承認日,承認日,承認日,承認日付,承認日付,Approval date,approval_date
+VBAK,CMGST,与信限度確認の全体ステータス,OvCS,与信Status,与信全処理 Stat,与信ステータス,Shin STATUS,shin_status
+VBAK,CMNGV,次回出荷予定日,次回出荷,次回出荷,次回出荷日,次回出荷日,Next shipment,next_shipment
+VBAK,CMNUP,次の伝票与信限度確認日付,次の確認,次の確認,次の確認,次の与信限度確認,Next confirmation,next_confirmation
+VBAK,CMPSC,最大伝票金額に対する与信限度確認のステータス,MAVO,金額,金額,最大金額,Amount of money,amount_of_money
+VBAK,CMPSD,支払条件に対する与信確認のステータス,TPAY,支払条件,支払条件,支払条件,Payment terms,payment_terms
+VBAK,CMPSI,ドキュメンタリクレジットの与信限度確認ステータス,DocC,Docu.Cred.,Documen. Credit,Documentary Credit,Docu.cred.,docu.cred.
+VBAK,CMPSJ,輸出与信保険の与信限度確認ステータス,ECI,ExptCredIn,輸出与信保険,輸出与信保険,EXPTCREDIN,exptcredin
+VBAK,CMPSK,支払カード承認の与信限度確認ステータス,PaCa,支払カード,支払カード,支払カードステータス,Payment card,payment_card
+VBAK,CMPS_CM,与信限度確認のステータス SAP 与信管理,SAPCM,SAP CrMa,SAP 与信管理,SAP 与信管理,SAP CRMA,sap_crma
+VBAK,CMPS_TE,SAP Credit Management 技術エラーステータス,CM TE,CrMa TE,CrMa TE Status,Credit Mgmt TE ステータス,CRMA TE,crma_te
+VBAK,CMWAE,与信管理領域の通貨コード,通貨,通貨,通貨,通貨,currency,currency
+VBAK,CONT_DG,区分: 伝票に危険物あり,DG,危険物あり,危険物あり,危険物あり,There is a dangerous item,there_is_a_dangerous_item
+VBAK,COSTA,ALE の確認ステータス,CoSt,ConfStatus,確認ステータス,確認ステータス,Confustus,confustus
+VBAK,CRM_GUID,文字入力項目長 70,文字 70,文字 70,文字 70,文字 70,Character 70,character_70
+VBAK,CTLPC,与信管理: リスクカテゴリ,リスクカテゴリ,リスクcat.,リスクカテゴリ,リスクカテゴリ,Risk cat.,risk_cat.
+VBAK,DAT_FZAU,累積出荷数量日付,累積数量日,累積数量日,累積数量日,累積数量日,Cumulative quantity,cumulative_quantity
+VBAK,DCSTK,遅延ステータス (すべての明細),De,遅延Status,遅延ステータス,遅延ステータス,Delayed Status,delayed_status
+VBAK,DELIVERY_DATE_TYPE_RULE,納入日付ルール,納入日Rule,納入日Rule,納入日付ルール,納入日付ルール,Delivery date Rule,delivery_date_rule
+VBAK,DP_CLEAR_STA_HDR,前受金ステータス,前受金 Status,前受金 Sts,前受金 Status,前受金 Status,Previous payment STS,previous_payment_sts
+VBAK,DUMMY_SALESDOC_INCL_EEW_PS,長さ 1 のダミー機能,,,,,#VALUE!,none
+VBAK,ENQUEUE_GRP,グループマスタ契約: 全下位レベル契約の更新終了までブロック,,,,,#VALUE!,none
+VBAK,ERDAT,レコードが登録された日付,登録日付,登録,登録日付,登録日付,register,register
+VBAK,ERNAM,オブジェクト登録者名,登録者,登録者,登録者,登録者,Registered person,registered_person
+VBAK,ERZET,登録時刻,時刻,時刻,時刻,時刻,Times of Day,times_of_day
+VBAK,EXT_BUS_SYST_ID,外部ビジネスシステム ID,外部ビジネスシステム ID,ExtBusSyst,外部 Bus システム ID,外部ビジネスシステム ID,EXTBUSSYST,extbussyst
+VBAK,EXT_COMM_SYST_TYPE,通信システムタイプ,通信システムタイプ,通信SystTy,通信システムタイプ,通信システムタイプ,Communication system,communication_system
+VBAK,EXT_REF_DOC_ID,外部伝票 ID,外部伝票ID,外部伝票ID,外部伝票 ID,外部伝票 ID,External slip ID,external_slip_id
+VBAK,EXT_REV_TMSTMP,外部呼出の改訂タイムスタンプ,外部改訂,外部改訂,外部改訂,外部改訂のタイムスタンプ,External revision,external_revision
+VBAK,FAKSK,販売管理伝票内の請求ブロック,BB,請求 Block,請求ブロック,請求ブロック,Request block,request_block
+VBAK,FKARA,受注関連請求伝票に対する提案請求伝票タイプ,OrBlT,請伝タイプ,請求伝票タイプ,受注関連請求タイプ,Contract type,contract_type
+VBAK,FKSAK,受注関連請求ステータス (全明細),BS,BS,受注関連請求Sts,受注関連請求 Status,BS,bs
+VBAK,FMBDAT,品目供給/利用可能日,品目 Av 日,品目 Av 日,品目利用可能日,品目利用可能日,Items AV Date,items_av_date
+VBAK,FMSTK,ステータス: 資金管理,予算管理ステータス,FM Status,予算管理ステータス,予算管理ステータス,Fm status,fm_status
+VBAK,FSH_CANDATE,取消日付,取消日付,取消日付,取消日付,取消日付,Date of cancellation,date_of_cancellation
+VBAK,FSH_CQ_CHECK,契約関連の所要量,所要量関連,所要量関連,所要量関連,所要量関連,Required amount,required_amount
+VBAK,FSH_KVGR10,得意先グループ 10,Grp10,得意先 Grp,得意先 Grp 10,得意先グループ 10,Courir GRP,courir_grp
+VBAK,FSH_KVGR6,得意先グループ 6,Grp6,得意先Grp6,得意先グループ6,得意先グループ 6,Customer GRP6,customer_grp6
+VBAK,FSH_KVGR7,得意先グループ 7,Grp7,得意先Grp7,得意先グループ7,得意先グループ 7,Customer GRP7,customer_grp7
+VBAK,FSH_KVGR8,得意先グループ 8,Grp8,得意先Grp8,得意先グループ8,得意先グループ 8,Customer GRP8,customer_grp8
+VBAK,FSH_KVGR9,得意先グループ 9,Grp9,得意先Grp9,得意先グループ9,得意先グループ 9,Customer GRP9,customer_grp9
+VBAK,FSH_OS_STG_CHANGE,受注納入日程作成方針項目マニュアル変更済,受注納入日程作成方針項目マニュアル変更済,変更済,マニュアル変更済,受注納入日程作成項目マニュアル変更済,Changed,changed
+VBAK,FSH_REREG,リリース規則,リリース,リリース,リリース規則,リリース規則,release,release
+VBAK,FSH_SS,受注納入日程作成方針,受注納入日程作成方針,Sched.方針,納入日程作成方針,受注納入日程作成方針,Sched. Policy,sched._policy
+VBAK,FSH_TRANSACTION,トランザクション番号,Transaction 番号,Trans.番号,Transaction 番号,トランザクション番号,Trans. Number,trans._number
+VBAK,FSH_VAS_CG,付加価値サービス得意先グループ,VAS 得意先グループ,VAS Cu. Gr,VAS 得意先グループ,VAS 得意先グループ,VAS CU. GR,vas_cu._gr
+VBAK,FSH_VRSN_STATUS,スナップショットステータス,スナップショットステータス,Status,Snap. Status,スナップショットステータス,Status,status
+VBAK,FSSTK,請求ブロックステータス (すべての明細),BS,請求BlkSt.,請求ブロックSt.,請求ブロック Status,Request blkst.,request_blkst.
+VBAK,GBSTK,全処理ステータス (ヘッダ/すべての明細),OS,全 Status,全ステータス,全処理ステータス,All Status,all_status
+VBAK,GLO_LOG_REF1_HD,伝票の国依存参照 1,国依存参照 1,,,国依存参照 1,#VALUE!,none
+VBAK,GRUPP,得意先与信グループ,与信,与信Group,与信グループ,得意先与信グループ,Shin GROUP,shin_group
+VBAK,GSBER,事業領域,BusA,事業領域,事業領域,事業領域,Business area,business_area
+VBAK,GSKST,原価センタの事業領域,BsAr,事業領域,事業領域,事業領域,Business area,business_area
+VBAK,GUEBG,有効開始日付 (購買契約/販売契約、品目提案),有効開始日,有効開始日,有効開始日付,有効開始日付,Effective start date,effective_start_date
+VBAK,GUEEN,有効終了日付 (購買契約/販売契約、品目提案),有効終了日,有効終了日,有効終了日付,有効終了日付,expiration date,expiration_date
+VBAK,GWLDT,保証期間の開始日付,保証開始日,保証開始日,保証期間開始日,保証期間開始日付,Guarantee start date,guarantee_start_date
+VBAK,HANDLE,VBAK-VBELN に対する国際的に一意のキー,国際 ID,国際 ID,国際 ID,国際 ID,International ID,international_id
+VBAK,HANDOVERLOC,商品の物理引渡の場所,引渡場所,引渡場所,引渡場所,引渡場所,Delivery location,delivery_location
+VBAK,HITYP_PR,価格設定の階層タイプ,HPr,価格階層ty,価格階層タイプ,階層タイプ/価格設定,Price hierarchy TY,price_hierarchy_ty
+VBAK,IHREZ,貴社参照,貴社参照,参照 1,貴社参照,貴社参照,See 1,see_1
+VBAK,J_3GKBAUL,ETM 関連区分,ETM 区分,ETM 区分,ETM 関連区分,ETM 関連区分,ETM category,etm_category
+VBAK,KALCD,キャンペーン設定表,設定表,設定表,Camp.Det. 表,キャンペーン設定表,Setting table,setting_table
+VBAK,KALSM,価格設定における価格決定表,決定表,価格決定表,価格決定表,価格決定表,Price decision table,price_decision_table
+VBAK,KALSM_CH,ロット決定検索順序,手順,検索順序,ロット検索順序,ロット検索順序,Search order,search_order
+VBAK,KKBER,与信管理領域,領域,与信領域,与信管理領域,与信管理領域,Creditworthiness,creditworthiness
+VBAK,KNKLI,与信限度付得意先コード,与信勘定,与信勘定,与信得意先勘定,与信得意先勘定,Trustworthiness account,trustworthiness_account
+VBAK,KNUMA,リベート契約 (複数条件をグループ化),契約,契約,リベート契約,リベート契約,contract,contract
+VBAK,KNUMV,伝票条件番号,伝票条件,伝票条件,伝票条件,伝票条件番号,Slip conditions,slip_conditions
+VBAK,KOKRS,管理領域,管理,管理領域,管理領域,管理領域,Management area,management_area
+VBAK,KOSTL,原価センタ,原価センタ,原価センタ,原価センタ,原価センタ,Cost center,cost_center
+VBAK,KTEXT,品目提案検索条件,検索条件,検索条件,検索条件,検索条件,Search conditions,search_conditions
+VBAK,KUNNR,受注先,受注先,受注先,受注先,受注先,Counsel,counsel
+VBAK,KURST,換算レートタイプ,換算レートタイプ,ExRateType,換算 Rateタイプ,換算レートタイプ,EXRATETYPE,exratetype
+VBAK,KVGR1,得意先グループ 1,Grp1,得意先Grp1,得意先グループ1,得意先グループ 1,Customer GRP1,customer_grp1
+VBAK,KVGR2,得意先グループ 2,Grp2,得意先Grp2,得意先グループ2,得意先グループ 2,Customer GRP2,customer_grp2
+VBAK,KVGR3,得意先グループ 3,Grp3,得意先Grp3,得意先グループ3,得意先グループ 3,Customer GRP3,customer_grp3
+VBAK,KVGR4,得意先グループ 4,Grp4,得意先Grp4,得意先グループ4,得意先グループ 4,Customer GRP4,customer_grp4
+VBAK,KVGR5,得意先グループ 5,Grp5,得意先Grp5,得意先グループ5,得意先グループ 5,Customer GRP5,customer_grp5
+VBAK,LANDTX,出荷国,TDC,出荷国,出荷国,出荷国,Shipping country,shipping_country
+VBAK,LASTVCHR,最終ビール伝票番号,最終 V.,最終Vouch.,最終ビール伝票,最終ビール伝票,Final Vouch.,final_vouch.
+VBAK,LAST_CHANGED_BY_USER,ビジネス文書を最後に変更したユーザ,変更者,変更者,最終変更者,最終変更者,Recipient,recipient
+VBAK,LFGSK,全出荷ステータス (すべての明細),DS,全出荷,全出荷 Status,全出荷ステータス,Full shipment,full_shipment
+VBAK,LFSTK,出荷ステータス (全明細),DS,出荷Status,出荷ステータス,出荷ステータス,Shipment STATUS,shipment_status
+VBAK,LIFSK,出荷ブロック (伝票ヘッダ),出ブ,出荷 BLOCK,出荷ブロック,出荷ブロック,Shipment Block,shipment_block
+VBAK,LOGSYSB,伝票が登録された論理システム,論理Systm,論理Systm,論理システム,論理システム,Logic SYSTM,logic_systm
+VBAK,LSSTK,全出荷ブロックステータス (すべての明細),DB,全出荷 Blk,全出荷 Blk Sts,全出荷ブロック Stat.,All shipment BLK,all_shipment_blk
+VBAK,MAHDT,前回得意先連絡日付,前回連絡,前回連絡,前回連絡日付,前回連絡日付,Previous contact,previous_contact
+VBAK,MAHZA,得意先からの連絡数,NoCnt,連絡数,連絡数,連絡数,Number of contacts,number_of_contacts
+VBAK,MANDT,クライアント,Cl.,Client,クライアント,クライアント,Client,client
+VBAK,MANEK,マニュアル契約完了,マニュアル契約完了,完了,マニュアル完了,マニュアル契約完了,completion,completion
+VBAK,MILL_APPL_ID,選定用アプリケーション ID カテゴリ,Application ID,APPL_ID,Application ID,アプリケーション ID,Appl_id,appl_id
+VBAK,MSR_ID,プロセス ID 番号,Process ID,Process ID,プロセス ID No.,プロセス ID 番号,Process ID,process_id
+VBAK,MULTI,複数キャンペーン/トレードプロモーション有効区分,複数プロモーション,複数 Pr.,複数プロモーション,複数プロモーション,Multiple PR.,multiple_pr.
+VBAK,NETWR,受注正味額 (伝票通貨),正味額,正味額,正味額,正味額,Tasteful amount,tasteful_amount
+VBAK,OBJNR,ヘッダレベルでのオブジェクト番号,対象番号ヘッダ,ObjNo hdr,Obj番号(ヘッダ),Object 番号 (ヘッダ),Objno HDR,objno_hdr
+VBAK,OIPBL,ビジネスロケーション ID (IS-Oil MRN),Loc. ID,LocationID,ロケーション ID,ビジネス Location ID,Local,local
+VBAK,PAY_METHOD,考慮される支払方法一覧,支払方法,支払方法,支払方法,支払方法,payment method,payment_method
+VBAK,PROLI,販売管理伝票の危険物管理プロファイル,DGPr,DGMgmtProf,危険物管理 Prof,危険物管理 Profile,DGMGMTPROF,dgmgmtprof
+VBAK,PS_PSP_PNR,WBS 要素,WBS 要素,WBS 要素,WBS 要素,WBS 要素,WBS element,wbs_element
+VBAK,QMNUM,通知番号,通知,通知,通知,通知,notification,notification
+VBAK,RETRO_PURCHDOC_CREATION,購買伝票の遡及登録,購買伝票の遡及登録,購買伝票Rt,遡及購買伝票,遡及購買伝票,Purchasing slip RT,purchasing_slip_rt
+VBAK,RFGSK,全参照ステータス (すべての明細),OR,全参照 Sts,全参照 Status,全参照ステータス,See all STS,see_all_sts
+VBAK,RFSTK,参照ステータス (すべての明細),RS,参照Status,参照ステータス,参照ステータス,See Status,see_status
+VBAK,RPLNR,支払カード計画タイプ番号,支払計画,支払計画,支払Card計画No.,支払カード計画番号,Payment plan,payment_plan
+VBAK,SBGRP,与信管理における与信担当者グループ,与信担当者 grp,与信担当者,与信担当者 grp,与信担当者グループ,Corporation,corporation
+VBAK,SCHEME_GRP,参照限定条件: 決定区分,決定区分,決定区分,参照決定区分,グループ参照決定区分,Determined category,determined_category
+VBAK,SDM_VERSION,SDM: VBAK のバージョン項目,SV,SDM Vers.,SDM バージョン管理,SDM バージョン管理,SDM Vers.,sdm_vers.
+VBAK,SOLUTION_ORDER_ID,ソリューションオーダ,ソリューションオーダ,Solnオーダ,ソリューションオーダ,ソリューションオーダ,SOLN Oda,soln_oda
+VBAK,SPART,製品部門,部,製品部門,製品部門,製品部門,Product department,product_department
+VBAK,SPPAYM,特別支払方法による支払フォーム,特別支払方法,PaymM,支払方法,支払方法,Paymmm,paymmm
+VBAK,SPSTG,全ブロックステータス (ヘッダ),OB,全BlockSts,全ブロック Sts,全ブロックステータス,All Blocksts,all_blocksts
+VBAK,STAFO,統計更新の更新グループ,更新GP,更新 Group,更新グループ,更新グループ (統計),Update GROUP,update_group
+VBAK,STCEG_L,仕向国,TDC,仕向国,仕向国,仕向国,Declining country,declining_country
+VBAK,STWAE,統計通貨,通貨,統計通貨,統計通貨,統計通貨,Statistical currency,statistical_currency
+VBAK,SUBMI,一括番号 (SD),一括番号,一括番号,一括番号,一括番号,Lump sum number,lump_sum_number
+VBAK,TAXK1,代替税分類,ATCl,代替税分類,代替税分類,代替税分類,Alternative tax classification,alternative_tax_classification
+VBAK,TAXK2,得意先の税分類 2,税 2,得意先税 2,得意先税分類 2,得意先税分類 2,Special tax 2,special_tax_2
+VBAK,TAXK3,得意先税分類 3,税 3,得意先税 3,得意先税分類 3,得意先税分類 3,Special tax 3,special_tax_3
+VBAK,TAXK4,得意先税分類 4,得税4,税クラス 4,得意先税クラス4,得意先税クラス 4,Tax class 4,tax_class_4
+VBAK,TAXK5,得意先の税分類 5,Cs税5,Cust税Cl5,得意先税分類 5,得意先税分類 5,CUST tax CL5,cust_tax_cl5
+VBAK,TAXK6,得意先の税分類 6,Cs税6,Cust税Cl 6,得意先税クラス6,得意先税分類 6,CUST tax CL 6,cust_tax_cl_6
+VBAK,TAXK7,得意先の税分類 7,Cs税7,Cust税Cl7,得意先税分類 7,得意先税分類 7,CUST tax CL7,cust_tax_cl7
+VBAK,TAXK8,得意先の税分類 8,Cs税8,Cust税Cl 8,得意先税分類 8,得意先税分類 8,CUST Tax CL 8,cust_tax_cl_8
+VBAK,TAXK9,得意先の税分類 9,Cs税9,Cust税Cl9,得意先税分類 9,得意先税分類 9,CUST tax CL9,cust_tax_cl9
+VBAK,TELF1,電話番号,電話,電話,電話,電話,phone,phone
+VBAK,TOTAL_DGSTA,危険物ステータス (すべての明細),危険物 Status,危険物 St,危険物ステータス,危険物ステータス,Dangerous goods ST,dangerous_goods_st
+VBAK,TOTAL_EMCST,エンバーゴステータス (全明細),Embargo Status,Emb.Status,エンバーゴステータス,エンバーゴステータス,Emb.status,emb.status
+VBAK,TOTAL_LCCST,法令管理ステータス,法令管理 Status,法令管理,法令管理ステータス,法令管理ステータス,Legal management,legal_management
+VBAK,TOTAL_PCSTA,製品市場性ステータス (すべての明細),製品市場性Stats,製品MarktS,製品市場性ステータス,製品市場性ステータス,Product Markts,product_markts
+VBAK,TOTAL_SDSSTA,安全データシートステータス (すべての明細),安全DataシートS,安全DatShS,安全DataシートStatus,安全データシートステータス,Safety datshs,safety_datshs
+VBAK,TOTAL_SLCST,Watch List Screening ステータス (全明細),WLS ステータス,WLS Sts,Watch List Scrng Sts,Watch List Screening Status,WLS STS,wls_sts
+VBAK,TRSTA,輸送計画ステータス (ヘッダ),TS,輸送計画St,輸送計画 Stat.,輸送計画ステータス,Transport plan,transport_plan
+VBAK,TRVOG,取引グループ,TrG,取引 Group,取引グループ,取引グループ,Trading Group,trading_group
+VBAK,UPD_TMSTMP,UTC タイムスタンプ完全形 (YYYYMMDDhhmmssmmmuuun),タイムスタンプ,Time Stamp,タイムスタンプ,タイムスタンプ,Time STAMP,time_stamp
+VBAK,UVALL,不完全ステータス (ヘッダ),OH,全ヘッダ,全ヘッダ,全ヘッダ,Whole header,whole_header
+VBAK,UVALS,不完全ステータス (すべての明細),AI,全明細,全明細,全明細,Whole details,whole_details
+VBAK,UVFAK,請求不完全ステータス (ヘッダ),BIS,請求-Headr,請求 - ヘッダ,請求 - ヘッダ,Request-Headr,request-headr
+VBAK,UVFAS,請求不完全ステータス (すべての明細),BI,請求 -明細,請求 - 全明細,請求 - 全明細,billing statement,billing_statement
+VBAK,UVK01,得意先リザーブ 1: ヘッダステータス,CR1,HdrRes1,ヘッダリザーブ1,ヘッダリザーブ 1,HDRRES1,hdrres1
+VBAK,UVK02,得意先リザーブ 2: ヘッダステータス,CR2,HdrRes2,ヘッダリザーブ2,ヘッダリザーブ 2,HDRRES2,hdrres2
+VBAK,UVK03,得意先リザーブ 3: ヘッダステータス,CR3,HdrRes3,ヘッダリザーブ3,ヘッダリザーブ 3,HDRRES3,hdrres3
+VBAK,UVK04,得意先リザーブ 4: ヘッダステータス,CR4,HdrRes4,ヘッダリザーブ4,ヘッダリザーブ 4,HDRRES4,hdrres4
+VBAK,UVK05,得意先リザーブ 5: ヘッダステータス,CR5,HdrRes5,ヘッダリザーブ5,ヘッダリザーブ 5,HDRRES5,hdrres5
+VBAK,UVPRS,価格設定不完全ステータス (すべての明細),PI,Prcg 明細,価格設定-全明細,価格設定 - 全明細,PRCG statement,prcg_statement
+VBAK,UVS01,得意先リザーブ 1: 全明細合計,TR1,合計 Res1,合計リザーブ 1,合計リザーブ 1,Total RES1,total_res1
+VBAK,UVS02,得意先リザーブ 2: 全明細合計,TR2,合計 Res2,合計リザーブ 2,合計リザーブ 2,Total RES2,total_res2
+VBAK,UVS03,得意先リザーブ 3: 全明細合計,TR3,合計 Res3,合計リザーブ 3,合計リザーブ 3,Total RES3,total_res3
+VBAK,UVS04,得意先リザーブ 4: 全明細合計,TR4,合計 Res4,合計リザーブ 4,合計リザーブ 4,Total RES4,total_res4
+VBAK,UVS05,得意先リザーブ 5: 全明細合計,TR5,合計 Res5,合計リザーブ 5,合計リザーブ 5,Total RES5,total_res5
+VBAK,UVVLK,出荷不完全ステータス (ヘッダ),DIH,出荷ヘッダ,出荷 - ヘッダ,出荷 - ヘッダ,Shipping header,shipping_header
+VBAK,UVVLS,出荷不完全ステータス (すべての明細),DI,出荷明細,出荷 - 全明細,出荷 - 全明細,Shipment statement,shipment_statement
+VBAK,VBELN,販売伝票,販売伝票,販売伝票,販売伝票,販売伝票,Sales slip,sales_slip
+VBAK,VBELN_GRP,グループマスタ契約番号,Gマスタ契約,マスタ契約,Groupマスタ契約,グループマスタ契約,Master contract,master_contract
+VBAK,VBKLA,リリースおよびトランザクション管理を備えた元システム,元,元,元システム,元システム,Origin,origin
+VBAK,VBKLT,販売管理伝票区分,I,区分,区分,区分,Classification,classification
+VBAK,VBTYP,販売管理伝票カテゴリ,伝票Categ.,伝票Categ.,伝票カテゴリ,販売管理伝票カテゴリ,Section CATEG.,section_categ.
+VBAK,VDATU,指定納期,指定納期,指定納期,指定納期,指定納期,Designated delivery date,designated_delivery_date
+VBAK,VGBEL,参照伝票番号,参照伝票,参照伝票,参照伝票,参照伝票,Reference slip,reference_slip
+VBAK,VGTYP,先行 SD 伝票の伝票カテゴリ,PrCat,SD 伝票Cat,先行伝票 Categ.,先行伝票カテゴリ,SD slip CAT,sd_slip_cat
+VBAK,VKBUR,営業所,SOff.,営業所,営業所,営業所,Sales office,sales_office
+VBAK,VKGRP,営業グループ,SGrp,営業 Group,営業グループ,営業グループ,Sales Group,sales_group
+VBAK,VKORG,販売組織,販組,販売組織,販売組織,販売組織,Sales organization,sales_organization
+VBAK,VPRGR,提案日付タイプ,日付,提案日付,提案日付タイプ,提案日付タイプ,Proposed date,proposed_date
+VBAK,VSBED,出荷条件,SC,出荷条件,出荷条件,出荷条件,Shipping conditions,shipping_conditions
+VBAK,VSNMR_V,販売伝票バージョン番号,バージョン,バージョン,バージョン,バージョン,version,version
+VBAK,VTWEG,流通チャネル,流チ,流通 Chan.,流通チャネル,流通チャネル,Distribution Chan.,distribution_chan.
+VBAK,VZEIT,納入日程の提案時刻 (現地時間: 販売組織参照),納入依頼Tm,納入依頼Tm,納入依頼時刻,納入依頼時刻,Delivery request TM,delivery_request_tm
+VBAK,WAERK,販売伝票通貨,通貨,通貨,伝票通貨,伝票通貨,currency,currency
+VBAK,WBSTK,在庫移動ステータス (すべての明細),GM,在庫移動,在庫移動 Status,在庫移動ステータス,Inventory,inventory
+VBAK,WTYSC_CLM_HDR,請求ヘッダ,請求ヘッダ,Clm ヘッダ,請求ヘッダ,請求ヘッダ,CLM header,clm_header
+VBAK,XBLNR,参照伝票番号,参照,参照,参照,参照,reference,reference
+VBAK,XEGDR,フラグ: EU 内での三角取引,,三角取引,EC 内三角取引,EC 内三角取引,Triangular trading,triangular_trading
+VBAK,ZUONR,割当番号,割当番号,割当番号,割当番号,割当番号,Assignment number,assignment_number
