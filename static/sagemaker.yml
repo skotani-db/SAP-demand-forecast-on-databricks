@@ -6,15 +6,20 @@ Resources:
       RoleName: databricks-cluster-sagemaker-access-role
       Path: "/"
       AssumeRolePolicyDocument:
-        Version: "2012-10-17"
+        Version: 2012-10-17
         Statement:
-          - Effect: "Allow"
+          - Effect: Allow
             Principal:
               Service:
-                - "ec2.amazonaws.com"
-                - "sagemaker.amazonaws.com"
+                - ec2.amazonaws.com
+                - sagemaker.amazonaws.com
+              AWS:
+                - arn:aws:iam::414351767826:role/unity-catalog-prod-UCMasterRole-14S5ZJVKOTYTL
             Action:
-              - "sts:AssumeRole"
+              - sts:AssumeRole
+            Condition:
+              StringEquals:
+                "sts:ExternalId": "<DATABRICKS-ACCOUNT-ID>"
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/AmazonS3FullAccess
         - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess
@@ -22,14 +27,15 @@ Resources:
       Policies:
         - PolicyName: get-role-inline-policy
           PolicyDocument:
-            Version: "2012-10-17"
+            Version: 2012-10-17
             Statement:
               - Effect: Allow
-                Action: iam:GetRole"
+                Action: iam:GetRole
                 Resource: !Sub 'arn:aws:iam::${AWS::AccountId}:role/databricks-cluster-sagemaker-access-role'
+
   ### Instance Profile
   DatabricksClusterSageMakerAccessRoleInstanceProfile:
-    Type: "AWS::IAM::InstanceProfile"
+    Type: AWS::IAM::InstanceProfile
     Properties:
       Path: "/"
       Roles:
@@ -37,9 +43,10 @@ Resources:
 
   ### Create SageMaker Notebook
   SageMakerNotebookInstance:
-    Type: "AWS::SageMaker::NotebookInstance"
+    Type: AWS::SageMaker::NotebookInstance
     Properties:
       NotebookInstanceName: databricks-on-aws-immersion-day
       InstanceType: ml.t3.large
       RoleArn: !GetAtt DatabricksClusterSageMakerAccessRole.Arn
       PlatformIdentifier: notebok-al2-v2
+      VolumeSizeInGB: 30
