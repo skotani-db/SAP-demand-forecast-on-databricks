@@ -265,7 +265,9 @@ cat << EOF > trust-policy.json
     ]
 }
 EOF
-aws iam update-assume-role-policy --role-name databricks-cluster-sagemaker-access-role --policy-document file://trust-policy.json
+aws iam update-assume-role-policy \
+  --role-name databricks-cluster-sagemaker-access-role \
+  --policy-document file://trust-policy.json --output text
 ```
 
 Databricks クラスターにインスタンスプロファイルをアタッチする際に必要な権限をインラインポリシーとして追加します。
@@ -291,7 +293,7 @@ EOF
 aws iam put-role-policy \
   --role-name databricks-cluster-sagemaker-access-role \
   --policy-name get-role-inline-policy \
-  --policy-document file://get-role-inline-policy.json
+  --policy-document file://get-role-inline-policy.json --output text
 ```
 
 Databricks ワークスペースのクロスアカウントロール (\*) に対して、今回作成したロール (`databricks-cluster-sagemaker-access-role`) を渡せる権限を付与します。
@@ -355,33 +357,27 @@ aws iam put-role-policy \
 
 ::alert[クラスターの起動中は裏側の EC2 インスタンスが起動中であり、課金対象となります。不用意な請求を防ぐために、使用していないときはクラスターを停止するように気をつけてください。上記の設定 (Terminate after 120 minutes of inactivity) では、クラスターが120分間アイドル状態となると自動的に停止します。]{type=warning}
 
-## ハンズオン用のノートブックとファイル
+## Databricks ワークスペースにハンズオン用のノートブックをダウンロード
 
-ハンズオン用のノートブックは `201-data-prep.ja.py` です。
-以下のボタンを右クリックしてローカル PC 内に `201-data-prep.ja.py` を保存してください。
-
-:button[201-data-prep.ja.py]{href="/static/02-data-preparation/notebooks/201-data-prep.ja.py" action=download}
-
-また、ハンズオンで用いる CSV ファイルも併せて保存してください。
-
-:button[vbak_mapping.csv]{href="/static/02-data-preparation/notebooks/vbak_mapping.csv" action=download}
-:button[vbap_mapping.csv]{href="/static/02-data-preparation/notebooks/vbap_mapping.csv" action=download}
-
-## Databricks ワークスペースにハンズオン用のノートブックをアップロード
+ハンズオン用のノートブックとファイルは以下の GitHub リポジトリの `assets` ディレクトリに格納されています。
+```
+https://github.com/skotani-db/SAP-demand-forecast-on-databricks.git
+```
 
 1. Databricks ワークスペースの左ペインの「Workspace」をクリックします。
-2. 「Home」を選択した状態で右側にある縦三点リーダーをクリックし、「Import」をクリックします。
-![File import](/static/02-data-preparation/file-import.png)
-3. 以下のモーダル画面が表示されるので、灰色の枠内にダウンロードした `201-data-prep.ja.py`、`vbak_mapping.csv`、`vbap_mapping.csv` をドラッグアンドドロップし、「Import」ボタンをクリックします。
-![Import modal](/static/02-data-preparation/import-modal.png)
+2. 「Repos」を選択し、右側の「Add repo」をクリックします。
 
-無事インポートできたらファイルエクスプローラーに `201-data-prep.ja` のリンクが表示されます。
-そちらのリンクをクリックし、ノートブックを開き、ノートブック内に記載されている手順に沿って進めてください。
+![File import](/static/02-data-preparation/add_repo.png)
+
+3. 以下のモーダル画面が表示されるので、"Git repository URL" に `https://github.com/skotani-db/SAP-demand-forecast-on-databricks.git` と入力し、「Create Repo」ボタンをクリックします。
+
+![Import modal](/static/02-data-preparation/create-repo.png)
+
+無事インポートできたらファイルエクスプローラーにリポジトリ内のファイルが表示されます。
+`assets` ディレクトリをクリックし、`201-data-prep.ja` ノートブックを開き、ノートブック内に記載されている手順に沿って進めてください。
 
 ## 参考文献
 
 - [Set up AWS authentication for SageMaker deployment](https://docs.databricks.com/administration-guide/cloud-configurations/aws/sagemaker.html)
 
 ::alert[ご自身の AWS アカウントを利用している場合、途中でラボを退出すると意図せず課金が継続される可能性があります。中断する場合は [あと片付け](/09-clearnup) の手順に従い、不要なリソースを削除するよう気をつけてください。]{type=warning}
-
-:assetUrl{path="/notebooks.zip" source=s3}

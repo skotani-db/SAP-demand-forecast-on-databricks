@@ -4,23 +4,9 @@ weight: 40
 ---
 
 このラボでは Databricks 上で機械学習モデルの開発を行う手順を解説します。
-`301-eda.ja.py` のノートブックでは、データの理解のための探索的データ分析 (EDA) を行い、`302-machine-learning.ja.py` のノートブックでは、Databricks AutoML を用いて機械学習モデルを開発し、次のダッシュボード開発で用いる予測結果を含んだテーブルを作成します。
+`301-eda.ja` のノートブックでは、データの理解のための探索的データ分析 (EDA) を行い、`302-machine-learning.ja` のノートブックでは、Databricks AutoML を用いて機械学習モデルを開発し、次のダッシュボード開発で用いる予測結果を含んだテーブルを作成します。
 
-以下のボタンを右クリックしてローカル PC 内に `301-eda.ja.py`、`302-machine-learning.ja.py` を保存してください。
-
-:button[301-eda.ja.py]{href="/static/03-machine-learning/notebooks/301-eda.ja.py" action=download}
-:button[302-machine-learning.ja.py]{href="/static/03-machine-learning/notebooks/302-machine-learning.ja.py" action=download}
-
-## Databricks ワークスペースにハンズオン用のノートブックをアップロード
-
-1. Databricks ワークスペースの左ペインの「Workspace」をクリックします。
-2. 「Home」を選択した状態で右側にある縦三点リーダーをクリックし、「Import」をクリックします。
-![File import](/static/02-data-preparation/file-import.png)
-3. 以下のモーダル画面が表示されるので、灰色の枠内にダウンロードした `301-eda.ja.py`、`302-machine-learning.ja.py` をドラッグアンドドロップし、「Import」ボタンをクリックします。
-![Import modal](/static/02-data-preparation/import-modal.png)
-
-無事インポートできたらファイルエクスプローラーにノートブックを開くためのリンクが表示されます。
-まずは、`301-eda.ja.py` のリンクをクリックし、ノートブックを開き、ノートブック内に記載されている手順に沿って進めてください。
+[Lab 2: Databricks におけるデータ準備](/02-data-preparation) の事前準備でダウンロードしたノートブックのうち、`301-eda.ja` のリンクをクリックし、ノートブックを開き、ノートブック内に記載されている手順に沿って進めてください。
 
 ------------
 
@@ -32,6 +18,12 @@ weight: 40
 
 ラボ3の後半では、Databricks 上で開発した機械学習モデルを Amazon SageMaker の推論エンドポイントとしてデプロイする手順を解説します。
 その際に、推論用コンテナをビルドする必要があります。
+
+::::tabs{variant="container"}
+:::tab{id="handson" label="ハンズオン用 AWS アカウントを利用する場合"}
+講師からハンズオン用に払い出された AWS アカウントを利用する場合はすでに SageMaker ノートブックインスタンスを作成済みのため、この手順は必要ありません。
+:::
+:::tab{id="byoa" label="ご自身の AWS アカウントを利用する場合"}
 手元に Docker 構築環境がない場合は、あらかじめ以下のコマンドで SageMaker ノートブックインスタンスを作成しておいてください。
 
 ```bash:
@@ -44,6 +36,9 @@ aws sagemaker create-notebook-instance \
   --region us-east-1 \
   --platform-identifier notebook-al2-v2 
 ```
+:::
+::::
+
 
 ::alert[SageMaker ノートブックインスタンスが起動している間は課金対象となります。必要がなくなったら [あと片付け](/09-cleanup) の手順を参考にリソースを削除してください。]{type=warning}
 
