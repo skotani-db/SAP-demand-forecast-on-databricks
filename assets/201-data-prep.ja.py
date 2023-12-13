@@ -69,7 +69,7 @@
 # MAGIC %sql
 # MAGIC -- ボリュームの作成
 # MAGIC CREATE EXTERNAL VOLUME main.sap_seminar.sap_data
-# MAGIC LOCATION "s3://675409449903-appflowodata-20230928";
+# MAGIC LOCATION "s3://675409449903-appflowodata-20230928"; --  変更する
 
 # COMMAND ----------
 
