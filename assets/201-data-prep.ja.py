@@ -16,7 +16,7 @@
 # MAGIC ### (推奨) Unity Catalog の外部ロケーション/Volumeを用いる 
 # MAGIC Instance Profileはクラスターごとにアタッチする必要があり、 IAMロールでの権限管理になるため、Databricks の権限モデルから逸脱したアクセスコントロールになることが課題でした。複数のS3バケットへのアクセスを Instance Profileによって管理している場合、権限の変更が生じた際に直接 IAM Role を変更してなくてはならず運用が複雑化します。
 # MAGIC
-# MAGIC そこで、Unity Catalogで外部ロケーション/Volumeを用いることで、 事前に登録したS3バケットへのアクセスコントロールを Unity Catalog の権限モデル体系で管理できる様になります。あるS3バケットをユーザーにアクセスできなくしたい場合、 IAM Role を直接編集するのではなく、 Unity Catalog 側で権限を剥奪すれば良いのです。
+# MAGIC そこで、Unity Catalogで外部ロケーション+Volumeを用いることで、 事前に登録したS3バケットへのアクセスコントロールを Unity Catalog の権限モデル体系で管理できる様になります。あるS3バケットをユーザーにアクセスできなくしたい場合、 IAM Role を直接編集するのではなく、 Unity Catalog 側で権限を剥奪すれば良いのです。
 
 # COMMAND ----------
 

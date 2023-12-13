@@ -14,7 +14,7 @@
 # MAGIC SELECT
 # MAGIC   *
 # MAGIC FROM
-# MAGIC   sales_record_silver;
+# MAGIC   dlt_sales_record_silver;
 
 # COMMAND ----------
 
@@ -31,7 +31,7 @@
 # MAGIC   SUM(Price),
 # MAGIC   COUNT(1)
 # MAGIC FROM
-# MAGIC   sales_record_silver
+# MAGIC   dlt_sales_record_silver
 # MAGIC GROUP BY
 # MAGIC   ItemGroup;
 
@@ -53,7 +53,7 @@
 # MAGIC   *,
 # MAGIC   date_format(RegisteredDate, 'yyyyMM') YearMonth
 # MAGIC FROM
-# MAGIC   sales_record_silver
+# MAGIC   dlt_sales_record_silver
 # MAGIC WHERE
 # MAGIC   ItemGroup in ("ZYOUTH", "ZCRUISE", "ZRACING", "ZMTN");
 
@@ -83,7 +83,7 @@
 # MAGIC       date_format(RegisteredDate, 'yyyy-MM-01') YearMonth,
 # MAGIC       Price
 # MAGIC     FROM
-# MAGIC       sales_record_silver
+# MAGIC       dlt_sales_record_silver
 # MAGIC     WHERE
 # MAGIC       ItemGroup in ("ZYOUTH", "ZCRUISE", "ZRACING", "ZMTN")
 # MAGIC   ) item_extracted
