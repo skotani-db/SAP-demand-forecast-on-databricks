@@ -5,7 +5,7 @@
 # MAGIC * Unity Catalog の外部ロケーション/Volumeを用いる (推奨)
 # MAGIC * Instance Profile をクラスターにアタッチし、 S3 バケットを DBFS へマウントする
 # MAGIC * Credential Paththrough によるアクセス
-# MAGIC * Access Key 認証によるアクセス
+# MAGIC * Access Key 認証
 # MAGIC
 # MAGIC 今回は S3バケット　`<AWSAccountID>-appflowodata-<YYYYMMDD>` を Unity Catalogの外部ボリュームとして登録し、ファイルとして格納されている SAP データへアクセスします。
 # MAGIC 一方で、事前準備で S3 フルアクセスの権限を持ったインスタンスプロファイルをクラスターにアタッチ済みです。このまま、DBFS (Databricks File System) にデータ抽出を行った S3 バケットをマウントしアクセスすることも可能です。事前準備セクションでセルフペースを選択し、Unity Catalogのセットアップを行っていない場合、こちらのオプションでデータニアクセスします。
