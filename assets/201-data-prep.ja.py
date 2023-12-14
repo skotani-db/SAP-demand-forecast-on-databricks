@@ -5,7 +5,7 @@
 # MAGIC * Unity Catalog の外部ロケーション/Volumeを用いる (推奨)
 # MAGIC * Instance Profile をクラスターにアタッチし、 S3 バケットを DBFS へマウントする
 # MAGIC * Credential Paththrough によるアクセス
-# MAGIC * Access Key 認証
+# MAGIC * Access Key 認証によるアクセス
 # MAGIC
 # MAGIC 今回は S3バケット　`<AWSAccountID>-appflowodata-<YYYYMMDD>` を Unity Catalogの外部ボリュームとして登録し、ファイルとして格納されている SAP データへアクセスします。
 # MAGIC 一方で、事前準備で S3 フルアクセスの権限を持ったインスタンスプロファイルをクラスターにアタッチ済みです。このまま、DBFS (Databricks File System) にデータ抽出を行った S3 バケットをマウントしアクセスすることも可能です。事前準備セクションでセルフペースを選択し、Unity Catalogのセットアップを行っていない場合、こちらのオプションでデータニアクセスします。
@@ -16,13 +16,20 @@
 # MAGIC ### (推奨) Unity Catalog の外部ロケーション/Volumeを用いる 
 # MAGIC Instance Profileはクラスターごとにアタッチする必要があり、 IAMロールでの権限管理になるため、Databricks の権限モデルから逸脱したアクセスコントロールになることが課題でした。複数のS3バケットへのアクセスを Instance Profileによって管理している場合、権限の変更が生じた際に直接 IAM Role を変更してなくてはならず運用が複雑化します。
 # MAGIC
-# MAGIC そこで、Unity Catalogで外部ロケーション+Volumeを用いることで、 事前に登録したS3バケットへのアクセスコントロールを Unity Catalog の権限モデル体系で管理できる様になります。あるS3バケットをユーザーにアクセスできなくしたい場合、 IAM Role を直接編集するのではなく、 Unity Catalog 側で権限を剥奪すれば良いのです。
+# MAGIC そこで、Unity Catalogで外部ロケーション/Volumeを用いることで、 事前に登録したS3バケットへのアクセスコントロールを Unity Catalog の権限モデル体系で管理できる様になります。あるS3バケットをユーザーにアクセスできなくしたい場合、 IAM Role を直接編集するのではなく、 Unity Catalog 側で権限を剥奪すれば良いのです。
+# MAGIC
+# MAGIC 左ペインから **Catalog** を選択し、ワークスペース名が含まれるカタログ名 (例: `workshop_2998024384562747`) をコピーして以下のセルを書き換えてください。
+
+# COMMAND ----------
+
+catalog_name = "workshop_2998024384562747"  # 書き換える
+spark.conf.set("var.catalog_name", catalog_name)
 
 # COMMAND ----------
 
 # MAGIC %sql
 # MAGIC -- カタログとスキーマの設定
-# MAGIC USE CATALOG main;
+# MAGIC USE CATALOG ${var.catalog_name};
 # MAGIC CREATE SCHEMA IF NOT EXISTS sap_seminar;
 # MAGIC USE SCHEMA sap_seminar;
 
@@ -36,10 +43,10 @@
 # MAGIC 以下はストレージ認証情報を登録するためのステップです。
 # MAGIC
 # MAGIC 1. 左ペインから **Catalog** を選択します
-# MAGIC 1. **Catalog Explorer** が表示されます。左下のメニュー **Storage Credential** を選択します
+# MAGIC 1. **Catalog Explorer** が表示されます。左下のメニュー **External Data** を開き、**Storage Credential** を選択します
 # MAGIC 1. **Create Credential** を選択します
 # MAGIC 1. **Copy from Instance Profile** を選択し、 **databricks-cluster-sagemaker-acess-role** を選択します。
-# MAGIC 1. **databricks-cluster-sagemaker-acess-role** のIAM Role ARNを入力し、**Create** を選択します
+# MAGIC 1. **databricks-cluster-sagemaker-acess-role** のIAM Role ARN (`arn:aws:iam::<AWS Account ID>:role/databricks-cluster-sagemaker-access-role`) を入力し、**Create** を選択します
 
 # COMMAND ----------
 
@@ -53,9 +60,9 @@
 # MAGIC 以下は外部ロケーションを登録するためのステップです。
 # MAGIC
 # MAGIC 1. 左ペインから **Catalog** を選択します
-# MAGIC 1. **Catalog Explorer** が表示されます。左下のメニュー **External Locations** を選択します
+# MAGIC 1. **Catalog Explorer** が表示されます。左下のメニュー **External Data** を開き、**External Locations** を選択します
 # MAGIC 1. **Create Location** を選択します
-# MAGIC 1. **Manual** を選択し、 **External Location name** には**sap-data**を指定し、**Storage credential**には前のステップで作成したものをプルダウンから選択し、**URL**にはデータ抽出先として指定した S3 バケットの名前 (`s3://111122223333-appflowodata-20230808` のような形式) を入力します。
+# MAGIC 1. **Manual** を選択し、 **External Location name** には**sap-data**を指定し、**Storage credential**には前のステップで作成した `databricks-cluster-sagemaker-access-role` をプルダウンから選択し、**URL**にはデータ抽出先として指定した S3 バケットの名前 (`s3://111122223333-appflowodata-20230808` のような形式) を入力します。
 # MAGIC 1. **Create** を選択します
 
 # COMMAND ----------
@@ -68,8 +75,8 @@
 
 # MAGIC %sql
 # MAGIC -- ボリュームの作成
-# MAGIC CREATE EXTERNAL VOLUME main.sap_seminar.sap_data
-# MAGIC LOCATION "s3://675409449903-appflowodata-20230928"; --  変更する
+# MAGIC CREATE EXTERNAL VOLUME ${var.catalog_name}.sap_seminar.sap_data
+# MAGIC LOCATION "s3://501563350435-appflowodata-20231213";  -- 書き換える
 
 # COMMAND ----------
 
@@ -128,7 +135,7 @@
 
 ## データパス
 # Volumeの場合
-path = "/Volumes/main/sap_seminar/sap_data"
+path = f"/Volumes/{catalog_name}/sap_seminar/sap_data"
 # Instance Profileの場合
 # path = f"/mnt/{mount_name}"
 
@@ -198,7 +205,7 @@ user_name = spark.sql("SELECT current_user()").collect()[0][0]
     spark.read.format("csv")
     .option("header", True)
     .load(
-        f"file:/Workspace/Users/{user_name}/vbak_mapping.csv"
+        f"file:/Workspace/Repos/{user_name}/SAP-demand-forecast-on-databricks/assets/vbak_mapping.csv"
     )
     .createOrReplaceTempView("vbak_mapping")
 )
@@ -208,7 +215,7 @@ user_name = spark.sql("SELECT current_user()").collect()[0][0]
     spark.read.format("csv")
     .option("header", True)
     .load(
-        f"file:/Workspace/Users/{user_name}/vbap_mapping.csv"
+        f"file:/Workspace/Repos/{user_name}/SAP-demand-forecast-on-databricks/assets/vbap_mapping.csv"
     )
     .createOrReplaceTempView("vbap_mapping")
 )

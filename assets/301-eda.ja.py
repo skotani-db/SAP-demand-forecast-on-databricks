@@ -1,6 +1,23 @@
 # Databricks notebook source
 # MAGIC %md
 # MAGIC # Databricks 上での探索的データ分析 (Exploratory Data Analysis; EDA)
+# MAGIC
+
+# COMMAND ----------
+
+catalog_name = "workshop_2998024384562747"  # 書き換える
+spark.conf.set("var.catalog_name", catalog_name)
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC USE CATALOG ${var.catalog_name};
+# MAGIC CREATE SCHEMA IF NOT EXISTS sap_seminar;
+# MAGIC USE SCHEMA sap_seminar;
+
+# COMMAND ----------
+
+# MAGIC %md
 # MAGIC ## Step 1: 基礎分析を行う
 # MAGIC
 # MAGIC まずは基礎的な統計情報を確認してみましょう。
@@ -18,7 +35,7 @@
 # MAGIC SELECT
 # MAGIC   *
 # MAGIC FROM
-# MAGIC   dlt_sales_record_silver;
+# MAGIC   sales_record_silver;
 
 # COMMAND ----------
 
@@ -35,7 +52,7 @@
 # MAGIC   SUM(Price),
 # MAGIC   COUNT(1)
 # MAGIC FROM
-# MAGIC   dlt_sales_record_silver
+# MAGIC   sales_record_silver
 # MAGIC GROUP BY
 # MAGIC   ItemGroup;
 
@@ -57,7 +74,7 @@
 # MAGIC   *,
 # MAGIC   date_format(RegisteredDate, 'yyyyMM') YearMonth
 # MAGIC FROM
-# MAGIC   dlt_sales_record_silver
+# MAGIC   sales_record_silver
 # MAGIC WHERE
 # MAGIC   ItemGroup in ("ZYOUTH", "ZCRUISE", "ZRACING", "ZMTN");
 
@@ -87,7 +104,7 @@
 # MAGIC       date_format(RegisteredDate, 'yyyy-MM-01') YearMonth,
 # MAGIC       Price
 # MAGIC     FROM
-# MAGIC       dlt_sales_record_silver
+# MAGIC       sales_record_silver
 # MAGIC     WHERE
 # MAGIC       ItemGroup in ("ZYOUTH", "ZCRUISE", "ZRACING", "ZMTN")
 # MAGIC   ) item_extracted
@@ -137,7 +154,7 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC これで機械学習モデル開発用のテーブルの準備は完了です。`302-machine-learning.ja.py` に進んでください。
+# MAGIC これで機械学習モデル開発用のテーブルの準備は完了です。`302-machine-learning.ja` に進んでください。
 
 # COMMAND ----------
 

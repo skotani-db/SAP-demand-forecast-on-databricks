@@ -1,11 +1,11 @@
 ---
-title: "Option 2: Databricks パートナーアカウント等をお持ちの場合"
+title: "2. (Option 2) Databricks クイックスタートを選択できない場合"
 weight: 12
 ---
 
 ::alert[本ワークショップを実行するには Databricks の管理者アカウントおよび AWS アカウントの管理者権限が必要です。Databricks の管理者アカウントをお持ちでない場合は[Option 1: クイックスタート](/00-prerequisites/option1-quickstart)のラボに進んでください。]{type=warning}
 
-::alert[このラボは、Databricks のパートナーアカウントなどを利用されており、ワークスペース作成時にクイックスタートのオプションを選択できない方を対象としています。通常のアカウントをお持ちの方は[Option 1: クイックスタート](/00-prerequisites/option1-quickstart)のラボに進んでください。]{type=warning}
+::alert[このラボは、Databricks のアカウントの制約上、ワークスペース作成時にクイックスタートのオプションを選択できない方を対象としています。通常のアカウントをお持ちの方は[Option 1: クイックスタート](/00-prerequisites/option1-quickstart)のラボに進んでください。]{type=warning}
 
 ### Databricks ワークスペースをデプロイするための IAM ロールを作成
 

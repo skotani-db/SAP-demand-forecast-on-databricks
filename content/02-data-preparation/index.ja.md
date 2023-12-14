@@ -20,7 +20,7 @@ Databricks on AWS のクラスターの実態は Amazon EC2 インスタンス�
 ワークショップ用に払い出された AWS アカウントを利用する場合、あらかじめ AWS CloudFormation を用いて IAM 関連のリソースが作成されています。
 一部、Databricks のアカウント ID や、Databricks のクイックスタートにより作成されたクロスアカウントロールの設定を追加で行う必要があります。
 
-<DATABRICKS-ACCOUNT-ID と書いてある部分を>
+以下の CLI コマンドをコピーし、AWS CloudShell に貼り付けて実行してください。
 
 ```bash:
 # Databricks クイックスタートの CloudFormation スタックで作成されたリソースとパラメータを取得
@@ -339,8 +339,12 @@ aws iam put-role-policy \
 
 1. Databricks ワークスペースにログインし、右上のユーザー名からメニューを開き、「Admin Settings」をクリックします。
 ![Open Databricks Admin Settings](/static/02-data-preparation/admin-settings.png)
-2. 「Instance profiles」タブの「Add instance profile」ボタンをクリックします。
-3. 「Instance profile ARN」に、先ほど作成したインスタンスプロファイルの ARN (`arn:aws:iam::<!!!your-aws-account-id!!!>:instance-profile/databricks-cluster-sagemaker-access-role`) を入力し、他は空のままにして「Add」ボタンをクリックします。
+<!--2. 「Instance profiles」タブの「Add instance profile」ボタンをクリックします。-->
+2. 「Security」メニューの「Instance profiles」欄の「Manage」ボタンをクリックします。
+3. 右側の「Add instance profile」ボタンをクリックします。
+3. 「Instance profile ARN」に、先ほどセットアップしたインスタンスプロファイルの ARN (`arn:aws:iam::<!!!your-aws-account-id!!!>:instance-profile/databricks-cluster-sagemaker-access-role`) を入力し、他は空のままにして「Add」ボタンをクリックします。
+
+10秒ほど待つとインスタンスプロファイルがワークスペースに登録されます。
 
 ### Databricks クラスターの作成
 
@@ -351,7 +355,11 @@ aws iam put-role-policy \
 2. 「All-purpose compute」タブの「Create compute」ボタンをクリックします。
 3. 以下のスクリーンショットを参考に設定し、「Create cluster」ボタンをクリックします。なお、ここでは「Single node」モードを選択し、「Databricks runtime version」は「**Runtime: 13.3 LTS ML (Scala 2.12, Spark 3.4.1)**」を選択し、「Use Photon Acceleration」チェックボックスを外し、「Instance Profile」には「databricks-cluster-sagemaker-access-role」を選択します。
 
+::alert[ランタイムには Standard と ML の2種類がありますが **必ず ML を選んでください**。ML を選ばないとこの先の AutoML や Mlflow を扱うセクションが実行できなくなります。]{type=warning}
+
 ![New compute settings](/static/02-data-preparation/create-cluster.png)
+
+数分まつとクラスターが立ち上がります。
 
 ::alert[今回は「Single node」モードを選択しましたが、「Multi node」モードを選択すると複数のインスタンスで分散処理し、かつ負荷に応じてオートスケールさせる設定を簡単に行うことができます。]{type=info}
 

@@ -7,12 +7,12 @@
 # MAGIC Auto ML は、「Machine Learning (機械学習)」メニュースペースで利用できます。<br>
 # MAGIC (左ペインの Machine Learning セクションの下にある Experiments を選択してください。)
 # MAGIC
-# MAGIC 「Create AutoML Experiment」ボタンをクリックして新規に Auto-ML 実験を開始し、先ほど作成した特徴量テーブル(`default.sales_history`) を選択するだけで自動的にモデルが学習されます。
+# MAGIC 「Create AutoML Experiment」ボタンをクリックして新規に Auto-ML 実験を開始し、先ほど作成した特徴量テーブル(例: `workshop_2998024384562747.sap_seminar.sales_history`) を選択するだけで自動的にモデルが学習されます。
 # MAGIC
 # MAGIC ML Problem type は、今回は `Forcasting` です。 \
 # MAGIC prediction target は `Price` カラムです。 \
 # MAGIC Time column は `YearMonth` カラムです。 \
-# MAGIC Output Database は `default` です。 
+# MAGIC Output Database は `workshop_2998024384562747.sap_seminar` です。 
 # MAGIC
 # MAGIC Forecast horizon and frequency (予測対象の期間)は `2` ヶ月とします
 # MAGIC
@@ -98,14 +98,26 @@
 
 # COMMAND ----------
 
+catalog_name = "workshop_2998024384562747"  # 書き換える
+spark.conf.set("var.catalog_name", catalog_name)
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC USE CATALOG ${var.catalog_name};
+# MAGIC CREATE SCHEMA IF NOT EXISTS sap_seminar;
+# MAGIC USE SCHEMA sap_seminar;
+
+# COMMAND ----------
+
 # 予測テーブルの特定
 forecast_table_name = (
                         spark
                         .sql("SHOW TABLES")
                         .filter("tableName like 'forecast_prediction_%'")
                         .select("tableName")
-                        .collect()[0][0]
-                        )
+                        .collect()
+                        )[0][0]
 
 display(forecast_table_name)
 

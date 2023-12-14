@@ -19,8 +19,8 @@ account_id = boto3.client("sts").get_caller_identity().get("Account")
 
 # リージョン名は必要に応じて変更
 region = "us-east-1"
-# Model Registry に登録したモデル名に書き換えてください！
-model_uri = "models:/sales-predict/1"
+# ！！！Model Registry に登録したモデル名に書き換えてください！！！
+model_uri = "models:/kazmot-sales-predict/1"
 # mlflow sagemaker build-and-push-container コマンドで作成したコンテナイメージ
 image_ecr_url = f"{account_id}.dkr.ecr.{region}.amazonaws.com/mlflow-pyfunc:2.5.0"
 

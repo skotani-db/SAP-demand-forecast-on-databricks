@@ -13,6 +13,10 @@ Resources:
               Service:
                 - ec2.amazonaws.com
                 - sagemaker.amazonaws.com
+            Action:
+              - sts:AssumeRole
+          - Effect: Allow
+            Principal:
               AWS:
                 - arn:aws:iam::414351767826:role/unity-catalog-prod-UCMasterRole-14S5ZJVKOTYTL
             Action:
@@ -37,6 +41,7 @@ Resources:
   DatabricksClusterSageMakerAccessRoleInstanceProfile:
     Type: AWS::IAM::InstanceProfile
     Properties:
+      InstanceProfileName: databricks-cluster-sagemaker-access-role
       Path: "/"
       Roles:
         - !Ref DatabricksClusterSageMakerAccessRole
@@ -48,5 +53,5 @@ Resources:
       NotebookInstanceName: databricks-on-aws-immersion-day
       InstanceType: ml.t3.large
       RoleArn: !GetAtt DatabricksClusterSageMakerAccessRole.Arn
-      PlatformIdentifier: notebok-al2-v2
+      PlatformIdentifier: notebook-al2-v2
       VolumeSizeInGB: 30
