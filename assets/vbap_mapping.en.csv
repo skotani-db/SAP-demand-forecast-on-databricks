@@ -1,0 +1,382 @@
+table,original_column,Content,header,column_text,medium_label,long_label,translated_column,column_for_analysis
+VBAP,ABDAT,Matching date for agreed cumulative delivery quantity,Matching reference date,Matching reference date,Matching reference date,Matching reference date,Loading...,none
+VBAP,ABFOR,Payment guarantee form,payment,Warranty type,Payment guarantee form,Payment guarantee form,Loading...,none
+VBAP,ABGES,Guaranteed (coefficient between 0 and 1),G,guarantee,guarantee,guarantee,Loading...,none
+VBAP,ABGRS,Results Analysis Key,RA Key,RA Key,Results Analysis Key,Results Analysis Key,Loading...,none
+VBAP,ABGRU,Reasons for rejecting sales documents,Refusal,Reason for refusal,Reason for refusal,Reason for refusal,Loading...,none
+VBAP,ABLFZ,Rounding amount: Shipment,Rounding amount,Rounding amount,Rounding amount,Rounding amount,Loading...,none
+VBAP,ABSFZ,Quantity deviation tolerance (absolute value),DQty,Absolute deviation,Absolute deviation,Absolute deviation,Loading...,none
+VBAP,ABSTA,Rejected Status (Item),Rejection Status,RejectedStatus,Rejection Status,Rejection Status,Loading...,none
+VBAP,AD01PROFNR,Dynamic Item Processor Profile,Profile,Profile,DIP Profile,DIP Profile,Loading...,none
+VBAP,ADACN,Aircraft registration number,Aircraft registration number,Aircraft No.,Aircraft registration number,Aircraft registration number,Loading...,none
+VBAP,ADDNS,Non-substitutable,Non-substitutable,DNS,Non-substitutable,Non-substitutable,Loading...,none
+VBAP,ADICC,Interchangeability Code,Interchangeability Code,Exchange Code,Interchangeability Code,Interchangeability Code,Loading...,none
+VBAP,ADMOI,Model ID Code,Model ID Code,Mod.ID Cd.,Model ID Code,Model ID Code,Loading...,none
+VBAP,ADPRI,Order Priority,Order Priority,priority,Order Priority,Order Priority,Loading...,none
+VBAP,AEDAT,Last Modified Date,Date of change,change,Date of change,Date of change,Loading...,none
+VBAP,ANTLF,Maximum number of partial deliveries for a line item,PD,Maximum number of partial deliveries,Maximum number of installment deliveries,Maximum number of installment deliveries,Loading...,none
+VBAP,ANZSN,Serial Number Number,NoSNo.,Serial Number,Serial Number Number,Serial Number Number,Loading...,none
+VBAP,APLZL_OAA,Internal Counter,counter,counter,counter,counter,Loading...,none
+VBAP,APLZL_OLC,Internal Counter,counter,counter,counter,counter,Loading...,none
+VBAP,ARKTX,Sales order item short text,Detail Text,text,Detail Text,Detail Text,Loading...,none
+VBAP,ARSNUM,Reservation/dependent requirement number,Scheduled In/Out Number,Reservation number,Scheduled arrival and departure,Scheduled arrival and departure,Loading...,none
+VBAP,ARSPOS,Reservation/dependent requirement item number,Reservation Item Number,Item number,Item number,Reservation Item Number,Loading...,none
+VBAP,ARUN_GROUP_PRIO,Distribution Run Demand Group Priority,Demand Priority,demand,Demand Priority,Demand Priority,Loading...,none
+VBAP,ASSIGNMENT_PRIORITY,Allocation Demand Priority,Demand Priority,demand,Demand Priority,Demand Priority,Loading...,none
+VBAP,ATPKZ,Replacement parts,R,Replacement,Replacement parts,Replacement parts,Loading...,none
+VBAP,ATP_ABC_SUBSTITUTION_STATUS,Alternative Status for Alternative Criteria Check (ABC),Alternative Status,Alternative Status,Alternative Status,Alternative Status,Loading...,none
+VBAP,AUART_ANA,Sales Document Type,Sales,Sales slip Ty,Sales Document Type,Sales Document Type,Loading...,none
+VBAP,AUDAT_ANA,Document Date (Received/Sent),Document Date,Document Date,Document Date,Document Date,Loading...,none
+VBAP,AUFNR,Order Number,Instructions,Instructions,Instructions,Instructions,Loading...,none
+VBAP,AUFPL_OAA,Routing number of the operation in the order,Operation procedure number,Plan Number,Workplan Number,Work Task List Number,Loading...,none
+VBAP,AUFPL_OLC,Routing number of the operation in the order,Operation procedure number,Plan Number,Workplan Number,Work Task List Number,Loading...,none
+VBAP,AUGRU_ANA,Reason for order (reason for transaction),reason,Reason for order,Reason for order,Reason for order,Loading...,none
+VBAP,AWAHR,Orderability of a line,Prb,Availability,Availability,Availability,Loading...,none
+VBAP,BEDAE,Requirement Type,RqTy,type,Requirement Type,Requirement Type,Loading...,none
+VBAP,BERID,MRP Area,MRP Area,MRP Area,MRP Area,MRP Area,Loading...,none
+VBAP,BESTA,Shipment Confirmation Status (Item),CS,Shipping confirmation,Shipment Confirmation Status,Ship Confirmation Status,Loading...,none
+VBAP,BONUS,Volume Rebate Group,VRG,Rebate Gp,Trading VolumeRebateGroup,Volume Rebate Group,Loading...,none
+VBAP,BRGEW,Total weight of the item,gross weight,gross weight,gross weight,gross weight,Loading...,none
+VBAP,BSTKD_ANA,Customer Reference,Customer Reference,Customer Reference,Customer Reference,Customer Reference,Loading...,none
+VBAP,BUDGET_PD,Budget Period,Budget Period,BP,Budget Period,Budget Period,Loading...,none
+VBAP,BWTAR,Evaluation Type,Evaluation Type,Evaluation Type,Evaluation Type,Evaluation Type,Loading...,none
+VBAP,BWTEX,Split Valuation Category,V,Split Valuation,Split Valuation,Split Valuation,Loading...,none
+VBAP,BZIRK_ANA,Sales area,region,Sales area,Sales area,Sales area,Loading...,none
+VBAP,CAPPED_NET_AMOUNT,Net amount limit,Net amount limit,Net amount limit,Net amount limit,Net amount limit,Loading...,none
+VBAP,CAPPED_NET_AMOUNT_ALERT_THLD,Exceeded Net Limit Notification Threshold (Percentage),Upper Notification Threshold,threshold,Upper Notification Threshold,Upper Notification Threshold,Loading...,none
+VBAP,CATS_OVERTIME_CATEGORY,Overtime Category,Overtime Category,Overtime,Overtime Category,Overtime Category,Loading...,none
+VBAP,CEPOK,Status Estimated Price,CEP,Estimated Price,Estimated Price,Estimated Price,Loading...,none
+VBAP,CHARG,Lot number,lot,lot,lot,lot,Loading...,none
+VBAP,CHMVS,Lot: Quantity proposal end,QP,Quantity proposal,Quantity proposal,Quantity proposal,Loading...,none
+VBAP,CHSPL,Lot split possible,B.S.,Lot Split,Lot Split,Lot split possible,Loading...,none
+VBAP,CLINT,Internal Class Number,Inner Classes,Inner Classes,Internal Class Number,Internal Class Number,Loading...,none
+VBAP,CMKUA,Credit data exchange rate for requested delivery date,exchange rate,exchange rate,exchange rate,Credit Data Conversion Rate,Loading...,none
+VBAP,CMPNT,Item activation indicator for credit management functions,Credit Valid,valid,Credit Valid,Credit function enabled,Loading...,none
+VBAP,CMPPI,Financial Document Credit Limit Check Status,DocC,Docu.Cred.,Document. Credit,Documentary Credit,Loading...,none
+VBAP,CMPPJ,Export Credit Insurance Credit Limit Check Status,ECI,ExptCredIn,Export Credit Insurance,Export Credit Insurance,Loading...,none
+VBAP,CMPRE,Line Credit Price,Credit Price,price,Credit Price,Credit Price,Loading...,none
+VBAP,CMPRE_FLT,Line Credit Price,Credit Price,Credit Price,Credit Price,Credit Price,Loading...,none
+VBAP,CMTD_DELIV_CREADATE,Delivery registration date to meet confirmed delivery date,Cmtd Delivery Cr. Date,Confirmed delivery CD,Confirmed delivery registration date,Confirmed delivery registration date,Loading...,none
+VBAP,CMTD_DELIV_DATE,Supplier confirmed delivery date,Confirmed Delivery Date,C. Delivery Date,Confirmed Delivery Date,Confirmed Delivery Date,Loading...,none
+VBAP,CMTD_DELIV_QTY_SU,Confirmed delivery quantity for sales unit,Confirmed Delivery Quantity,C. Delivery quantity,Confirmed Delivery Quantity,Confirmed delivery quantity for sales unit,Loading...,none
+VBAP,CMTFG,"Identification for partial approval of purchase order line, credit block",R,Approval,Partial Approval,Partial Approval,Loading...,none
+VBAP,COSTA,ALE confirmation status,Cost,ConfStatus,Verification Status,Verification Status,Loading...,none
+VBAP,CPD_UPDAT,Time stamp,Time stamp,time,Time stamp,Time stamp,Loading...,none
+VBAP,CUOBJ,System setting,Analysis target number,setting,setting,setting,Loading...,none
+VBAP,CUOBJ_CH,Internal object number of the batch classification,Object number,Internal Obj No.,Internal Object Number,Internal Object Number,Loading...,none
+VBAP,DCSTA,Delay Status (Item),De,Delay Status,Delay Status,Delay Status,Loading...,none
+VBAP,DELIVERY_DATE_TYPE_RULE,Delivery Date Rules,Delivery Date Rule,Delivery Date Rule,Delivery Date Rules,Delivery Date Rules,Loading...,none
+VBAP,DGSTA,Hazardous materials status (item),Dangerous Goods Status,Dangerous Goods St,Dangerous Goods Status,Dangerous Goods Status,Loading...,none
+VBAP,DP_CLEAR_STA_ITM,Advance Status,Advance Payment Status,Advance payment Sts,Advance Payment Status,Advance Payment Status,Loading...,none
+VBAP,DUMMY_SLSDOCITEM_INCL_EEW_PS,Dummy function of length 1,,,,,#VALUE!,none
+VBAP,EAN11,International Product Code (EAN/UPC),EAN/UPC,EAN/UPC,EAN/UPC,EAN/UPC,Loading...,none
+VBAP,EANNR,European Article Number (EAN) - invalid,EAN number,EAN number,EAN number,EAN number,Loading...,none
+VBAP,EMCST,Embargo Status (Item),Embargo Status,Emb.Status,Embargo Status,Embargo Status,Loading...,none
+VBAP,EQART,Technology Object Type,Target Type,Target Type,Technology Object Type,Technology Object Type,Loading...,none
+VBAP,EQUNR,Equipment Number,Facility,Facility,Facility,Facility,Loading...,none
+VBAP,ERDAT,The date the record was created,Registration Date,Registration,Registration Date,Registration Date,Loading...,none
+VBAP,ERLRE,Completion rules for quotes/contracts,ComRl,Completion Rules,Completion Rules,Completion Rules,Loading...,none
+VBAP,ERNAM,Object Registrant Name,Registered person,Registered person,Registered person,Registered person,Loading...,none
+VBAP,ERZET,Registration time,time,time,time,time,Loading...,none
+VBAP,EXART,Transaction Type,Transaction Type,Transaction Type,Transaction Type,Transaction Type,Loading...,none
+VBAP,EXT_REF_ITEM_ID,External Item ID,External Line ID,External Line ID,External Item ID,External Item ID,Loading...,none
+VBAP,FABSG,Incoming delivery schedule header indicator,JIT delivery schedule EDI stop/information classification,JDSEDI Ind,JITDSchdEDI Ind,JIT delivery schedule EDI stop/information classification,Loading...,none
+VBAP,FAKSP,Blocking Items for Billing,B.B.,Billing Block,Billing Block,Billing Block,Loading...,none
+VBAP,FISTL,Budget Center,Budget Center,Budget Center,Budget Center,Budget Center,Loading...,none
+VBAP,FIXMG,Fixed delivery date and quantity,Fix,Fixed delivery date,Fixed Date/Quantity,Fixed Date and Quantity,Loading...,none
+VBAP,FKBER,Functional Areas,Functional Areas,Functional Areas,Functional Areas,Functional Areas,Loading...,none
+VBAP,FKDAT_ANA,Billing Date,Billing Date,Billing Date,Billing Date,Billing Date,Loading...,none
+VBAP,FKREL,Billing,Claim,Billing,Billing,Billing,Loading...,none
+VBAP,FKSAA,Order-related billing status (item),B.S.,Ord Claim Sts,Order-related billing St,Order Related Invoice Status,Loading...,none
+VBAP,FMENG,Fixed quantity,Fix,Fixed quantity,Fixed quantity,Fixed quantity,Loading...,none
+VBAP,FMFGUS_KEY,US Federal Government Items,US Federal Government Items,US Government,United States Federal Government,US Federal Government Items,Loading...,none
+VBAP,FONDS,fund,fund,fund,fund,fund,Loading...,none
+VBAP,FPLNR_ANA,Billing Plan Number,Plan Number,Plan Number,Billing Plan Number,Billing Plan Number,Loading...,none
+VBAP,FREEZE_PAOBJNR,Profitability segment dependent on previous document,Profitability segment dependent on previous document,DependentProfSg,Dependent Profitability Segments,Profitability segment dependent on previous document,Loading...,none
+VBAP,FSH_CANDATE,Cancellation Date,Cancellation Date,Cancellation Date,Cancellation Date,Cancellation Date,Loading...,none
+VBAP,FSH_COLLECTION,Fashion Collection,collection,Collection,collection,collection,Loading...,none
+VBAP,FSH_CRSD,Season condition record number,Condition Record Number,Condition Rec No.,Condition Record No.,Condition Record Number,Loading...,none
+VBAP,FSH_GRID_COND_REC,Grid Condition Record Number,Grid Condition Record Number,RecNo,Record Number,Grid Record Number,Loading...,none
+VBAP,FSH_ITEM,Item number,Item number,Item number,Item number,Item number,Loading...,none
+VBAP,FSH_ITEM_GROUP,Detail Group,Details Group,Details Group,Detail Group,Detail Group,Loading...,none
+VBAP,FSH_PQR_UEPOS,Partial quantity rejection top line,PQR Top Details,PQR HL Details,PQR Top Details,Partial quantity rejection top line,Loading...,none
+VBAP,FSH_PSM_PFM_SPLIT,PSM and PFM Split ID,PFM Division ID,Partition ID,Partition ID,PFM Division ID,Loading...,none
+VBAP,FSH_SEAREF,Season determined from the reference document,Copied Season Data,CopySeas,Copied Season,Copied Season Data,Loading...,none
+VBAP,FSH_SEASON,Season,Season,Season,Season,Season,Loading...,none
+VBAP,FSH_SEASON_YEAR,Season Year,Season Year,Season,Season Year,Season Year,Loading...,none
+VBAP,FSH_THEME,Fashion Theme,theme,theme,theme,theme,Loading...,none
+VBAP,FSH_TRANSACTION,Transaction Number,Transaction number,Trans. Number,Transaction number,Transaction Number,Loading...,none
+VBAP,FSH_VASREF,VAS determined by reference document,Copied VAS data,VAS Copy,Copied VAS Data,Copied VAS data,Loading...,none
+VBAP,FSH_VAS_PRNT_ID,Item Number (Sales and Distribution Document),detail,detail,detail,Detail (SD),Loading...,none
+VBAP,FSH_VAS_REL,VAS Related,VAS Related,VAS Related,VAS Related,VAS Related,Loading...,none
+VBAP,FSSTA,Billing Block Status (Item),B.S.,Claim BlkSt.,Billing Block St.,Billing Block Status,Loading...,none
+VBAP,GBSTA,Overall Processing Status (Item),OS,All Status,All Processing Status,Overall Processing Status,Loading...,none
+VBAP,GEWEI,Weight Unit,WUn,Weight Unit,Weight Unit,Weight Unit,Loading...,none
+VBAP,GLO_LOG_REF1_IT,Country-specific reference for document 1,Country Specific Reference 1,,,Country Specific Reference 1,#VALUE!,none
+VBAP,GRANT_NBR,Subsidy,Subsidy,Subsidy,Subsidy,Subsidy,Loading...,none
+VBAP,GRKOR,Delivery Group (Item Shipment),Output G,SHIPPING GROUP,Shipping Group,Shipping Group,Loading...,none
+VBAP,GRPOS,The line for which this line is a substitute,Alternative,Substitute a Line,Substitute a Line,Alternate Line,Loading...,none
+VBAP,GSBER,Business Area,BusA,Business Area,Business Area,Business Area,Loading...,none
+VBAP,HANDLE,GUID in 'CHAR' format (uppercase),GUID 16,GUID 16,GUID 16,GUID 16,Loading...,none
+VBAP,HANDOVERDATE,Delivery date at the delivery location,Delivery Date,Delivery Date,Delivery Date,Delivery Date,Loading...,none
+VBAP,HANDOVERLOC,Place of physical delivery of the goods,Delivery location,Delivery location,Delivery location,Delivery location,Loading...,none
+VBAP,HANDOVERTIME,Delivery time at the delivery location,Delivery time,Delivery time,Delivery time,Delivery time,Loading...,none
+VBAP,IFRS15_RELEVANCE,Details are IFRS 15 related,IFRS 15,IFRS 15,IFRS 15 related,IFRS 15 related,Loading...,none
+VBAP,IFRS15_TOTAL_SSP,IFRS 15: Standalone selling price,Standalone selling price,SSP,Standalone selling price,Standalone selling price,Loading...,none
+VBAP,IUID_RELEVANT,Item Unique ID Customer Related,IUID Customer related,IUID Customers,IUID Customer related,Item Unique ID Customer Related,Loading...,none
+VBAP,J_1BCFOP,,CFOP,CFOP,CFOP,CFOP,Loading...,none
+VBAP,J_1BTAXLW1,Tax law: ICMS,TXT,ICMS Text,ICMS Act,ICMS Act,Loading...,none
+VBAP,J_1BTAXLW2,Tax Law: IPI,TXT,IPI Text,IPI Act,IPI Act,Loading...,none
+VBAP,J_1BTXSDC,,T.C.,Tax Code,Tax Code,Tax Code,Loading...,none
+VBAP,J_3GBELNRI,Slip number,Slip number,Slip number,Slip number,Slip number,Loading...,none
+VBAP,J_3GDATBI,End date,End date,End date,End date,End date,Loading...,none
+VBAP,J_3GDATVO,Start Date,start date,start date,start date,start date,Loading...,none
+VBAP,J_3GLVART,Equipment status,A Type,Equipment status,Equipment status,Equipment status,Loading...,none
+VBAP,J_3GPOSNRI,Voucher details,Item No.,Item number,Item number,Item number,Loading...,none
+VBAP,KALNR,Cost estimate number for cost estimate without quantity structure,Cost Estimate Number,CENo,Cost Estimate Number,Cost Estimate Number,Loading...,none
+VBAP,KALSM_K,Costing sheet,CstgSh,Costing sheet,Costing sheet,Costing sheet,Loading...,none
+VBAP,KALVAR,Costing variant,Costing variant,Cstg Vrnt,Costing variant,Costing variant,Loading...,none
+VBAP,KANNR,Kanban/Sequence Number,Sequence No,SequenceNo,Sequence Number,Sequence Number,Loading...,none
+VBAP,KBMENG,Cumulative confirmed quantity of sales unit,Cumulative confirmed quantity (SU),Cumulative confirmed count,Cumulative Confirmed Quantity,Cumulative confirmed quantity (SU),Loading...,none
+VBAP,KBVER,Quantity deviation tolerance (%),deviation%,Deviation (%),Deviation (%),Deviation (%),Loading...,none
+VBAP,KDGRP_ANA,Customer Group,Get,Customer Group,Customer Group,Customer Group,Loading...,none
+VBAP,KDMAT,Item number used by the customer,Customer Item Number,Customer Item,Customer Item,Customer Item,Loading...,none
+VBAP,KEVER,Number of days required for shift,Number of days,Number of days,Number of days,Difference in days,Loading...,none
+VBAP,KLMENG,Cumulative confirmed quantity of base unit,Cumulative confirmed quantity (BU),Cumulative confirmed count,Cumulative Confirmed Quantity,Cumulative confirmed quantity (BU),Loading...,none
+VBAP,KLVAR,Costing variant,Costing variant,Cstg Vrnt,Costing variant,Costing variant,Loading...,none
+VBAP,KMEIN,Condition unit,UoM,unit,Unit of measure,Unit of measure,Loading...,none
+VBAP,KMPMG,Component quantity,quantity,quantity,quantity,Component quantity,Loading...,none
+VBAP,KNTTP,Account assignment category,A,Account Determination Ca,Account assignment Categ.,Account assignment category,Loading...,none
+VBAP,KNUMA_AG,Sales Deals,Deal,Deal,Sales Deals,Sales Deals,Loading...,none
+VBAP,KNUMA_PI,Sales Promotion,Sales Promotion,Sales Promotion,Sales Promotion,Sales Promotion,Loading...,none
+VBAP,KNUMH,Condition record number via batch determination,Condition Master,Condition Master,Condition Master/Lot,Condition Master/Batch,Loading...,none
+VBAP,KNUMV_ANA,Document Condition Number,Voucher Conditions,Voucher Conditions,Voucher Conditions,Document Condition Number,Loading...,none
+VBAP,KONDM,Item Price Group,MPG,MaPricngGr,Item Price Group,Item Price Group,Loading...,none
+VBAP,KOSCH,Product Allocation Decision Procedure,Product Allocation,Product Allocation,Product Allocation,Product Allocation,Loading...,none
+VBAP,KOSTL,Cost Center,Cost Center,Cost Center,Cost Center,Cost Center,Loading...,none
+VBAP,KOUPD,Condition Update,CdUpd,Condition Update,Condition Update,Condition Update,Loading...,none
+VBAP,KOWRR,Statistical amount,statistics,Statistics,Statistics,Statistics,Loading...,none
+VBAP,KPEIN,Price condition unit,/,unit,Pricing Unit,Pricing Unit,Loading...,none
+VBAP,KTGRM,Account assignment group for the item,AAGM,AccAsmtGrM,Account Determination Group (Account),Account Determination Group (Product),Loading...,none
+VBAP,KUNNR_ANA,Order Receiver,Order Receiver,Order Receiver,Order Receiver,Order Receiver,Loading...,none
+VBAP,KUNRE_ANA,Billing address,Billing address,Billing address,Billing address,Billing address,Loading...,none
+VBAP,KUNRG_ANA,Payer,Payer,Payer,Payer,Payer,Loading...,none
+VBAP,KUNWE_ANA,Shipping destination,Shipping destination,Shipping destination,Shipping destination,Shipping destination,Loading...,none
+VBAP,KVGR1_ANA,Customer Group 1,Grp1,Customer Group 1,Customer Group 1,Customer Group 1,Loading...,none
+VBAP,KVGR2_ANA,Customer Group 2,Grp2,Customer Group 2,Customer Group 2,Customer Group 2,Loading...,none
+VBAP,KVGR3_ANA,Customer Group 3,Grp3,Customer Group 3,Customer Group 3,Customer Group 3,Loading...,none
+VBAP,KVGR4_ANA,Customer Group 4,Grp4,Customer Group 4,Customer Group 4,Customer Group 4,Loading...,none
+VBAP,KVGR5_ANA,Customer Group 5,Grp5,Customer Group 5,Customer Group 5,Customer Group 5,Loading...,none
+VBAP,KWMENG,Cumulative Order Quantity (Sales Unit),Order Quantity,Order Quantity,Order Quantity,Order Quantity,Loading...,none
+VBAP,KZBWS,Valuation of Special Stocks,,evaluation,evaluation,Valuation of Special Stocks,Loading...,none
+VBAP,KZFME,ID: Leading unit of measure at the end of the transaction,L,Preceding UoM,Leading Unit of Measure,Leading Unit of Measure,Loading...,none
+VBAP,KZTLF,Partial deliveries at item level,PD,Partial delivery,Partial Delivery/Item,Partial Delivery/Item,Loading...,none
+VBAP,KZVBR,Consumption posting indicator,Disappear,consumption,consumption,consumption,Loading...,none
+VBAP,KZWI1,Subtotal 1 from pricing procedure for conditions,Subtotal 1,Subtotal 1,Subtotal 1,Subtotal 1,Loading...,none
+VBAP,KZWI2,Subtotal 2 from pricing procedure for conditions,Subtotal 2,Subtotal 2,Subtotal 2,Subtotal 2,Loading...,none
+VBAP,KZWI3,Subtotal 3 from pricing procedure for conditions,Subtotal 3,Subtotal 3,Subtotal 3,Subtotal 3,Loading...,none
+VBAP,KZWI4,Subtotal 4 from pricing procedure for conditions,Subtotal 4,Subtotal 4,Subtotal 4,Subtotal 4,Loading...,none
+VBAP,KZWI5,Subtotal 5 from pricing procedure for conditions,Subtotal 5,Subtotal 5,Subtotal 5,Subtotal 5,Loading...,none
+VBAP,KZWI6,Subtotal 6 from pricing procedure for conditions,Subtotal 6,Subtotal 6,Subtotal 6,Subtotal 6,Loading...,none
+VBAP,LABSG,Expected JIT delivery schedule indicator,Forecast delivery schedule EDI outage/information indicator,FDSEDI Ind,Forecast delivery schedule EDI indicator,Forecast delivery schedule EDI outage/information indicator,Loading...,none
+VBAP,LFGSA,Overall Shipping Status (Items),DS,All Shipments,All shipments Sts,Overall Shipping Status,Loading...,none
+VBAP,LFMNG,Minimum delivery quantity for delivery note processing,Minimum Delivery Quantity,Delivery quantity,Minimum Delivery Quantity,Minimum Delivery Quantity,Loading...,none
+VBAP,LFREL,Line is shipping related,DlI,Line Shipment,Line Shipment Related,Line Shipment Related,Loading...,none
+VBAP,LFSTA,Shipping Status (Item),DS,Shipping Status,Shipping Status,Shipping Status,Loading...,none
+VBAP,LGORT,Storage location,SLoc,Storage location,Storage location,Storage location,Loading...,none
+VBAP,LOGSYS_EXT,Logical System,Logical System.,Logic System,Logical System,Logical System,Loading...,none
+VBAP,LPRIO,Shipping Priority,Ranking,Shipping Order,Shipping Priority,Shipping Priority,Loading...,none
+VBAP,LSMENG,Cumulative requested delivery quantity (all delivery-related schedule lines),Requested shipping quantity,Requested shipment quantity,Requested shipping quantity,Requested shipping quantity,Loading...,none
+VBAP,LSSTA,All Delivery Block Status (Items),DB,All shipments Blk,All shipments Blk Sts,All Shipping Block Status,Loading...,none
+VBAP,LSTANR,Free Goods Delivery Management,D,FG Shipping Terms,Free Goods Delivery Management,Free Goods Delivery Management,Loading...,none
+VBAP,MAGRV,Item group: Packaging material,GrPMt,Item Group PM,Item Grp Packaging material,Item group packaging material,Loading...,none
+VBAP,MANDT,client,Cl.,Client,client,client,Loading...,none
+VBAP,MANEK,Manual contract completion,Manual contract completion,completion,Manual Completion,Manual contract completion,Loading...,none
+VBAP,MATKL,Item Group,Item Group,Item Group,Item Group,Item Group,Loading...,none
+VBAP,MATNR,Item code,Item,Item,Item,Item,Loading...,none
+VBAP,MATWA,Entered Items,Input Item,Entered Items,Entered Items,Input Item,Loading...,none
+VBAP,MEINS,Base unit of measure,single,unit,Base Unit,Base unit of measure,Loading...,none
+VBAP,MFRGR,Item Freight Group,Fare Group,Fare Group,Fare Group,Item Freight Group,Loading...,none
+VBAP,MILL_BATCH_SEL_F,Controlling lot selection,Controlling lot selection,BatchSe,Mill BSelInd,Lot Selection,Loading...,none
+VBAP,MILL_SE_GPOSN,Global Details,,Global Details,Global Details,Global Details,Loading...,none
+VBAP,MPROK,Status Manual Price Change,M.P.R.,Manual Price,Manual Price,Manual Price,Loading...,none
+VBAP,MSR_APPROV_BLOCK,Approval Block,Approval,Approval,Approval,Approval,Loading...,none
+VBAP,MSR_REFUND_CODE,Return Refund Code,Refund Code,Refund Code,Refund Code,Refund Code,Loading...,none
+VBAP,MSR_RET_REASON,Reason for return,Reason for return,Reason for return,Reason for return,Reason for return,Loading...,none
+VBAP,MTVFP,Check Group for Availability Check,Av,AvailCheck,Available stock chk,Availability Check,Loading...,none
+VBAP,MVGR1,Item Group 1,MG 1,Item Group 1,Item Group 1,Item Group 1,Loading...,none
+VBAP,MVGR2,Item Group 2,MG 2,Item Group 2,Item Group 2,Item Group 2,Loading...,none
+VBAP,MVGR3,Item Group 3,MG3,Item Group 3,Item Group 3,Item Group 3,Loading...,none
+VBAP,MVGR4,Item Group 4,MG4,Item Group 4,Item Group 4,Item Group 4,Loading...,none
+VBAP,MVGR5,Item Group 5,MG5,Item Group 5,Item Group 5,Item Group 5,Loading...,none
+VBAP,MWSBP,Tax amount in document currency,Tax amount,Tax,Tax amount,Tax amount,Loading...,none
+VBAP,NACHL,The customer has not posted the goods receipt,NGR,GR Unposted,No goods receipt posted,Customer Goods Receipt Not Posted,Loading...,none
+VBAP,NETPR,Net price,Net price,Net price,Net price,Net price,Loading...,none
+VBAP,NETWR,Sales order line item net amount in document currency,Net amount,Net amount,Net amount,Net amount,Loading...,none
+VBAP,NRAB_KNUMH,Condition Record Number,Condition Rec No.,Condition Rec No.,Condition Record No.,Condition Record Number,Loading...,none
+VBAP,NTGEW,Net weight of the item,net weight,net weight,net weight,net weight,Loading...,none
+VBAP,OBJNR,Line-level object number,ObjNo Item,ObjNo Itm,ObjNo Item,Object Number Details,Loading...,none
+VBAP,ORIGINAL_PLANT,Original plant for plant replacement,Former plant,Former plant,Former plant,Former plant,Loading...,none
+VBAP,PAOBJNR,Profitability Segment Number (CO-PA),Profitability Seg,Prof.Segmt,Profitability Segment,Profitability Segment Number,Loading...,none
+VBAP,PARGB,Partner Business Area,TPBA,Business Partner BA,Business Partner BA,Partner Business Area,Loading...,none
+VBAP,PAY_METHOD,List of accepted payment methods,payment method,payment method,payment method,payment method,Loading...,none
+VBAP,PBS_STATE,Project-Based Service Status,status,status,PBS Status,PBS Status,Loading...,none
+VBAP,PCSTA,Product Marketability Status (Details),Product Marketability Stats,ProductMarktS,Product Marketability Status,Product Marketability Status,Loading...,none
+VBAP,PCTRF,Profit center for billing,Claimed profit Ct,Claimed profit Ct,Billing Profit Center,Billing Profit Center,Loading...,none
+VBAP,PERVE_ANA,Salesperson,Salesperson,Salesperson,Salesperson,Salesperson,Loading...,none
+VBAP,PERZM_ANA,Chief administrator,Chief administrator,Chief administrator,Chief administrator,Chief administrator,Loading...,none
+VBAP,PLAVO,Planning Delivery Schedule Procedure,Instructions,Instructions,Planned delivery schedule Ins,Planning delivery schedule instructions,Loading...,none
+VBAP,PMATN,Pricing Reference Item,Pricing Reference Item,Pr Reference Item,Price Reference Item,Pricing Reference Item,Loading...,none
+VBAP,POSAR,Line Type,IT,Line Type,Line Type,Line Type,Loading...,none
+VBAP,POSEX,Original purchase order item number,PO Details,PO Line,Purchase order item,Purchase order item,Loading...,none
+VBAP,POSNR,Sales document details,detail,detail,Sales document details,Sales document details,Loading...,none
+VBAP,POSNV,Start Detail,detail,detail,detail,detail,Loading...,none
+VBAP,PO_QUAN,Purchase Order Quantity,Purchase Order Quantity,quantity,Purchase Order Quantity,Purchase Order Quantity,Loading...,none
+VBAP,PO_UNIT,Purchase order unit of measure,OUn,Order unit,Order unit,Order unit,Loading...,none
+VBAP,PRBME,Base unit of measure for product group,PUM,Unit of measure,Product Group Unit of Measure,Product Group Unit of Measure,Loading...,none
+VBAP,PRCTR,Profit Center,Profit Center,Profit Center,Profit Center,Profit Center,Loading...,none
+VBAP,PREFE,Preferential tariffs,Pr,Preferential tariffs,Preferential tariffs,Preferential tariffs,Loading...,none
+VBAP,PROCESS_CODE,Item Processing Code,Item Processing Code,Processing Code,Processing Code,Item Processing Code,Loading...,none
+VBAP,PROD,Product Hierarchy,Product Hierarchy,Product Hierarchy,Product Hierarchy,Product Hierarchy,Loading...,none
+VBAP,PRODH_UNIV_BATDET_DET_ORIGIN,Dates relevant for product hierarchy determination,Dates relevant for product hierarchy determination,Related Dates,Dates relevant to the decision,Dates relevant for product hierarchy determination,Loading...,none
+VBAP,PRODH_UNIV_BATDET_PARNT_NODID,Node ID,Node ID,Node ID,Node ID,Node ID,Loading...,none
+VBAP,PRODH_UNIV_SALES_DET_ORIGIN,Dates relevant for product hierarchy determination,Dates relevant for product hierarchy determination,Related Dates,Dates relevant to the decision,Dates relevant for product hierarchy determination,Loading...,none
+VBAP,PRODH_UNIV_SALES_PARNT_NODID,Node ID,Node ID,Node ID,Node ID,Node ID,Loading...,none
+VBAP,PROSA,ID of the item conversion,,MatDetermA,Item Setup Activities,Item Conversion Enabled,Loading...,none
+VBAP,PROVG,Fee Group,Com,Comm. Group,Commission Group,Fee Group,Loading...,none
+VBAP,PRSOK,Pricing OK,OK,Pricing,Pricing,Pricing,Loading...,none
+VBAP,PRS_OBJNR,Engagement Management: Object Number,Engagement Management: Object Number,EnMg:ObjNr,Eng. Management: Object Number,Engagement Management: Object Number,Loading...,none
+VBAP,PRS_SD_SPSNR,Standard WBS element for project initiation by sales and distribution,Standard WBS Elements,St. WBS element,Standard WBS Elements,Standard WBS Elements,Loading...,none
+VBAP,PRS_WORK_PERIOD,Work period (internal display),Work period,Work period,Work period,Work period,Loading...,none
+VBAP,PR_F_F,Profile for comparing old and new JIT delivery schedules,Comparison of old and new JIT delivery schedules,JIT Comparison,JIT Delivery Schedule Comparison,JIT Delivery Schedule Comparison,Loading...,none
+VBAP,PR_F_L,Comparison Profile for JIT Delivery Schedules and Forecast Delivery Schedules,Comparing JIT Delivery Schedules with Forecast Delivery Schedules,JIT-Frcst,JITDS-FcstDS comparison,JITDS-FrcstDS comparison,Loading...,none
+VBAP,PR_L_L,Profile for comparing old and new planned delivery schedules,Comparison of old and new planned delivery schedules,Scheduled Delivery,Planned delivery schedule comparison,Comparison of old and new planned delivery schedules,Loading...,none
+VBAP,PSTYV,Item Category (Sales Document),Ming,Details Cat.,Item Category,Item Category,Loading...,none
+VBAP,PS_PSP_PNR,WBS element,WBS element,WBS element,WBS element,WBS element,Loading...,none
+VBAP,REASON_CODE,Reason for change in scheduled shipment quantity,Reason for change in scheduled shipment quantity,reason,Reason for change,Reason for change in scheduled shipment quantity,Loading...,none
+VBAP,REQQTY_BU,Order quantity (base unit),Order quantity,Request SO Qty,Order quantity,Order quantity,Loading...,none
+VBAP,REVFP,Rules for transferring availability check results,AR,Av.ch.rule,AvailCheck rule,Availability Check Rule,Loading...,none
+VBAP,RFGSA,All Reference Status (Item),RS,All references Sts,All references Sts,All Reference Status,Loading...,none
+VBAP,RFM_PSST_GROUP,PSST Group,PSST Group,PSST Group,PSST Group,PSST Group,Loading...,none
+VBAP,RFM_PSST_RULE,PSST Grouping Rules,PSST Grouping Rules,PSST GR,PSST Grouping Rules,PSST Grouping Rules,Loading...,none
+VBAP,RFM_SCC_INDICATOR,Seasonal Integrity Classification,Seasonal Integrity Classification,Sea.Co Division,Seasonal Integrity Classification,Seasonal Integrity Classification,Loading...,none
+VBAP,RFSTA,Reference Status (Item),RS,Reference Status,Reference Status,Reference Status,Loading...,none
+VBAP,RKFKF,How to invoice a CO/PPC order,BlMe.,How to claim,Billing Method CO/PPC,Billing Method CO/PPC,Loading...,none
+VBAP,ROUTE,Transportation Route,route,Transportation Route,Transportation Route,Transportation Route,Loading...,none
+VBAP,SDSSTA,Safety Data Sheet Status (Details),Safety Data Sheet S,Safety Data Sheet,Safety Data Sheet Status,Safety Data Sheet Status,Loading...,none
+VBAP,SERAIL,Serial Number Profile,Profile.,Profile,Serial Number Prf,Serial Number Profile,Loading...,none
+VBAP,SERNR,BOM Explosion Number,Deployment number,BOM Expansion No.,BOM Explosion Number,BOM Explosion Number,Loading...,none
+VBAP,SERVICE_DOC_ID,Service document ID,Service Voucher,Servc. voucher,Service Voucher,Service Voucher,Loading...,none
+VBAP,SERVICE_DOC_ITEM_ID,Service document item ID,Service document details,Sv slip details,Service document details,Service document details,Loading...,none
+VBAP,SERVICE_DOC_TYPE,Service Document Types,Service Document Types,SrvDocType,Service Document Types,Service Document Types,Loading...,none
+VBAP,SESSION_CREATION_DATE,Record entry session date,Session Registration Date,date,Session Registration Date,Session Registration Date,Loading...,none
+VBAP,SESSION_CREATION_TIME,Record submission session time,Session registration time,time,Session registration time,Session registration time,Loading...,none
+VBAP,SGT_RCAT,Requirement Segment,Requirement Segment,Requirement Seg.,Requirement Segment,Requirement Segment,Loading...,none
+VBAP,SHKZG,Return Details,Ret,Returns,Returns,Returns,Loading...,none
+VBAP,SKOPF,Assortment Module,module,module,module,module,Loading...,none
+VBAP,SKTOF,Cash Discount Flag,CDc,Cash discount,Cash discount,Cash discount,Loading...,none
+VBAP,SLCST,Watch List Screening Status (Details),WLS Status,WLS Status,WLS Status,Watch List Screening Status,Loading...,none
+VBAP,SLOCTYPE,First inventory location type,Location Type,Location Type,Location Type,Location Type,Loading...,none
+VBAP,SMENG,Scale quantities in base unit of measure,Scale quantity,Scale Quantity,Scale quantity,Scale quantity,Loading...,none
+VBAP,SOBKZ,Special Stock Indicator,S,Special Stock,Special Stock,Special Stock,Loading...,none
+VBAP,SOLUTION_ORDER_ID,Solution Order,Solution Order,Soln Order,Solution Order,Solution Order,Loading...,none
+VBAP,SOLUTION_ORDER_ITM_ID,Solution Order Details,Solution Order Details,SolnOrdItm,Solution Order Details,Solution Order Details,Loading...,none
+VBAP,SPART,Product Category,Department,Product Category,Product Category,Product Category,Loading...,none
+VBAP,SPART_ANA,Product Category,Department,Product Category,Product Category,Product Category,Loading...,none
+VBAP,SPOSN,BOM Item Number,Item,detail,detail,Item number,Loading...,none
+VBAP,STADAT,Statistics Date,Statistics Date,Statistics Date,Statistics Date,Statistics Date,Loading...,none
+VBAP,STAFF,Update Group for Update Statistics,Update GP,Update Group,Update Group,Update Group (Statistics),Loading...,none
+VBAP,STCUR,Statistical Exchange Rates,exchange rate,exchange rate,Exchange Rate Stats,Exchange Rate Status,Loading...,none
+VBAP,STDAT,Bill of material key date,BOM Key Date,BOM Key Date,BOM Key Date,BOM Key Date,Loading...,none
+VBAP,STKEY,Original bill of materials/recipes,OrBOM,Original BOM,Original BOM,Original BOM,Loading...,none
+VBAP,STLKN,BOM Item Node Number,node,node,Detail Node,Detail Node,Loading...,none
+VBAP,STLNR,Parts list/recipes,BOM,BOM,BOM,Parts list/recipes,Loading...,none
+VBAP,STLTY,BOM Category,BOMCat,BOM Cat,BOM Category,BOM Category,Loading...,none
+VBAP,STMAN,Inconsistent System Settings,,Inconsistent Settings,Inconsistent Settings,Inconsistent System Settings,Loading...,none
+VBAP,STOCKLOC,First inventory location,First inventory location,Location,Location,Location,Loading...,none
+VBAP,STPOS,Bill of material/recipe line number VBAP is not used,Bill of material/recipe list item number,BOM Item No.,BOM Item Number,Bill of material/recipe list item number,Loading...,none
+VBAP,STPOZ,Internal Counter,counter,counter,counter,counter,Loading...,none
+VBAP,SUGRD,Item Substitution Reason,reason,reason,reason,Reasons for substitution,Loading...,none
+VBAP,SUMBD,Total requirement,total,Total Requirement,Total Requirement,Total Requirement,Loading...,none
+VBAP,TAXM1,Item Tax Classification,Tax,Tax Classification,Tax Classification,Tax Classification,Loading...,none
+VBAP,TAXM2,Item Tax Classification,Tax,Tax Classification,Tax Classification,Tax Classification,Loading...,none
+VBAP,TAXM3,Item Tax Classification,Tax,Tax Classification,Tax Classification,Tax Classification,Loading...,none
+VBAP,TAXM4,Item Tax Classification,Tax,Tax Classification,Tax Classification,Tax Classification,Loading...,none
+VBAP,TAXM5,Item Tax Classification,Tax,Tax Classification,Tax Classification,Tax Classification,Loading...,none
+VBAP,TAXM6,Item Tax Classification,Tax,Tax Classification,Tax Classification,Tax Classification,Loading...,none
+VBAP,TAXM7,Item Tax Classification,Tax,Tax Classification,Tax Classification,Tax Classification,Loading...,none
+VBAP,TAXM8,Item Tax Classification,Tax,Tax Classification,Tax Classification,Tax Classification,Loading...,none
+VBAP,TAXM9,Item Tax Classification,Tax,Tax Classification,Tax Classification,Tax Classification,Loading...,none
+VBAP,TECHS,Parameter variants/Standard variants,Standard Variant,StdVariant,Standard variant,Standard variant,Loading...,none
+VBAP,TOTAL_LCCST,Legal Management Status,Legal Management Status,Legal Management,Legal Management Status,Legal Management Status,Loading...,none
+VBAP,TRANSIT_PLANT,Transportation Plant,Transportation Plant,Transportation Plant,Transportation Plant,Transportation Plant,Loading...,none
+VBAP,TRMRISK_RELEVANT,Risk relevance of sales management,Risk Rel.,Risk Rel.,Risk Association,Risk Association,Loading...,none
+VBAP,UEBTK,No limit on overdeliveries allowed,U,Unlimited,Limit Unacceptable Range,Limit Unacceptable Range,Loading...,none
+VBAP,UEBTO,Overdelivery Tolerance,Overdelivery allowance,Over. Tol.,Overdelivery allowance,Overdelivery Tolerance,Loading...,none
+VBAP,UEPOS,High-level items in the BOM structure,Top Ming,Top Details,Higher Level Details,Higher Level Details,Loading...,none
+VBAP,UEPVW,Higher Level Item Usage ID,,Us.HLitem,Usage of the higher level item,Usage of the higher level item,Loading...,none
+VBAP,UKONM,Main Line Item Pricing Group,Main Item MPG,Main Item MPG,MnItem MatPrcGr,Main Line Item Price Grp,Loading...,none
+VBAP,UMREF,Conversion factor: Quantity,conversion,conversion,conversion,conversion,Loading...,none
+VBAP,UMVKN,The denominator (divisor) used to convert sales quantity to inventory units,denominator,denominator,denominator,denominator,Loading...,none
+VBAP,UMVKZ,Numerator of the conversion factor from sales unit to base unit,molecule,molecule,molecule,molecule,Loading...,none
+VBAP,UMZIN,Conversion factor of sales unit to base unit (target quantity),Conversion factor,Conversion factor,Conversion factor,Conversion factor,Loading...,none
+VBAP,UMZIZ,Conversion factor of sales unit to base unit (target quantity),Conversion factor,Conversion factor,Conversion factor,Conversion factor,Loading...,none
+VBAP,UNTTO,Underdelivery Tolerance,Under.Tol.,Under.Tol.,Shortage allowance,Underdelivery Tolerance,Loading...,none
+VBAP,UPFLU,Update indicator for sales document flow,U,Flow Update,Document flow update,Document flow update,Loading...,none
+VBAP,UPMAT,Pricing Reference Item for the Primary Line,Main Line Price Reference Item,Main Item PRM,Main Detail PrRefMatl,Main Line Price Reference Item,Loading...,none
+VBAP,UVALL,Incomplete Status (Item),I,detail,detail,detail,Loading...,none
+VBAP,UVFAK,Incomplete Billing Status (Item),BI,billing statement,billing statement,billing statement,Loading...,none
+VBAP,UVP01,Customer Reserve 1: Item Status,IR1,Details Res1,Detail Reserve 1,Detail Reserve 1,Loading...,none
+VBAP,UVP02,Customer Reserve 2: Item Status,IR2,Details Res2,Detail Reserve 2,Detail Reserve 2,Loading...,none
+VBAP,UVP03,Customer Reserve 3: Item Status,IR3,Details Res3,Detail Reserve 3,Detail Reserve 3,Loading...,none
+VBAP,UVP04,Customer Reserve 4: Item Status,IR4,Details Res4,Detail Reserve 4,Detail Reserve 4,Loading...,none
+VBAP,UVP05,Customer Reserve 5: Item Status,IR5,Details Res5,Detail Reserve 5,Detail Reserve 5,Loading...,none
+VBAP,UVPRS,Pricing Incomplete Status (Item),PI,Prcg Details,Pricing - Details,Pricing - Details,Loading...,none
+VBAP,UVVLK,Incomplete status of the delivery (item),DI,Shipping Details,Shipment - Line,Shipment - Line,Loading...,none
+VBAP,VBEAF,Fixed shipping processing days,FxdPrT,Fixed Processing Date,Fixed processing days,Fixed shipping processing days,Loading...,none
+VBAP,VBEAV,Variable shipping processing times,VaPrTi,Variable Processing Date,Variable processing days,Variable shipping processing times,Loading...,none
+VBAP,VBELN,Sales slip,Sales slip,Sales slip,Sales slip,Sales slip,Loading...,none
+VBAP,VBELV,Starting document,Starting document,Starting document,Starting document,Starting document,Loading...,none
+VBAP,VBKD_POSNR,Sales document details,detail,detail,Sales document details,Sales document details,Loading...,none
+VBAP,VBTYP_ANA,Sales and Distribution Document Category,InvoiceCateg.,InvoiceCateg.,Document Category,Sales and Distribution Document Category,Loading...,none
+VBAP,VDATU_ANA,Specified delivery date,Specified delivery date,Specified delivery date,Specified delivery date,Specified delivery date,Loading...,none
+VBAP,VEDA_POSNR,Sales document details,detail,detail,Sales document details,Sales document details,Loading...,none
+VBAP,VGBEL,Reference Document Number,Reference Document,Reference Document,Reference Document,Reference Document,Loading...,none
+VBAP,VGPOS,Reference Line Number,Reference,Reference Line,Reference Line,Reference Line,Loading...,none
+VBAP,VGREF,The previous document has been registered as a reference.,Predecessor document generated from reference,Reference document,Previous document by reference,Predecessor document generated from reference,Loading...,none
+VBAP,VGTYP,Document category of the preceding SD document,PrCat,SD slip Cat,Advance document Categ.,Leading Document Category,Loading...,none
+VBAP,VKAUS,Use classification,Applications,Applications,Applications,Applications,Loading...,none
+VBAP,VKBUR_ANA,Sales Office,SOff.,Sales Office,Sales Office,Sales Office,Loading...,none
+VBAP,VKGRP_ANA,Sales Group,SGrp,Sales Group,Sales Group,Sales Group,Loading...,none
+VBAP,VKGRU,Repair Processing: Classification of Items,Repair Processing: Classification of Items,Classification of items,Classification of items,Repair: Classification of items,Loading...,none
+VBAP,VKORG_ANA,Sales organization,Sales group,Sales organization,Sales organization,Sales organization,Loading...,none
+VBAP,VLCENDCU,End Customer (Central Customer),Final Customer,Final Customer,Final Customer,Final Customer,Loading...,none
+VBAP,VOLH,Volume Unit,VUn,Volume Unit,Volume Unit,Volume Unit,Loading...,none
+VBAP,VOLUM,Total quantity of the line,Total Quantity,Total Quantity,Total Quantity,Total Quantity,Loading...,none
+VBAP,VOREF,Reference complete division,Completed,Full Reference,Full Reference,Full Reference,Loading...,none
+VBAP,VPMAT,Planning Items,Planning Items,Planning Items,Planning Items,Planning Items,Loading...,none
+VBAP,VPWRK,Planning Plant,PPlt,Plan,Planning Plant,Planning Plant,Loading...,none
+VBAP,VPZUO,Allocation Class,allocation,Allocation Class,Allocation Class,Allocation Class,Loading...,none
+VBAP,VRKME,Sales unit,S.U.,Sales unit,Sales unit,Sales unit,Loading...,none
+VBAP,VSART_ANA,Shipment Type,ST,Shipment Type,Shipment Type,Shipment Type,Loading...,none
+VBAP,VSBED_ANA,Shipping Terms,SC,Shipping Terms,Shipping Terms,Shipping Terms,Loading...,none
+VBAP,VSTEL,Shipping point/receiving point,Out,Shipping Point,Shipping Point,Shipping point/receiving point,Loading...,none
+VBAP,VTWEG_ANA,Distribution Channels,Flow,Distribution Chan.,Distribution Channels,Distribution Channels,Loading...,none
+VBAP,WAERK,Sales document currency,currency,currency,Document Currency,Document Currency,Loading...,none
+VBAP,WAVWR,Cost in document currency,Cost,Cost,Cost,Cost,Loading...,none
+VBAP,WBSTA,Goods Movement Status (Item),GM,Inventory Movement,Inventory Transfer Status,Inventory Movement Status,Loading...,none
+VBAP,WERKS,Plant (own or external),Plnt,plant,plant,plant,Loading...,none
+VBAP,WGRU1,Item Group Hierarchy 1,MH1,Item Gr.1,Item Group 1,Item Group 1,Loading...,none
+VBAP,WGRU2,Item Group Hierarchy 2,MH2,Item Group 2,Item Group 2,Item Group 2,Loading...,none
+VBAP,WKTNR,Amount Contract Number,Amount Contract Number,Amount Contract No.,Amount Contract Number,Amount Contract Number,Loading...,none
+VBAP,WKTPS,Value Contract Item,VC Details,VC Details,Value Contract Item,Value Contract Item,Loading...,none
+VBAP,WRF_CHARSTC1,Attribute value 1,Attribute value 1,Property 1,Property 1,Attribute value 1,Loading...,none
+VBAP,WRF_CHARSTC2,Attribute value 2,Attribute value 2,Property 2,Property 2,Attribute value 2,Loading...,none
+VBAP,WRF_CHARSTC3,Attribute value 3,Attribute value 3,Property 3,Property 3,Attribute value 3,Loading...,none
+VBAP,WTYSC_CLMITEM,Invoice Item Number,billing statement,Clm Details,Invoice Item Number,Invoice Item Number,Loading...,none
+VBAP,XCHAR,Batch management indicator (internal),B,Lot Management,Lot management category,Lot Management,Loading...,none
+VBAP,XCHPF,Lot management required category,BMR,Lot Management,Lot management category,Lot Management,Loading...,none
+VBAP,ZIEME,Target quantity UoM,UoM,Target Unit,Target quantity UoM,Target quantity UoM,Loading...,none
+VBAP,ZMENG,Target quantity (sales unit),Target quantity,Target quantity,Target quantity,Target quantity,Loading...,none
+VBAP,ZSCHL_K,Overhead Key,OH key,Overhead Key,Overhead Key,Overhead Key,Loading...,none
+VBAP,ZWERT,Purchase agreement target amount (document currency),Target Amount,Target Amount,Target Amount,Purchasing contract target amount,Loading...,none

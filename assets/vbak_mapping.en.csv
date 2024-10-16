@@ -1,0 +1,205 @@
+table,original_column,Content,header,column_text,medium_label,long_label,translated_column,column_for_analysis
+VBAK,ABDIS,MRP: Shipment Planning Type,,MRP,MRP:DS Type,MRP: Shipment Planning Type,Mrp,mrp
+VBAK,ABHOB,Pick-up time,time,Pick-Up Tm,Pick-Up Time,Pick-up time,Pick-UP TM,pick-up_tm
+VBAK,ABHOD,Pickup Date,Pick-Up Day,Pick-Up Day,Pickup Date,Pickup Date,Pick-up day,pick-up_day
+VBAK,ABHOV,Pick-up time,time,Pick-Up Tm,Pick-Up Time,Pick-up time,Pick-UP TM,pick-up_tm
+VBAK,ABRUF_PART,Partner Authorization Check,Business Partner Check,CheckPart.,Business Partner Check,Partner Authorization Check,Checkpart.,checkpart.
+VBAK,ABRVW,Use classification,Applications,Applications,Applications,Applications,Use,use
+VBAK,ABSTK,Rejected Status (All Items),Refusal,RejectedStatus,Rejection Status,Rejection Status,Rejected Status,rejected_status
+VBAK,AD01BASDOC,Initial document,Initial document,Initial document,Initial document,Initial document,Initial slip,initial_slip
+VBAK,AD01FAREG,Billing Rules,R,A&D Billing Rule,A&D Billing Rules,A&D Billing Rules,A & D claim rule,a_&_d_claim_rul
+VBAK,AEDAT,Last Modified Date,Date of change,change,Date of change,Date of change,change,change
+VBAK,AGRZR,Accrual period - Sales order-related billing documents to be accrued,AP,Accrual Period,Accrual Period,Accrual Period,Overtaking period,overtaking_period
+VBAK,AMTBL,Approved credit amount for vouchers,Approved Credit Amount,Credit amount,Credit amount,Approved Credit Amount,Belief amount,belief_amount
+VBAK,ANGDT,Quote/Inquiry validity start date,Effective from,Effective Start Date,Effective Start Date,Quote Effective Start Date,Effective start date,effective_start_date
+VBAK,APM_APPROVAL_REASON,Approval Request Reason ID,Approval Request Reason ID,AppReqRsn,Approval Request Reason ID,Approval Request Reason ID,APPREQRSN,Appreqrsn
+VBAK,APM_APPROVAL_STATUS,Document Approval Status,Approval Status,Approval Status,Approval Status,Approval Status,Approval Status,approval_status
+VBAK,APM_REJECTION_REASON,The ID of the reason for rejecting the approval request,The ID of the reason for rejecting the approval request,Reason for refusal,Reason for rejecting approval request,Approval request rejection reason ID,Reason for rejection,reason_for_rejection
+VBAK,AUART,Sales Document Type,Sales,Sales slip Ty,Sales Document Type,Sales Document Type,Sales slip TY,sales_slip_ty
+VBAK,AUDAT,Document Date (Received/Sent),Document Date,Document Date,Document Date,Document Date,Slip date,slip_date
+VBAK,AUFNR,Order Number,Instructions,Instructions,Instructions,Instructions,Instruction,Instructions
+VBAK,AUGRU,Reason for order (reason for transaction),reason,Reason for order,Reason for order,Reason for order,Reason for ordering,reason_for_ordering
+VBAK,AUTLF,Complete delivery (defined per order),CDl,Lump sum delivery,Lump sum delivery,Lump sum delivery,Collective delivery,collective_delivery
+VBAK,AWAHR,Availability,Prb,Availability,possibility,possibility,Possibility of ordering,possibility_of_ordering
+VBAK,B2B_MSG_PROCESSING_STATUS,B2B Message Processing Status,B2B Message Processing Status,B2B Status,B2B Processing Status,B2B Message Processing Status,B2B Status,b2b_status
+VBAK,BESTK,Shipment Confirmation Status (All Items),CS,Shipping confirmation,Shipment Confirmation Status,Ship Confirmation Status,Shipment confirmation ST,shipment_confirmation_st
+VBAK,BNAME,Name of client,Customer Name,name,name,name,name,name
+VBAK,BNDDT,Quote validity end date,expiration date,expiration date,expiration date,Quote Effective End Date,expiration date,expiration_date
+VBAK,BSARK,Customer Purchase Order Type,order,PO Type,Purchase Order Type,Purchase Order Type,PO type,po_type
+VBAK,BSTDK,Customer Reference Date,Cust Reference Date,Cust Reference Date,Customer Reference Date,Customer Reference Date,CUST reference date,cust_reference_date
+VBAK,BSTNK,Customer Reference,Customer Reference,Customer Reference,Customer Reference,Customer Reference,See customer,see_customer
+VBAK,BSTZD,Purchase Order Number Supplement,supplement,supplement,supplement,supplement,supplement,supplement
+VBAK,BUKRS_VF,Company code to be billed,company,Company code,Billing Company Code,Billable C Code,Company code,company_code
+VBAK,CMFRE,"The approval date of the document, as determined by credit management",Approval Date,Approval Date,Approval Date,Approval Date,Approval date,approval_date
+VBAK,CMGST,Overall status of credit check,OvCS,Credit Status,Credit Processing Stat,Credit Status,Shin STATUS,shin_status
+VBAK,CMNGV,Next scheduled shipping date,Next shipment,Next shipment,Next shipping date,Next shipping date,Next shipment,next_shipment
+VBAK,CMNUP,Next Document Credit Check Date,Next check,Next check,Next check,Next Credit Check,Next confirmation,next_confirmation
+VBAK,CMPSC,Status of the credit limit check for the maximum document amount,MAVO,Amount of money,Amount of money,Maximum amount,Amount of money,amount_of_money
+VBAK,CMPSD,Status of credit check for payment terms,TPAY,Payment terms,Payment terms,Payment terms,Payment terms,payment_terms
+VBAK,CMPSI,Financial Document Credit Limit Check Status,DocC,Docu.Cred.,Document. Credit,Documentary Credit,Docu.cred.,docu.cred.
+VBAK,CMPSJ,Export Credit Insurance Credit Limit Check Status,ECI,ExptCredIn,Export Credit Insurance,Export Credit Insurance,EXPTCREDIN,exptcredin
+VBAK,CMPSK,Payment card authorization credit check status,PaCa,Payment Cards,Payment Cards,Payment Card Status,Payment card,payment_card
+VBAK,CMPS_CM,Status of the Credit Check SAP Credit Management,SAPCM,SAP CrMa,SAP Credit Management,SAP Credit Management,SAP CRMA,sap_crma
+VBAK,CMPS_TE,SAP Credit Management technical error status,CM TE,CrMa TE,CrMa TE Status,Credit Mgmt TE Status,CRMA TE,crma_te
+VBAK,CMWAE,Currency code for credit control area,currency,currency,currency,currency,currency,currency
+VBAK,CONT_DG,Category: Dangerous goods on the document,DG,Hazardous materials present,Hazardous materials present,Hazardous materials present,There is a dangerous item,there_is_a_dangerous_item
+VBAK,COSTA,ALE confirmation status,Cost,ConfStatus,Verification Status,Verification Status,Confustus,Confustus
+VBAK,CRM_GUID,Character input field length 70,Character 70,Character 70,Character 70,Character 70,Character 70,character_70
+VBAK,CTLPC,Credit Management: Risk Categories,Risk Category,Risk cat.,Risk Category,Risk Category,Risk cat.,risk_cat.
+VBAK,DAT_FZAU,Cumulative Shipment Quantity Date,Cumulative Quantity Date,Cumulative Quantity Date,Cumulative Quantity Date,Cumulative Quantity Date,Cumulative quantity,cumulative_quantity
+VBAK,DCSTK,Deferred Status (All Items),De,Delay Status,Delay Status,Delay Status,Delayed Status,delayed_status
+VBAK,DELIVERY_DATE_TYPE_RULE,Delivery Date Rules,Delivery Date Rule,Delivery Date Rule,Delivery Date Rules,Delivery Date Rules,Delivery date rule,delivery_date_rule
+VBAK,DP_CLEAR_STA_HDR,Advance Status,Advance Payment Status,Advance payment Sts,Advance Payment Status,Advance Payment Status,Previous payment STS,previous_payment_sts
+VBAK,DUMMY_SALESDOC_INCL_EEW_PS,Dummy function of length 1,,,,,#VALUE!,none
+VBAK,ENQUEUE_GRP,Group master contract: Block until all lower-level contracts have been updated,,,,,#VALUE!,none
+VBAK,ERDAT,The date the record was created,Registration Date,Registration,Registration Date,Registration Date,register,register
+VBAK,ERNAM,Object Registrant Name,Registered person,Registered person,Registered person,Registered person,Registered person,registered_person
+VBAK,ERZET,Registration time,time,time,time,time,Times of Day,times_of_day
+VBAK,EXT_BUS_SYST_ID,External Business System ID,External Business System ID,ExtBusSyst,External Bus System ID,External Business System ID,EXTBUSSYST,extbussyst
+VBAK,EXT_COMM_SYST_TYPE,Communication System Type,Communication System Type,Communication System,Communication System Type,Communication System Type,Communication system,communication_system
+VBAK,EXT_REF_DOC_ID,External document ID,External document ID,External document ID,External document ID,External document ID,External slip ID,external_slip_id
+VBAK,EXT_REV_TMSTMP,Revision timestamp of external calls,External Revision,External Revision,External Revision,External revision timestamp,External revision,external_revision
+VBAK,FAKSK,Billing Blocks in Sales and Distribution Documents,B.B.,Billing Block,Billing Block,Billing Block,Request block,request_block
+VBAK,FKARA,Proposed billing document type for sales-related billing documents,OrBlT,Request Type,Billing Document Type,Order Related Billing Types,Contract type,contract_type
+VBAK,FKSAK,Order Related Billing Status (All Items),B.S.,B.S.,Order Related Billing Sts,Order Related Invoice Status,B.S.,bs
+VBAK,FMBDAT,Item Supply/Availability Date,Item Av Date,Item Av Date,Item Availability Date,Item Availability Date,Items AV Date,items_av_date
+VBAK,FMSTK,Status: Money Management,Budgetary Control Status,FM Status,Budgetary Control Status,Budgetary Control Status,Fm status,fm_status
+VBAK,FSH_CANDATE,Cancellation Date,Cancellation Date,Cancellation Date,Cancellation Date,Cancellation Date,Date of cancellation,date_of_cancellation
+VBAK,FSH_CQ_CHECK,Contract-related requirements,Requirement related,Requirement related,Requirement related,Requirement related,Required amount,required_amount
+VBAK,FSH_KVGR10,Customer Group 10,Grp10,Customer Group,Customer Group 10,Customer Group 10,Courir GRP,courir_grp
+VBAK,FSH_KVGR6,Customer Group 6,Grp6,Customer Group 6,Customer Group 6,Customer Group 6,Customer GRP6,customer_grp6
+VBAK,FSH_KVGR7,Customer Group 7,Grp7,Customer Group 7,Customer Group 7,Customer Group 7,Customer GRP7,customer_grp7
+VBAK,FSH_KVGR8,Customer Group 8,Grp8,Customer Group 8,Customer Group 8,Customer Group 8,Customer GRP8,customer_grp8
+VBAK,FSH_KVGR9,Customer Group 9,Grp9,Customer Group 9,Customer Group 9,Customer Group 9,Customer GRP9,customer_grp9
+VBAK,FSH_OS_STG_CHANGE,Order delivery schedule creation policy item manual changed,Order delivery schedule creation policy item manual changed,Changed,Manual has been changed,Order delivery schedule creation item manual changed,Changed,changed
+VBAK,FSH_REREG,Release Rules,release,release,Release Rules,Release Rules,release,release
+VBAK,FSH_SS,Order Scheduling Strategy,Order Scheduling Strategy,Sched. Policy,Delivery Scheduling Strategy,Order Scheduling Strategy,Schedule. Policy,sched._policy
+VBAK,FSH_TRANSACTION,Transaction Number,Transaction number,Trans. Number,Transaction number,Transaction Number,Trans. Number,trans._number
+VBAK,FSH_VAS_CG,Value Added Service Customer Group,VAS Customer Group,VAS Cu.Gr,VAS Customer Group,VAS Customer Group,VAS CU.GR,vas_cu._gr
+VBAK,FSH_VRSN_STATUS,Snapshot Status,Snapshot Status,Status,Snap. Status,Snapshot Status,Status,status
+VBAK,FSSTK,Billing Block Status (All Items),B.S.,Claim BlkSt.,Billing Block St.,Billing Block Status,Request blkst.,request_blkst.
+VBAK,GBSTK,Overall processing status (header/all items),OS,All Status,All Status,Overall Processing Status,All Status,all_status
+VBAK,GLO_LOG_REF1_HD,Country-specific reference for document 1,Country Specific Reference 1,,,Country Specific Reference 1,#VALUE!,none
+VBAK,GRUPP,Customer Credit Group,Credit,Credit Group,Credit Group,Customer Credit Group,Shin GROUP,shin_group
+VBAK,GSBER,Business Area,BusA,Business Area,Business Area,Business Area,Business area,business_area
+VBAK,GSKST,Cost Center Business Area,BsAr,Business Area,Business Area,Business Area,Business area,business_area
+VBAK,GUEBG,"Validity start date (purchase contract/sales contract, product proposal)",Effective Start Date,Effective Start Date,Effective Start Date,Effective Start Date,Effective start date,effective_start_date
+VBAK,GUEEN,"Validity end date (purchase agreement/sales agreement, product proposal)",expiration date,expiration date,Valid End Date,Valid End Date,expiration date,expiration_date
+VBAK,GWLDT,Warranty period start date,Warranty start date,Warranty start date,Warranty period start date,Warranty period start date,Guarantee start date,guarantee_start_date
+VBAK,HANDLE,VBAK-Internationally unique key for VBELN,International ID,International ID,International ID,International ID,International ID,international_id
+VBAK,HANDOVERLOC,Place of physical delivery of the goods,Delivery location,Delivery location,Delivery location,Delivery location,Delivery location,delivery_location
+VBAK,HITYP_PR,Pricing Tier Types,HPr,Price Tier,Price Tier Type,Tier Type/Pricing,Price hierarchy TY,price_hierarchy_ty
+VBAK,IHREZ,Your reference,Your reference,Reference 1,Your reference,Your reference,See 1,see_1
+VBAK,J_3GKBAUL,ETM related categories,ETM Classification,ETM Classification,ETM related categories,ETM related categories,ETM category,etm_category
+VBAK,KALCD,Campaign Settings Table,Settings Table,Settings Table,Camp.Det. Table,Campaign Settings Table,Setting table,setting_table
+VBAK,KALSM,Pricing Procedures in Pricing,Decision Table,Pricing Procedure,Pricing Procedure,Pricing Procedure,Price decision table,price_decision_table
+VBAK,KALSM_CH,Batch Determination Search Sequence,procedure,Search Order,Lot Search Sequence,Lot Search Sequence,Search order,search_order
+VBAK,KKBER,Credit Control Area,region,Credit Area,Credit Control Area,Credit Control Area,Creditworthiness,creditworthiness
+VBAK,KNKLI,Credit limit customer code,Credit Account,Credit Account,Credit Customer Account,Credit Customer Account,Trustworthiness account,trustworthiness_account
+VBAK,KNUMA,Rebate agreements (grouping multiple conditions),contract,contract,Rebate Agreement,Rebate Agreement,contract,contract
+VBAK,KNUMV,Document Condition Number,Voucher Conditions,Voucher Conditions,Voucher Conditions,Document Condition Number,Slip conditions,slip_conditions
+VBAK,KOKRS,Management Area,management,Management Area,Management Area,Management Area,Management area,management_area
+VBAK,KOSTL,Cost Center,Cost Center,Cost Center,Cost Center,Cost Center,Cost center,cost_center
+VBAK,KTEXT,Item suggestion search criteria,Search Criteria,Search Criteria,Search Criteria,Search Criteria,Search conditions,search_conditions
+VBAK,KUNNR,Order Receiver,Order Receiver,Order Receiver,Order Receiver,Order Receiver,Counsel,counsel
+VBAK,KURST,Exchange Rate Type,Exchange Rate Type,ExRateType,Conversion Rate Type,Exchange Rate Type,EXRATETYPE,exratetype
+VBAK,KVGR1,Customer Group 1,Grp1,Customer Group 1,Customer Group 1,Customer Group 1,Customer GRP1,customer_grp1
+VBAK,KVGR2,Customer Group 2,Grp2,Customer Group 2,Customer Group 2,Customer Group 2,Customer GRP2,customer_grp2
+VBAK,KVGR3,Customer Group 3,Grp3,Customer Group 3,Customer Group 3,Customer Group 3,Customer GRP3,customer_grp3
+VBAK,KVGR4,Customer Group 4,Grp4,Customer Group 4,Customer Group 4,Customer Group 4,Customer GRP4,customer_grp4
+VBAK,KVGR5,Customer Group 5,Grp5,Customer Group 5,Customer Group 5,Customer Group 5,Customer GRP5,customer_grp5
+VBAK,LANDTX,Shipping Country,TDC,Shipping Country,Shipping Country,Shipping Country,Shipping country,shipping_country
+VBAK,LASTVCHR,Last beer receipt number,Final V.,Final Voucher.,Final beer receipt,Final beer receipt,Final Vouch.,final_vouch.
+VBAK,LAST_CHANGED_BY_USER,The user who last modified the business document,Modified by,Modified by,Last modified by,Last modified by,Recipient,recipient
+VBAK,LFGSK,Total Shipping Status (All Items),DS,All Shipments,All Shipment Status,Overall Shipping Status,Full shipment,full_shipment
+VBAK,LFSTK,Shipping Status (All Items),DS,Shipping Status,Shipping Status,Shipping Status,Shipment STATUS,shipment_status
+VBAK,LIFSK,Shipping block (document header),Exit Bu,Shipment BLOCK,Shipping Block,Shipping Block,Shipment Block,shipment_block
+VBAK,LOGSYSB,The logical system in which the document was created,Logic System,Logic System,Logical System,Logical System,Logic Systems,logic_system
+VBAK,LSSTK,All Delivery Block Status (All Items),DB,All shipments Blk,All shipments Blk Sts,All Shipping Blocks Stat.,All shipment BLK,all_shipment_blk
+VBAK,MAHDT,Last customer contact date,Last contact,Last contact,Last contact date,Last contact date,Previous contact,previous_contact
+VBAK,MAHZA,Number of contacts from customers,NoCnt,Number of contacts,Number of contacts,Number of contacts,Number of contacts,number_of_contacts
+VBAK,MANDT,client,Cl.,Client,client,client,Client,client
+VBAK,MANEK,Manual contract completion,Manual contract completion,completion,Manual Completion,Manual contract completion,completion,completion
+VBAK,MILL_APPL_ID,Application ID Category for Selection,Application ID,APPL_ID,Application ID,Application ID,Appl_id,appl_id
+VBAK,MSR_ID,Process ID number,Process ID,Process ID,Process ID No.,Process ID number,Process ID,process_id
+VBAK,MULTI,Multiple Campaigns/Trade Promotions Enabled Indicator,Multiple Promotions,Multiple Pr.,Multiple Promotions,Multiple Promotions,Multiple PR.,multiple_pr.
+VBAK,NETWR,Order Net Amount (Document Currency),Net amount,Net amount,Net amount,Net amount,Tasteful amount,tasteful_amount
+VBAK,OBJNR,Object number at header level,Object Number Header,ObjNo hdr,Obj number (header),Object Number (Header),Objno HDR,objno_hdr
+VBAK,OIPBL,Business Location ID (IS-Oil MRN),Location ID,LocationID,Location ID,Business Location ID,Local,local
+VBAK,PAY_METHOD,List of accepted payment methods,payment method,payment method,payment method,payment method,Payment method,payment_method
+VBAK,PROLI,Dangerous Goods Management Profile for Sales and Distribution Documents,DGPr,DGMgmtProf,Hazardous Materials Management Prof,Hazardous Materials Management Profile,DGMGMTPROF,dgmgmtprof
+VBAK,PS_PSP_PNR,WBS element,WBS element,WBS element,WBS element,WBS element,WBS element,wbs_element
+VBAK,QMNUM,Notification number,notification,notification,notification,notification,Notification,Notification
+VBAK,RETRO_PURCHDOC_CREATION,Retroactive creation of purchasing documents,Retroactive creation of purchasing documents,Purchase slip Rt,Retroactive Purchase Documents,Retroactive Purchase Documents,Purchasing slip RT,purchasing_slip_rt
+VBAK,RFGSK,All Reference Status (All Items),OR,All references Sts,All References Status,All Reference Status,See all STS,see_all_sts
+VBAK,RFSTK,Reference Status (All Items),RS,Reference Status,Reference Status,Reference Status,See Status,see_status
+VBAK,RPLNR,Payment Card Plan Type Number,Payment Plan,Payment Plan,Payment Card Plan No.,Payment Card Plan Number,Payment plan,payment_plan
+VBAK,SBGRP,Credit Officer Groups in Credit Management,Credit Officer Group,Credit Officer,Credit Officer Group,Credit Officer Group,Corporation,Corporation
+VBAK,SCHEME_GRP,Reference restriction condition: Determination indicator,Decision category,Decision category,Reference determination indicator,Group Reference Determination Indicator,Determined category,determined_category
+VBAK,SDM_VERSION,SDM: Version field in VBAK,S.V.,SDM Version.,SDM Versioning,SDM Versioning,SDM Version.,sdm_vers.
+VBAK,SOLUTION_ORDER_ID,Solution Order,Solution Order,Soln Order,Solution Order,Solution Order,SOLN Oda,soln_oda
+VBAK,SPART,Product Category,Department,Product Category,Product Category,Product Category,Product department,product_department
+VBAK,SPPAYM,Special Payment Method Payment Form,Special Payment Methods,PaymM,payment method,payment method,Paymmm,paymmm
+VBAK,SPSTG,All Block Status (Header),Alumni,All BlockSts,All Blocks Sts,All Block Status,All Blocksts,all_blocksts
+VBAK,STAFF,Update Group for Update Statistics,Update GP,Update Group,Update Group,Update Group (Statistics),Update GROUP,update_group
+VBAK,STCEG_L,Destination country,TDC,Destination country,Destination country,Destination country,Declining country,declining_country
+VBAK,STWAE,Statistical currency,currency,Statistical currency,Statistical currency,Statistical currency,Statistical currency,statistical_currency
+VBAK,SUBMI,Collective number (SD),Bulk Number,Bulk Number,Bulk Number,Bulk Number,Lump sum number,lump_sum_number
+VBAK,TAXK1,Alternative Tax Classification,ATC,Alternative Tax Classification,Alternative Tax Classification,Alternative Tax Classification,Alternative tax classification,alternative_tax_classification
+VBAK,TAXK2,Customer Tax Classification 2,Tax 2,Customer Tax 2,Customer Tax Classification 2,Customer Tax Classification 2,Special tax 2,special_tax_2
+VBAK,TAXK3,Customer Tax Classification 3,Tax 3,Customer Tax 3,Customer Tax Classification 3,Customer Tax Classification 3,Special tax 3,special_tax_3
+VBAK,TAXK4,Customer Tax Classification 4,Income tax 4,Tax Class 4,Customer tax class 4,Customer tax class 4,Tax class 4,tax_class_4
+VBAK,TAXK5,Customer Tax Classification 5,Cs tax 5,Cust Tax Cl5,Customer Tax Classification 5,Customer Tax Classification 5,CUST tax CL5,cust_tax_cl5
+VBAK,TAXK6,Customer Tax Classification 6,Cs Tax 6,Cust Tax Cl 6,Customer tax class 6,Customer Tax Classification 6,CUST tax CL 6,cust_tax_cl_6
+VBAK,TAXK7,Customer tax classification 7,Cs tax 7,Cust Tax Cl7,Customer Tax Classification 7,Customer Tax Classification 7,CUST tax CL7,cust_tax_cl7
+VBAK,TAXK8,Customer Tax Classification 8,Cs tax 8,Cust Tax Cl 8,Customer Tax Classification 8,Customer Tax Classification 8,CUST Tax CL 8,cust_tax_cl_8
+VBAK,TAXK9,Customer tax classification 9,Cs tax 9,Cust Tax Cl9,Customer Tax Classification 9,Customer Tax Classification 9,CUST tax CL9,cust_tax_cl9
+VBAK,TELF1,telephone number,phone,phone,phone,phone,phone,phone
+VBAK,TOTAL_DGSTA,Hazardous Materials Status (All Items),Dangerous Goods Status,Dangerous Goods St,Dangerous Goods Status,Dangerous Goods Status,Dangerous goods ST,dangerous_goods_st
+VBAK,TOTAL_EMCST,Embargo Status (All Items),Embargo Status,Emb.Status,Embargo Status,Embargo Status,Emb.status,emb.status
+VBAK,TOTAL_LCCST,Legal Management Status,Legal Management Status,Legal Management,Legal Management Status,Legal Management Status,Legal management,legal_management
+VBAK,TOTAL_PCSTA,Product Marketability Status (All Items),Product Marketability Stats,ProductMarktS,Product Marketability Status,Product Marketability Status,Product Markts,product_markts
+VBAK,TOTAL_SDSSTA,Safety Data Sheet Status (All Items),Safety Data Sheet S,Safety Data Sheet,Safety Data Sheet Status,Safety Data Sheet Status,Safety data,safety_datshs
+VBAK,TOTAL_SLCST,Watch List Screening Status (All Items),WLS Status,WLS Sts,Watch List Scrng Sts,Watch List Screening Status,WLS STS,wls_sts
+VBAK,TRSTA,Transportation Planning Status (Header),TS,Transportation Planning St,Transportation Planning Stat.,Transportation Planning Status,Transport plan,transport_plan
+VBAK,TRVOG,Trading Group,TrG,Trading Group,Trading Group,Trading Group,Trading Group,trading_group
+VBAK,UPD_TMSTMP,Full UTC timestamp (YYYYMMDDhhmmssmmmuuun),Time stamp,Time Stamp,Time stamp,Time stamp,Time STAMP,time_stamp
+VBAK,UVALL,Incomplete status (header),OH,All headers,All headers,All headers,Whole header,whole_header
+VBAK,UVALS,Incomplete status (all items),AI,All details,All details,All details,Whole details,whole_details
+VBAK,UVFAK,Incomplete Billing Status (Header),BIS,Billing - Header,Invoice - Header,Invoice - Header,Request-Header,request-header
+VBAK,UVFAS,Incomplete Billing Status (All Items),BI,billing statement,Invoice - All Details,Invoice - All Details,Billing statement,billing_statement
+VBAK,UVK01,Customer Reserve 1: Header Status,CR1,HdrRes1,Header Reserve 1,Header Reserve 1,HDRRES1,hdrres1
+VBAK,UVK02,Customer Reserve 2: Header Status,CR2,HdrRes2,Header Reserve 2,Header Reserve 2,HDRRES2,hdrres2
+VBAK,UVK03,Customer Reserve 3: Header Status,CR3,HdrRes3,Header Reserve 3,Header Reserve 3,HDRRES3,hdrres3
+VBAK,UVK04,Customer Reserve 4: Header Status,CR4,HdrRes4,Header Reserve 4,Header Reserve 4,HDRRES4,hdrres4
+VBAK,UVK05,Customer Reserve 5: Header Status,CR5,HdrRes5,Header Reserve 5,Header Reserve 5,HDRRES5,hdrres5
+VBAK,UVPRS,Pricing Incomplete Status (All Items),PI,Prcg Details,Pricing-All Lines,Pricing - All Lines,PRCG statement,prcg_statement
+VBAK,UVS01,Customer reserve 1: Total of all items,TR1,Total Res1,Total Reserve 1,Total Reserve 1,Total RES1,total_res1
+VBAK,UVS02,Customer reserve 2: Total of all items,TR2,Total Res2,Total Reserve 2,Total Reserve 2,Total RES2,total_res2
+VBAK,UVS03,Customer reserve 3: Total of all items,TR3,Total Res3,Total Reserve 3,Total Reserve 3,Total RES3,total_res3
+VBAK,UVS04,Customer reserve 4: Total of all items,TR4,Total Res4,Total Reserves 4,Total Reserves 4,Total RES4,total_res4
+VBAK,UVS05,Customer reserve 5: Total of all items,TR5,Total Res5,Total Reserve 5,Total Reserve 5,Total RES5,total_res5
+VBAK,UVVLK,Delivery Incomplete Status (Header),D.I.H.,Shipping Header,Shipment - Header,Shipment - Header,Shipping header,shipping_header
+VBAK,UVVLS,Delivery incomplete status (all items),DI,Shipping Details,Shipment - All Lines,Shipment - All Lines,Shipment statement,shipment_statement
+VBAK,VBELN,Sales slip,Sales slip,Sales slip,Sales slip,Sales slip,Sales slip,sales_slip
+VBAK,VBELN_GRP,Group Master Contract Number,G Master Contract,Master Agreement,Group Master Agreement,Group Master Contract,Master contract,master_contract
+VBAK,VBKLA,Original system with release and transaction management,Original,Original,Original System,Original System,Origin,origin
+VBAK,VBKLT,Sales and distribution document category,I,Classification,Classification,Classification,Classification,Classification
+VBAK,VBTYP,Sales and Distribution Document Category,InvoiceCateg.,InvoiceCateg.,Document Category,Sales and Distribution Document Category,Section CATEGORIES.,section_categ.
+VBAK,VDAT,Specified delivery date,Specified delivery date,Specified delivery date,Specified delivery date,Specified delivery date,Designated delivery date,designated_delivery_date
+VBAK,VGBEL,Reference Document Number,Reference Document,Reference Document,Reference Document,Reference Document,Reference slip,reference_slip
+VBAK,VGTYP,Document category of the preceding SD document,PrCat,SD slip Cat,Advance document Categ.,Leading Document Category,SD slip CAT,sd_slip_cat
+VBAK,VKBUR,Sales Office,SOff.,Sales Office,Sales Office,Sales Office,Sales office,sales_office
+VBAK,VKGRP,Sales Group,SGrp,Sales Group,Sales Group,Sales Group,Sales Group,sales_group
+VBAK,VKORG,Sales organization,Sales group,Sales organization,Sales organization,Sales organization,Sales organization,sales_organization
+VBAK,VPRGR,Suggested Date Type,date,Proposal Date,Suggested Date Type,Suggested Date Type,Proposed date,proposed_date
+VBAK,VSBED,Shipping Terms,SC,Shipping Terms,Shipping Terms,Shipping Terms,Shipping conditions,shipping_conditions
+VBAK,VSNMR_V,Sales document version number,version,version,version,version,version,version
+VBAK,VTWEG,Distribution Channels,Flow,Distribution Chan.,Distribution Channels,Distribution Channels,Distribution Chan.,distribution_chan.
+VBAK,VZEIT,Proposed time of delivery schedule (local time: see sales organization),Delivery request Tm,Delivery request Tm,Delivery request time,Delivery request time,Delivery request TM,delivery_request_tm
+VBAK,WAERK,Sales document currency,currency,currency,Document Currency,Document Currency,currency,currency
+VBAK,WBSTK,Goods Movement Status (All Items),GM,Inventory Movement,Inventory Transfer Status,Inventory Movement Status,Inventory,inventory
+VBAK,WTYSC_CLM_HDR,Invoice Header,Invoice Header,Clm Header,Invoice Header,Invoice Header,CLM header,clm_header
+VBAK,XBLNR,Reference Document Number,reference,reference,reference,reference,reference,reference
+VBAK,XEGDR,Flag: EU triangular transactions,,Triangular Transactions,EC Intra-Triangular Transactions,EC Intra-Triangular Transactions,Triangular trading,triangular_trading
+VBAK,ZUONR,Allocation Number,Allocation Number,Allocation Number,Allocation Number,Allocation Number,Assignment number,assignment_number
